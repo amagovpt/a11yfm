@@ -12,5 +12,3 @@ TBD by JF
 - Teclas de atalho Narrator
 - Teclas de atalho NVDA
 - Teclas de atalho VO
-
-- Teste change md
