@@ -3,18 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Exemplo de Erros de Acessibilidade</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-
-
-    <div class="skip-link">
-        <a href="#main">Pular para o Conteúdo Principal</a>
-    </div>
 
     <header>
         <a href="index.html">
@@ -45,7 +38,7 @@
             <div class="language-container">
                 <button class="language-button">
                     <div class="language-icon">
-                        <img src="../img/language.svg">
+                        <img src="../img/language.svg" alt="Idioma">
                     </div>
                     <a class="language-option">PT</a>
                 </button>
@@ -56,43 +49,45 @@
         </div>
     </header>
 
-    <div class="paginaEvento">
-        <img src="../img/Banner_Acessibilidadegov.pt-2-1.png" class="evento-image">
-        <div class="evento-header">
-            <p class="update">Atualização: 26/10/2023</p>
-            <div class="evento-social">
-                <a href="#" class="social-button facebook" ></a>
-                <a href="#" class="social-button twitter"></a>
-                <a href="#" class="social-button linkedin"></a>
-            </div>
+
+
+    <main>
+
+        <div >
+        <h1>Programação e Oradores</h1>
+
+        <h3>Agenda do Evento</h3>
+
+            <table class="styled-table">
+                <tr>
+                    <td>Horário</td>
+                    <td>Atividade</td>
+                    <td>Local</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Palestra de Abertura</td>
+                    <td>Sala Principal</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Palestra de Abertura</td>
+                    <td>Sala Principal</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Palestra de Abertura</td>
+                    <td>Sala Principal</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Palestra de Abertura</td>
+                    <td>Sala Principal</td>
+                </tr>
+            </table>
         </div>
-        <div class="evento-content">
-            <h1>Eventos</h1>
-            <p class="evento-description">O foco principal do evento são as necessidades de quem programa, desenvolve e
-                utiliza websites e aplicações móveis da Administração Pública. As jornadas têm como objetivo a troca de
-                experiências entre participantes, mostrando casos de sucesso, ferramentas e estratégias que permitam, no
-                futuro, o desenvolvimento de websites e apps móveis cada vez mais acessíveis e inclusivos.
 
-                As Jornadas de Acessibilidade e Usabilidade Digital da Administração Pública vão ter lugar no Auditório
-                do
-                IAPMEI (Edifício L), em Lisboa. A participação é gratuita, mas com inscrição obrigatória e limitada às
-                vagas
-                existentes.</p>
-
-            <a href="../img/Frame 1000003566.pdf.pdf" download="programa-do-evento.pdf" class="download-link">Transfira o
-                programa do evento</a>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
+    </main>
 
 
 
@@ -100,6 +95,10 @@
     <div class="footer-supporters">
         <h3>Apoios</h3>
         <div class="apoios-logos">
+            <img src="../img/republicaportuguesa_black.png" alt="Logo 1"
+                style="filter: invert(0) hue-rotate(0deg); visibility: visible !important;">
+            <img src="../img/FUE_black.svg" alt="Logo 2"
+                style="filter: invert(0) hue-rotate(0deg); visibility: visible !important;">
         </div>
         <div class="footer-policies">
             <div class="footer-text">
@@ -113,8 +112,7 @@
     </div>
 
 
-
-
 </body>
+
 
 </html>
