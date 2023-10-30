@@ -97,9 +97,8 @@
         </div>
     </div>
 
-
-
-    <div class="modal" id="searchModal">
+    <!-- Modal - Search -->
+    <div class="modal" style="display: none;" id="searchModal">
         <div class="modal-content">
             <img src="../img/close.svg" id="closeModalButton" class="close-button">
             <h2>Pesquisar</h2>
@@ -109,20 +108,16 @@
             </div>
         </div>
     </div>
-
-
-
-
 </body>
 
-    <script>
-        document.getElementById("openModalButton").addEventListener("click", function () {
-            document.getElementById("searchModal").style.display = "block";
-        });
+<script>
+    document.getElementById("openModalButton").addEventListener("click", function () {
+        document.getElementById("searchModal").style.display = "flex";
+    });
 
-        document.getElementById("closeModalButton").addEventListener("click", function () {
-            document.getElementById("searchModal").style.display = "none";
-        });
-    </script>
+    document.getElementById("closeModalButton").addEventListener("click", function () {
+        document.getElementById("searchModal").style.display = "none";
+    });
+</script>
 
 </html>
