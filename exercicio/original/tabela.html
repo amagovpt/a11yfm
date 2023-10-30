@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Erros de Acessibilidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/logo1234.svg" alt="logo1234.svg">
+        </a>
+
+        <div class="navegação">
+            <a href="#">Evento</a>
+            <a href="#">Inscrição</a>
+            <div class="submenu">
+                <a class="submenu-toggle" href="#">Workshops &#9662;</a>
+                <div class="submenu-content">
+                    <a href="#" style="white-space: nowrap;">Exercício prático I</a>
+                    <a href="#" style="white-space: nowrap;">Exercício prático II</a>
+                    <a href="#" style="white-space: nowrap;">Exercício prático III</a>
+                </div>
+            </div>
+            <a href="#">Agenda</a>
+            <a href="#">Gravações</a>
+        </div>
+
+        <div class="button-container">
+            <button id="openModalButton">
+                <img src="img/search.svg" alt="Pesquisar">
+                <span>Pesquisar</span>
+            </button>
+
+            <div class="language-container">
+                <button class="language-button">
+                    <div class="language-icon">
+                        <img src="img/language.svg" alt="Idioma">
+                    </div>
+                    <a class="language-option">PT</a>
+                </button>
+                <div class="language-dropdown">
+                    <a class="language-option">ENG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <div >
+        <h1>Programação e Oradores</h1>
+
+        <h3>Agenda do Evento</h3>
+
+            <table class="styled-table">
+                <tr>
+                    <td>Horário</td>
+                    <td>Atividade</td>
+                    <td>Local</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Palestra de Abertura</td>
+                    <td>Sala Principal</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Palestra de Abertura</td>
+                    <td>Sala Principal</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Palestra de Abertura</td>
+                    <td>Sala Principal</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td>Palestra de Abertura</td>
+                    <td>Sala Principal</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+
+
+
+    <div class="footer-supporters">
+        <h3>Apoios</h3>
+        <div class="apoios-logos">
+            <img src="img/republicaportuguesa_black.png" alt="Logo 1"
+                style="filter: invert(0) hue-rotate(0deg); visibility: visible !important;">
+            <img src="img/FUE_black.svg" alt="Logo 2"
+                style="filter: invert(0) hue-rotate(0deg); visibility: visible !important;">
+        </div>
+        <div class="footer-policies">
+            <div class="footer-text">
+                <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/acessibilidade">Acessibilidade</a>
+                <a href="/contactos">Contactos</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chart</title>
+    <style>
+        .container-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #007aff;
+            text-align: left;
+        }
+
+        .chart-container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-chart">
+        <div class="chart-container">
+            <h1>Participação no Evento Anteriores</h1>
+            <figure>
+                <canvas id="myChart" width="400" height="200"></canvas>
+            </figure>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Designers', 'Developers', 'Gestores de Projeto'],
+                datasets: [{
+                    label: 'Número de Participantes',
+                    data: [60, 40, 30],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>

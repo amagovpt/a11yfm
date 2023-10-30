@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Erros de Acessibilidade</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="img/logo1234.svg" alt="logo1234.svg">
+            </a>
+
+            <div class="navegação">
+   
+            </div>
+
+            <div class="button-container">
+                <button id="openModalButton">
+                    <img src="img/search.svg" alt="Pesquisar">
+                    <span>Pesquisar</span>
+                </button>
+
+                <div class="language-container">
+                </div>
+            </div>
+        </header>
+
+        <div class="content-container" id="main">
+            <div class="image-section">
+                <h1>Bem-vindo às Jornadas de Acessibilidade e Usabilidade <br> Digital da AP 2023</h1>
+            
+                <p>Concebido a pensar no futuro e orientado para a ação, este evento promovido pela <a
+                        href="https://www.ama.gov.pt/">AMA</a> é especialmente focado nas necessidades dos desenvolvedores e
+                    dos utilizadores de sítios web e aplicações móveis da Administração Pública (AP).</p>
+                <a href="tabela.html">Saiba mais</a>
+
+                <h3>Descrição do Evento</h3>
+                <p>As jornadas terão duas componentes complementares: uma mais expositiva, em auditório, e outra mais prática,
+                    com workshops <em>hands on job</em> durante parte da tarde, com grupos de trabalho mais pequenos em sala.
+                    Numa perspetiva de troca de experiências entre pares, iremos esclarecer dúvidas, analisar casos de sucesso,
+                    explorar ferramentas e apresentar estratégias que contribuam cada vez mais para o objetivo de desenvolver de
+                    sítios Web e aplicações móveis cada vez mais acessíveis e inclusivos.</p>
+
+                <p>A participação será gratuita mediante inscrição prévia, limitada às vagas existentes e poderá
+                    consultar a agenda do evento e inscrever-se <a
+                        href="https://www.acessibilidade.gov.pt/blogue/categoria-evento/jornadas-de-acessibilidade-e-usabilidade-digital-da-ap-2023/"
+                        target="_blank" rel="noopener">aqui</a>.</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h1>Eventos anteriores</h1>
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="footer-supporters">
+            <h3>Apoios</h3>
+            <div class="apoios-logos">
+            </div>
+            <div class="footer-policies">
+                <div class="footer-text">
+                    <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/acessibilidade">Acessibilidade</a>
+                    <a href="/contactos">Contactos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Designers', 'Developers', 'Gestores de Projeto'],
+        datasets: [{
+            label: 'Número de Participantes',
+            data: [60, 40, 30],
+            backgroundColor: [
+                'rgba(75, 192, 192, 0.5)',
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(54, 162, 235, 0.5)'
+            ],
+            borderColor: [
+                'rgba(75, 192, 192, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+    </script>
+</body>
+
+</html>
