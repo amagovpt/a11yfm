@@ -51,31 +51,91 @@ iframe {
 </head>
 
 <body>
+    <header>
+        <a href="index.html">
+            <img src="../img/logo1234.svg" alt="logo1234.svg">
+        </a>
 
-    <div class="container">
-        <h3 class="margin-bottom-xxlarge">Videos anteriores</h3>
-        <div>
-            <p class="intro">
-                <a href="#" target="_blank">2022</a>
-                &nbsp;|&nbsp;
-                <a href="#" target="_blank" >2021</a>
-            </p>
+        <div class="navegação">
+            <a href="evento.html">Evento</a>
+            <a href="inscricao.html">Inscrição</a>
+            <div class="submenu">
+                <a class="submenu-toggle" href="#">Workshops &#9662;</a>
+                <div class="submenu-content">
+                    <a href="#" style="white-space: nowrap;">Exercício prático I</a>
+                    <a href="#" style="white-space: nowrap;">Exercício prático II</a>
+                    <a href="#" style="white-space: nowrap;">Exercício prático III</a>
+                </div>
+            </div>
+            <a href="tabela.html">Agenda</a>
+            <a href="videos.html">Gravações</a>
         </div>
 
-        <div class="video-container">
-            <div class="video-iframe">
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/EK89NV7n7z4?si=Zc6aw6Re_eHOSva3"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="video-description">
-                <p class="speaker-name">Nome do orador</p>
-                <p class="video-description-text">Descrição do vídeo</p>
+        <div class="button-container">
+            <button id="openModalButton">
+                <img src="../img/search.svg" alt="Pesquisar">
+                <span>Pesquisar</span>
+            </button>
+
+            <div class="language-container">
+                <button class="language-button">
+                    <div class="language-icon">
+                        <img src="../img/language.svg" alt="Idioma">
+                    </div>
+                    <a class="language-option">PT</a>
+                </button>
+                <div class="language-dropdown">
+                    <a class="language-option">ENG</a>
+                </div>
             </div>
         </div>
-        <hr>
-    </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3 class="margin-bottom-xxlarge">Videos anteriores</h3>
+            <div>
+                <p class="intro">
+                    <a href="#" target="_blank">2022</a>
+                    &nbsp;|&nbsp;
+                    <a href="#" target="_blank" >2021</a>
+                </p>
+            </div>
+
+            <div class="video-container">
+                <div class="video-iframe">
+                    <iframe width="420" height="236" src="https://www.youtube.com/embed/EK89NV7n7z4?si=Zc6aw6Re_eHOSva3"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <p class="speaker-name">Nome do orador</p>
+                    <p class="video-description-text">Descrição do vídeo</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
+
+    <footer class="footer-supporters">
+        <h3>Apoios</h3>
+        <div class="apoios-logos">
+            <img src="../img/republicaportuguesa_black.png" alt="Logo 1"
+                style="filter: invert(0) hue-rotate(0deg); visibility: visible !important;">
+            <img src="../img/FUE_black.svg" alt="Logo 2"
+                style="filter: invert(0) hue-rotate(0deg); visibility: visible !important;">
+        </div>
+        <div class="footer-policies">
+            <div class="footer-text">
+                <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/acessibilidade">Acessibilidade</a>
+                <a href="/contactos">Contactos</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Modal - Search -->
     <div class="modal" style="display: none;" id="searchModal">
