@@ -350,10 +350,12 @@ border: 0;
 
 .image-section {
   width: 100%;
-  min-height: 50vw;
+  min-height: 60vh;
   background-image: url('img/Banner- site-900x450px (1).png'); 
-  background-size: cover; 
-  background-position: center center;
+  background-size: cover;
+  background-color: #f6f6f6;
+  background-repeat: no-repeat;
+  background-position: top center;
   color: #fff;
   text-align: left; 
   color: #999;
