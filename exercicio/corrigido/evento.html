@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="skip-link">
+        <a href="#main">Pular para o Conteúdo Principal</a>
+    </div>
+
+    <header>
+        <a href="index.html">
+            <img src="../img/logo1234.svg" alt="logo1234.svg">
+        </a>
+
+        <div class="navegação">
+            <a href="#">Evento</a>
+            <a href="#">Inscrição</a>
+            <div class="submenu">
+                <a class="submenu-toggle" href="#">Workshops &#9662;</a>
+                <div class="submenu-content">
+                    <a href="#" style="white-space: nowrap;">Exercício prático I</a>
+                    <a href="#" style="white-space: nowrap;">Exercício prático II</a>
+                    <a href="#" style="white-space: nowrap;">Exercício prático III</a>
+                </div>
+            </div>
+            <a href="#">Agenda</a>
+            <a href="#">Gravações</a>
+        </div>
+
+        <div class="button-container">
+            <button id="openModalButton">
+                <img src="../img/search.svg" alt="Pesquisar">
+                <span>Pesquisar</span>
+            </button>
+
+            <div class="language-container">
+                <button class="language-button">
+                    <div class="language-icon">
+                        <img src="../img/language.svg">
+                    </div>
+                    <a class="language-option">PT</a>
+                </button>
+                <div class="language-dropdown">
+                    <a class="language-option">ENG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-4">
+        <img src="../img/Banner_Acessibilidadegov.pt-2-1.png" alt="" class="evento-image">
+        <div class="evento-header">
+            <p class="update">Atualização: 26/10/2023</p>
+            <div class="evento-social">
+
+                <ul class="social-links">
+                    <li>
+                        <button href="#" class="social-button facebook" aria-label=" Partilhar no Facebook">
+                            <span class="visually-hidden" aria-hidden="true">Facebook</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button href="#" class="social-button twitter" aria-label=" Partilhar no twitter">
+                            <span class="visually-hidden" aria-hidden="true">Twiter</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="social-button linkedin" aria-label="Partilhar no LinkedIn">
+                            <span class="visually-hidden" aria-hidden="true">LinkedIn</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="evento-content">
+            <h1>Eventos</h1>
+            <p class="evento-description">O foco principal do evento são as necessidades de quem programa, desenvolve e
+                utiliza websites e aplicações móveis da Administração Pública. As jornadas têm como objetivo a troca de
+                experiências entre participantes, mostrando casos de sucesso, ferramentas e estratégias que permitam, no
+                futuro, o desenvolvimento de websites e apps móveis cada vez mais acessíveis e inclusivos.
+
+                As Jornadas de Acessibilidade e Usabilidade Digital da Administração Pública vão ter lugar no Auditório
+                do
+                IAPMEI (Edifício L), em Lisboa. A participação é gratuita, mas com inscrição obrigatória e limitada às
+                vagas
+                existentes.</p>
+
+                <button aria-label="Transferir folheto do evento PDF" onclick="window.location.href = '../img/Frame 1000003566.pdf'">
+                    Transferir folheto do evento PDF
+                </button>
+        </div>
+    </div>
+
+
+    <footer class="footer-supporters">
+        <h3>Apoios</h3>
+        <div class="apoios-logos">
+        </div>
+        <div class="footer-policies">
+            <div class="footer-text">
+                <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/acessibilidade">Acessibilidade</a>
+                <a href="/contactos">Contactos</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
