@@ -11,6 +11,9 @@ img.figure {
 .list-group-item{
 	border: none;
 }
+a {
+	color: #006FE6;
+}
 
 h3 {
 	font-size: 125%;			
