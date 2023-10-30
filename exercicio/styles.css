@@ -1,7 +1,16 @@
 body {
+  position: relative;
+  padding-top: 82px !important;
   font-family: 'Open Sans', Arial, sans-serif !important;
   margin: 0;
   padding: 0;
+}
+
+body > header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .content-container {
