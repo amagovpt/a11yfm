@@ -6,6 +6,8 @@
     <title>Erros de Acessibilidade</title>
     <link rel="stylesheet" href="../styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600&family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +45,7 @@
                     </div>
                 </div>
                 <a href="tabela.html">Agenda</a>
-                <a href="videos.hmtl">Gravações</a>
+                <a href="videos.html">Gravações</a>
             </div>
 
             <div class="button-container">
@@ -71,15 +73,15 @@
             <form>
                 <div class="form-group">
                     <label for="nome">Primeiro e último nome (Obrigatório)</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome">
                 </div>
                 <div class="form-group">
                     <label for="email">Email (Obrigatório)</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="evento">Selecione os dias em que pretende participar</label>
-                    <select id="evento" name="evento">
+                    <label>Selecione os dias em que pretende participar</label>
+                    <select name="evento">
                         <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
                         <option value="evento2">Dia 9 de novembro</option>
                         <option value="evento3">Dia 10 de novembro</option>
@@ -87,13 +89,19 @@
                 </div>
                 <div class="form-group">
                     <label>Refeições ?</label>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="cafe" name="cafe" value="cafe">
-                        <label for="cafe">Café da Manhã</label>
-                        <input type="checkbox" id="almoco" name="almoco" value="almoco">
-                        <label for="almoco">Almoço</label>
-                        <input type="checkbox" id="jantar" name="jantar" value="jantar">
-                        <label for="jantar">Jantar</label>
+                    <div class="checkbox-group mt-2">
+                        <span>
+                            <input type="checkbox" id="cafe" name="cafe" value="cafe">
+                            <label for="cafe">Café da Manhã</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="almoco" name="almoco" value="almoco">
+                            <label for="almoco">Almoço</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="jantar" name="jantar" value="jantar">
+                            <label for="jantar">Jantar</label>
+                        </span>
                     </div>
                 </div>
                 <button type="submit">Inscrever-se</button>
