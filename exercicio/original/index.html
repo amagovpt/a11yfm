@@ -5,34 +5,33 @@
     <meta charset="UTF-8">
     <title>Erros de Acessibilidade</title>
     <link rel="stylesheet" href="../styles.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
+    <header>
+        <a href="index.html">
+            <img src="../img/logo1234.svg" alt="logo1234.svg">
+        </a>
 
-    <div class="container">
-        <header>
-            <a href="index.html">
-                <img src="../img/logo1234.svg" alt="logo1234.svg">
-            </a>
+        <div class="navegação">
 
-            <div class="navegação">
-   
+        </div>
+
+        <div class="button-container">
+            <button id="openModalButton">
+                <img src="../img/search.svg" alt="Pesquisar">
+                <span>Pesquisar</span>
+            </button>
+
+            <div class="language-container">
             </div>
+        </div>
+    </header>
 
-            <div class="button-container">
-                <button id="openModalButton">
-                    <img src="../img/search.svg" alt="Pesquisar">
-                    <span>Pesquisar</span>
-                </button>
-
-                <div class="language-container">
-                </div>
-            </div>
-        </header>
-
-        <div class="content-container" id="main">
-            <div class="image-section">
+    <div class="content-container" id="main">
+        <div class="image-section">
+            <div class="container">
                 <h1>Bem-vindo às Jornadas de Acessibilidade e Usabilidade <br> Digital da AP 2023</h1>
             
                 <p>Concebido a pensar no futuro e orientado para a ação, este evento promovido pela <a
@@ -53,24 +52,26 @@
                         target="_blank" rel="noopener">aqui</a>.</p>
             </div>
         </div>
+    </div>
 
-        <div class="chart-container">
+    <div class="chart-container py-4">
+        <div class="container">
             <h1>Eventos anteriores</h1>
             <canvas id="myChart" width="400" height="200"></canvas>
         </div>
+    </div>
 
-        <div class="footer-supporters">
-            <h3>Apoios</h3>
-            <div class="apoios-logos">
+    <div class="footer-supporters">
+        <h3>Apoios</h3>
+        <div class="apoios-logos">
+        </div>
+        <div class="footer-policies">
+            <div class="footer-text">
+                <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
             </div>
-            <div class="footer-policies">
-                <div class="footer-text">
-                    <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="/acessibilidade">Acessibilidade</a>
-                    <a href="/contactos">Contactos</a>
-                </div>
+            <div class="footer-links">
+                <a href="/acessibilidade">Acessibilidade</a>
+                <a href="/contactos">Contactos</a>
             </div>
         </div>
     </div>
