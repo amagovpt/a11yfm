@@ -5,6 +5,13 @@ body {
 img {
 	width:100px;
 }
+img.figure {
+	width:300px;
+}
+.list-group-item{
+	border: none;
+}
+
 h3 {
 	font-size: 125%;			
 	padding:0.5rem 0;
