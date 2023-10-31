@@ -1,16 +1,7 @@
 body {
-  position: relative;
-  padding-top: 82px !important;
-  font-family: 'Open Sans', Arial, sans-serif !important;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body > header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .content-container {
@@ -118,20 +109,18 @@ button {
 
 /* Seletor de idioma */
 
+
 .language-container {
   position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.language-container:hover .language-dropdown {
-  display: block;
 }
 
 .language-button {
   background: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .language-dropdown {
@@ -145,37 +134,20 @@ button {
 }
 
 .language-option {
-  color: #000;
   text-decoration: none;
+  color: #333;
+  display: block;
+  transition: color 0.3s;
 }
 
 .language-option:hover {
   color: #007bff;
 }
 
-.label {
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
+.language-container:hover .language-dropdown {
+  display: block;
 }
 
-
-.bi-globe,
-.bi-chevron-down {
-  font-size: 24px;
-  color: #333;
-  margin: 0 5px; 
-}
-
-.language-select {
-  border: none; 
-  padding: 5px;
-  font-size: 16px;
-  appearance: none;
-  width: auto;
-  min-width: 100px;
-}
 
 
 
@@ -223,10 +195,10 @@ button {
 }
 
 .modal-content {
-  display: block !important;
+  display: block;
   background-color: #fff;
   padding: 20px;
-  width: 60% !important;
+  width: 60%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -308,7 +280,7 @@ border: 0;
 /* Footer */
 .footer-supporters {
   background-color: #0C1932; 
-  padding: 20px 0 0 0;
+  padding: 20px;
   text-align: center;
   color: #fff; 
 }
@@ -350,21 +322,14 @@ border: 0;
 
 .image-section {
   width: 100%;
-  min-height: 60vh;
+  height: 50vw;
   background-image: url('img/Banner- site-900x450px (1).png'); 
-  background-size: cover;
-  background-color: #f6f6f6;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-size: cover; 
+  background-position: center center;
   color: #fff;
-  text-align: left; 
-  color: #999;
+  text-align: center; 
   padding: 20px; 
-}
-
-.image-section__title {
-  color: #000;
-}
+}  
 
 
 
@@ -392,8 +357,6 @@ border: 0;
   border-top: 2px solid #929292; 
 }
 
-
-__
 
 
 
@@ -431,9 +394,8 @@ select {
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 20px;
   justify-content: center;
-  flex-direction: column;
 }
 
 .checkbox-group input[type="checkbox"] {

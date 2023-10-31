@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-pt">
 
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles-corrigidos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <header>
         <a href="index.html">
@@ -20,18 +23,19 @@
 
         <nav>
             <ul class="navegação">
-                <li><a href="#">Evento</a></li>
-                <li><a href="#">Inscrição</a></li>
-                <li>
-                    <a href="#" class="submenu-toggle">Workshops ▼</a>
+                <li><a href="index.html" class="current-page">Homepage</a></li>
+                <li><a href="index.html">Evento</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Workshops 
+                        <i class="bi bi-chevron-down"></i></a>
                     <ul class="submenu-content">
-                        <li><a href="#">Exercício prático I</a></li>
-                        <li><a href="#">Exercício prático II</a></li>
-                        <li><a href="#">Exercício prático III</a></li>
+                        <li><a href="gravacoes.html">Gravações</a></li>
+                        <li><a href="exercicio2.html">Exercício prático II</a></li>
+                        <li><a href="exercicio3.html">Exercício prático III</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">Gravações</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
             </ul>
         </nav>
 
@@ -62,7 +66,7 @@
 
 
 
-    <section class="content-container">
+    <section class="content-presentation">
         <div class="image-section">
             <div class="container">
                 <h1>Bem-vindo às Jornadas de Acessibilidade e Usabilidade <br> Digital da AP 2023</h1>
@@ -128,7 +132,7 @@
 
 </main>
 
-    <div class="footer-supporters">
+    <footer class="footer-supporters">
         <h3>Apoios</h3>
         <div class="apoios-logos">
         </div>
@@ -141,7 +145,7 @@
                 <a href="/contactos">Contactos</a>
             </div>
         </div>
-    </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -185,6 +189,21 @@ var showTableLink = document.getElementById('showTableLink');
             }
         });
     </script>
+
+<script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".submenu-toggle").on("click", function() {
+            var $submenuContent = $(this).next(".submenu-content");
+            var expanded = $submenuContent.is(":visible");
+            
+            $submenuContent.toggle();
+            $(this).attr("aria-expanded", !expanded);
+        });
+    });
+    </script>
+
 </body>
 
 </html>
