@@ -2,8 +2,7 @@
 # Jornadas de Acessibilidade e Usabilidade na AP 2023
 
 ## Materiais
--  [Website Jornada Acessibilidade 2023 - com problemas]()
--  [Website Jornada Acessibilidade 2023 - corrigido]()
+-  [Website Jornada Acessibilidade 2023]()
 -  [Checklist dos 10 aspetos críticos de acessibilidade funcional](checklist-10aspetos.html)
 -  [Template Plano de correção](ficheiros/template-relatorio.pdf)
 
