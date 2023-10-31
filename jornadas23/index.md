@@ -15,5 +15,5 @@
 ## TBD by JF
 
 - Teclas de atalho Narrator
-- Teclas de atalho NVD
+- Teclas de atalho NVDA
 - Teclas de atalho VO
