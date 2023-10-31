@@ -523,7 +523,6 @@ button:hover {
   
 }
 
-
 /* Slider */
 
 .slider-container {
@@ -533,7 +532,7 @@ button:hover {
   flex-direction: column;
   text-align: center;
   position: relative;
-  margin-bottom: 20px; /* Adiciona espaçamento inferior */
+  margin-bottom: 20px;
 }
 
 .image-slider {
@@ -584,7 +583,7 @@ button:hover {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
-  margin: 0 10px; /* Adiciona espaçamento entre os botões */
+  margin: 0 10px; 
 }
 
 .prev-slide:hover, .next-slide:hover {
