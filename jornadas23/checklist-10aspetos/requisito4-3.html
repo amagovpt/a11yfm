@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">4.3 É possível localizar e ler as mensagens de erro usando apenas um leitor de ecrã</h1>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>Os erros identificados no decorrer do preenchimento de um formulário deverão preferencialmente ser listados de forma condensada, direcionando cada elemento da lista ao respetivo campo. Cada campo deverá associar a mensagem de erro a si próprio. As mensagens de erro deverão ser breves e claras.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">Procurar formulários no site (por ex: newsletter, registo, contacto, filtro, pesquisa).</li>
+				<li class="">Verificar se os campos do formulário devolvem mensagens de erro.</li>
+                <li class="">Verificar com a ferramenta ANDI se as mensagens de erro  são lidas pelo leitor do ecrã e estão associadas aos campos a que dizem respeito. Para isso, é necessário selecionar a opção "Elementos com foco".
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem11_Selecionando a opcao elemento em foco.png">
+                    </div> 
+                </li>
+                <li class="">Selecionar o campo com a mensagem de erro > Em "ANDI Output" verificar se o campo retorna o texto da etiqueta e a mensagem de erro.</li>
+                <div>
+                    <img class="figure" alt="" src="../imagem/Imagem12_Verificando campo com mensagens de erro.png">
+                </div> 
+            </ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Referências de boas práticas</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/tutorials/forms/validation/#validating-required-input" target="_blank">W3C Tutorial - Validação de campos de formulários</a>
+				</li>
+			</ul>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G85" target="_blank">Técnica G85: Fornecer uma descrição de texto quando a entrada do usuário estiver fora do formato ou dos valores exigidos</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>

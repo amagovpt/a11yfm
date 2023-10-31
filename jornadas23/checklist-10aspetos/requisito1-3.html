@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">Requisito 1.3 As imagens-link, caso existam no menu, devem ter o correspondente equivalente alternativo em texto</h1>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>As imagens corretamente legendadas permitem ser interpretadas como texto, tornando todas as opções de navegação acessíveis.neste requisito avaliamos imagens-link que fazem parte da lista de opções disponível no menu. O logotipo é avaliado no critério 5.3 imagens-link</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">Posicionar o rato na imagem-link do menu, clicar no botão do lado direito do rato e selecionar a opção “Inspecionar”.
+					<div>
+						<img class="figure" alt="" src="../imagem/Imagem1_Abrindo o inspector do navegador.png">
+					</div>
+				</li>
+                <li class="">Confirmar se no código HTML existe o atributo <code>alt</code> preenchido.
+                    <div>
+						<img class="figure" alt="" src=".png">
+					</div>             
+                </li>
+			</ol>
+		</div>
+	</div>
+    <!-- VER COM O JORGE ALGUMA REFERENCIA PARA ADICIONAR
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Referências de boas práticas</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/tutorials/menus/flyout/#use-button-as-toggle" target="_blank">W3C Tutorial - Flyout Menus</a>
+				</li>
+			</ul>	
+		</div>
+	</div>
+    -->
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G94" target="_blank">Técnica G94: Fornecer alternativas de texto curto para conteúdo não textual que atenda ao mesmo propósito e apresente as mesmas informações que o conteúdo não textual</a>
+				</li>
+                <li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H37" target="_blank">Técnica H37: Usando altatributos em imgelementos</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>
