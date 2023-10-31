@@ -513,15 +513,88 @@ button:hover {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   background-color: #f2f2f2;
 }
 
 .chart-container {
   text-align: center;
+  
 }
 
+
+/* Slider */
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px; /* Adiciona espaçamento inferior */
+}
+
+.image-slider {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-slider img {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.image-slider img:first-child {
+  display: block;
+}
+
+.slider-content {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-content h1 {
+  font-size: 24px;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  color: #888;
+  
+  
+}
+
+.prev-slide, .next-slide {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px; /* Adiciona espaçamento entre os botões */
+}
+
+.prev-slide:hover, .next-slide:hover {
+  background-color: #0056b3;
+}
+
+.container-Mensage {
+  padding: 50px;
+  text-align: left;
+}
 
 
 
