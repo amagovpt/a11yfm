@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">8.3 Quando se retira a CSS, deve ser possível reconhecer a semântica dos diversos elementos</h1>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>Os elementos que estruturam o conteúdo devem estar semanticamente bem estruturados, usando os elementos de HTML apropriados a cada tipo de conteúdo, como títulos, parágrafos, listas, etc... Sem estilo é possível analisar a diversidade semântica do documento. Outro aspeto que é possível analisar é a semântica dos elementos. Isto é, se os conteúdos são parágrafos, títulos, listas.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">Com o plugin Web Developer selecionar a opção CSS > Desativar todos os estilos (disabled all styles)
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem18_desabilitando estilos no web developer.png">
+					</div>
+                </li>
+				<li>Verifique se é possível reconhecer a semântica dos diversos elementos da página, por exemplo ao desativar o CSS, um botão deve aparentar ser um botão, um link deve aparentar ser um link (sublinhado ou a cor azul), etc...</li>
+            </ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G115" target="_blank">Técnica G115: Usando elementos semânticos para marcar estrutura</a>
+				</li>
+                <li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H49" target="_blank">Técnica H49: Usando marcação semântica para marcar texto enfatizado ou especial</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">6.2 O rácio de contraste entre a cor do texto de tamanho grande (maior ou igual que 18 pontos ou maior ou igual que 14 pontos negrito) e a cor do fundo é superior a 3:1</h1>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>Os textos de tamanho superior a 18 pontos, ou os textos de tamanho superior a 14 pontos mas a negrito, devem assegurar um rácio de contraste mínimo de 3:1 entre a cor do texto e a cor do fundo.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">Procurar no site blocos de texto com tamanho maior ou igual que 24px ou 19px em negrito.</li>
+				<li class="">Na ferramenta ANDI, selecionar a opção "Contraste de cor (color contrast)"
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem16_ Opcao de contraste no ANDI.png">
+                    </div>
+                </li>
+                
+                <li class="">Os elementos com constraste abaixo do recomendado serão destacados com um contorno. É possível consultar o número de elementos com baixo contraste em "Alertas de acessibilidade (acessibility alerts)".
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem17_Verificando falta de contraste ANDI.png">
+                    </div>
+                </li>
+                <li class="">A avaliação deve ser feita na Homepage e todas as páginas linkadas a esta diretamente.</li>
+            </ol>
+            <p>
+            <strong>Observações:</strong>
+            O contraste do logotipo NÃO ENTRA na avaliação deste requisito, apenas as suas cores caso sejam usadas noutros elementos do site (exemplo: botões).
+            </p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Referências de boas práticas</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/tips/designing/#provide-sufficient-contrast-between-foreground-and-background" target="_blank">W3C - Dicas para fornecer contraste suficiente entre o primeiro plano e o fundo</a>
+				</li>
+			</ul>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G18" target="_blank">Técnica G18: Garantir que exista uma taxa de contraste de pelo menos 4,5:1 entre o texto (e imagens de texto) e o fundo por trás do texto</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>
