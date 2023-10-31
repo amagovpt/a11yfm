@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">8.1 Quando se retira a CSS, todos os elementos HTML devem alinhar à esquerda</h1>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>Quando se desativam todos os estilos visuais, o conteúdo da página é apresentado alinhado à esquerda e apresenta-se de forma linear. Ao executar o procedimento proposto (retirar a CSS) ficamos só com a estrutura. Como todos os elementos HTML alinham à esquerda, se, porventura, existirem ainda resíduos de estilo aplicados no HTML (p.e. text-align=“center”) o conteúdo não irá alinhar, todo ele, à esquerda. Este procedimento permite verificar se há resíduos de estilo na estrutura.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">Com o plugin Web Developer selecionar a opção CSS > Desativar todos os estilos (disabled all styles)
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem18_desabilitando estilos no web developer.png">
+					</div>
+                </li>
+				<li> Quando o conteúdo não encosta à esquerda, podem existir estilos misturados nos próprios atributos, mesmo na própria linha de código de HTML, resultando em conflito e apresentar elementos com CSS aplicado.</li>
+				<li class="">O requisito apenas chumba apenas se o leitor de ecrã não ler devidamente o conteúdo.</li>
+            </ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G140" target="_blank">G140: Separar informações e estrutura da apresentação para permitir diferentes apresentações
+                    </a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">8.4 Quando se retira a CSS, a informação relevante permanece visível</h1>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>Toda a informação visível deve permanecer na página sob forma textual, quando se desativam os estilos visuais.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">Com o plugin Web Developer selecionar a opção CSS > Desativar todos os estilos (disabled all styles)
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem18_desabilitando estilos no web developer.png">
+					</div>
+                </li>
+				<li>Verificar se os elementos da página não desaperecem, como por exemplo, botões, títulos e textos, etc... </li>
+            </ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G117" target="_blank">G117: Utilizar texto para transmitir informações transmitidas por variações na apresentação do texto</a>
+				</li>
+                <li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G140" target="_blank">G140: Separar informações e estrutura da apresentação para permitir diferentes apresentações</a>
+				</li>
+                <li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G138" target="_blank">G138: Usando marcação semântica sempre que dicas de cores são usadas</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>
