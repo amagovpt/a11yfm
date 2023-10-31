@@ -178,12 +178,10 @@ button {
   padding: 10px;
 }
 
-.submenu-content a:hover {
-  background-color: #007bff;
-  color: #fff; 
-  border-radius: 4px; 
+.submenu-link:hover {
+    color: #fff;
+    border-radius: 4px;
 }
-
 
 /* Modal */
 .modal {
@@ -586,7 +584,7 @@ button:hover {
 .container-Mensage {
   padding: 50px;
   text-align: left;
-  color: #666;
+  color: #888;
 }
 
 .sem-sublinhado {
