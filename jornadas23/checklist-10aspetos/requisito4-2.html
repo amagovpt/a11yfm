@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">Requisito 4.2 É possível identificar os campos de preenchimento obrigatório quando se usa apenas um leitor de ecrã
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>Os campos obrigatórios devem ser preferencialmente agrupados na parte inicial de um formulário e claramente identificados como tal. Se não for possível, cada campo deverá estar identificado textualmente ou como Obrigatório ou como Opcional. Não deverão ser usados apenas símbolos ou cores como elemento identificador.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">Procurar formulários no site (por ex: newsletter, registo, contacto, filtro, pesquisa).</li>
+				<li class="">Verificar se existem campos obrigatórios que podem estar da seguinte forma:
+                    <ul>
+                        <li class="list-group-item">
+                           - Em "inspecionar elemento" verificar o uso do required ou aria-required=”true” no campo.
+                           <div>
+                                <img class="figure" alt="" src="../imagem/Imagem9_Verificar atributos no campo no html.png">
+                            </div> 
+                        </li>
+                        <li class="list-group-item">
+                            - A etiqueta possui uma descrição com a palavra “obrigatório” ou “opcional” à frente do campo <strong>OU</strong>
+                            A etiqueta possui um asterisco (*) à frente do texto. Nesse caso, é necessário que a informação sobre o que se trata esse asterisco seja exibida preferencialmente no início do formulário.
+                            <div>
+                                <img class="figure" alt="" src="../imagem/Imagem10_Sinalizacao campos obrigatorios.png">
+                            </div> 
+                        </li>
+					</ul>  
+                </li>
+			</ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Referências de boas práticas</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/tutorials/forms/validation/#validating-required-input" target="_blank">W3C Tutorial - Validação de campos de formulários</a>
+				</li>
+			</ul>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H90" target="_blank">Técnica H90: Indicando controles de formulário necessários usando rótulo ou legenda</a>
+				</li>
+                <li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G83" target="_blank">Técnica G83: Fornecer descrições de texto para identificar campos obrigatórios que não foram preenchidos</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>

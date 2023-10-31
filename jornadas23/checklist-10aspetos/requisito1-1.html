@@ -13,23 +13,42 @@
 		</div>
 	</div>	
 	<div class="row">
-		
 		<div class="col-sm">
 			<h2 id="n11">Sobre o requisito</h2>
 			<p>Para que possa ser bem interpretado por tecnologias de apoio, os menus e submenus devem estar estruturados com elementos nativos, do tipo &lt;ul&gt;, ou com a semântica e o estado dos elementos identificados com técnicas em ARIA.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
 			<h2 id="n11">Método de avaliação</h2>
 			<ol class="">
 				<li class="">Identificar todos os menus que existem no site e não apenas o menu principal, incluindo menus de páginas específicas. O footer também é avaliado neste critério.</li>
-				<li class="">Clicar no botão do lado direito do rato e selecionar a opção “Inspecionar”.</li>
-				<li class="">Confirmar se o menu possui o elemento <code>ul</code>. Em cada opção do menu deve ter o elemento <code>li</code>.</li>
+				<li class="">Abrir a janela do desenvolvedor. Para isso, clicar no botão do lado direito do rato e selecionar a opção “Inspecionar”. 
+					<div>
+						<img class="figure" alt="" src="../imagem/Imagem1_Abrindo o inspector do navegador.png">
+					</div>
+				</li>
+				<li class="">Com a janela inspecionar aberta, confirmar se o menu possui o elemento <code>ul</code>. Em cada opção do menu deve ter o elemento <code>li</code>. Para isso, é necessário clicar no menu com o botão "Inspecionar elemento na página ativo" e verificar no código se possui os elementos corretos <code>ul</code> e <code>li</code>.
+					<div>
+						<img class="figure" alt="" src="../imagem/Imagem2_Identificando menu no codigo.png">
+					</div>
+				</li>
 				<li class="">Se o menu tiver opções de 2º nível, elas devem estar no interior das opções de 1º nível.</li>
 			</ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
 			<h2 id="n11">Referências de boas práticas</h2>
 			<ul class="list-group">
 				<li class="list-group-item">
 					<a href="https://www.w3.org/WAI/tutorials/menus/flyout/#use-button-as-toggle" target="_blank">W3C Tutorial - Flyout Menus</a>
 				</li>
 			</ul>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
 			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
 			<ul class="list-group">
 				<li class="list-group-item">
@@ -38,6 +57,5 @@
 			</ul>			
 		</div>
 	</div>
-	
 </body>
 </html>

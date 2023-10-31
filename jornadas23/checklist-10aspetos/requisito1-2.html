@@ -9,35 +9,53 @@
 <body class="container funcional">
 	<div class="row">
 		<div class="col-sm">		
-			<h1 id="n1">Requisito 1.1 O menu de navegação deve estar estruturado como uma lista de opções</h1>
+			<h1 id="n1">Requisito 1.2 É possível selecionar as opções e as subopções do menu quer com rato quer com teclado</h1>
 		</div>
 	</div>	
 	<div class="row">
-		
 		<div class="col-sm">
 			<h2 id="n11">Sobre o requisito</h2>
-			<p>Para que possa ser bem interpretado por tecnologias de apoio, os menus e submenus devem estar estruturados com elementos nativos, do tipo &lt;ul&gt;, ou com a semântica e o estado dos elementos identificados com técnicas em ARIA.</p>
+			<p>Deve ser possível percorrer a estrutura de navegação quer com um dispositivo apontador, quer com o teclado.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
 			<h2 id="n11">Método de avaliação</h2>
 			<ol class="">
-				<li class="">Identificar todos os menus que existem no site e não apenas o menu principal, incluindo menus de páginas específicas. O footer também é avaliado neste critério.</li>
-				<li class="">Clicar no botão do lado direito do rato e selecionar a opção “Inspecionar”.</li>
-				<li class="">Confirmar se o menu possui o atributo <code>ul</code>. Em cada opção do menu deve ter o atributo.</li>
-				<li class="">Se o menu tiver opções de 2º nível, elas devem estar no interior das opções de 1º nível</li>
+				<li class="">Utilizar as teclas TAB e SHIFT+TAB para passar pelos vários elementos e perceber se o menu e submenus são selecionados sequencialmente ou não. (Menu de 1º nível deve passar para as opções de 2º nível).</li>
+				<li class="">Utilizar a tecla ENTER para ver as subopções do menu e a tecla ESC para fechar a subopção que está aberta.</li>
 			</ol>
+            <p>
+                <strong>Observação:</strong>
+                Pode ser possível estilizar os comandos de teclado, como por exemplo, utilizar as setas direcionais para navegar pelo conteúdo. Não reprova o requisito, no entando, o desenvolvimento deverá seguir boas práticas recomendadas da W3C. Também é necessário garantir o funcionamento do mesmo com os leitores de ecrã.
+            </p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
 			<h2 id="n11">Referências de boas práticas</h2>
 			<ul class="list-group">
 				<li class="list-group-item">
 					<a href="https://www.w3.org/WAI/tutorials/menus/flyout/#use-button-as-toggle" target="_blank">W3C Tutorial - Flyout Menus</a>
 				</li>
 			</ul>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
 			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
 			<ul class="list-group">
 				<li class="list-group-item">
-					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G125" target="_blank">Técnica G125: Fornecendo links para navegar para páginas da Web relacionadas</a>
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G202" target="_blank">Técnica G202: Garantindo o controle do teclado para todas as funcionalidades</a>
+				</li>
+                <li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H91" target="_blank">Técnica H91: Usando controles e links de formulário HTML</a>
+				</li>
+                <li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G149" target="_blank">Técnica G149: Usando componentes da interface do usuário que são destacados pelo agente do usuário quando recebem foco</a>
 				</li>
 			</ul>			
 		</div>
 	</div>
-	
 </body>
 </html>
