@@ -10,7 +10,7 @@
 ## Ferramentas necessárias
 - [ANDI](https://www.ssa.gov/accessibility/andi/help/install.html)
 - [Web developer tools](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
-- [Access Monitor (análise automática)](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
+- [Access Monitor (análise automática)](https://accessmonitor.acessibilidade.gov.pt/)
 
 ## TBD by JF
 
