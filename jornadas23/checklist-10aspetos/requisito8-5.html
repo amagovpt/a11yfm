@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">8.5 A maquetização da página é feita sem recorrer ao elemento <code>table</code></h1>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>A estrutura de composição gráfica da página não é feita recorrendo a elementos de tabela mas sim a uma maior diversidade de elementos semânticos (por exemplo, <code>main</code>) e genéricos (por exemplo, <code>div</code>), que permitem a recomposição visual para diferentes tipos e dimensões de ecrã.</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">Com a ferramenta ANDI, selecionar a opção "Tabela (table)". A opção estará visível apenas se existir elementos de tabela na página.
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem21_Opcao tabela no ANDI.png">
+					</div>
+                </li>
+				<li>Verificar se o conteúdo da página (como por exemplo, blocos de texto ou seções da página) está identificado como sendo uma tabela. Se o conteúdo estiver estruturado como uma tabela o requisito é chumbado.</li>
+            </ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Falha WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F46" target="_blank">F46: Falha no Critério de Sucesso 1.3.1 devido à utilização de elementos, tabelas de layout</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>

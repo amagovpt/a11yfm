@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de verificação 10 aspetos críticos de acessibilidade funcional</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../checklist.css">
+</head>
+<body class="container funcional">
+	<div class="row">
+		<div class="col-sm">		
+			<h1 id="n1">9.1 A página apresenta-se sem erros de (x)HTML</h1>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Sobre o requisito</h2>
+			<p>A página não deve apresentar erros de sintaxe de (x)HTML em qualquer ferramenta de avaliação automática das páginas</p>
+		</div>		
+	</div>	
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Método de avaliação</h2>
+			<ol class="">
+				<li class="">No Access Monitor, inserir a url da página para avaliação. A avaliação deve ser feita às páginas Home+ (Homepage e todas as páginas linkadas a esta diretamente).
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem22_AccessMonitor.png">
+					</div>
+                </li>
+                <li class=""> Se a página apresentar erros de HTML, uma mensagem é apresentada no relatório do Access Monitor indicando o total de erros identificados na página. É possível consultar mais informações sobre os erros. 
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem23_ErrosHTML.png">
+					</div>
+                </li>
+                <li class=""> Os erros de HTML são apresentados no Nu Validator quando selecionamos a opção "Filtro de mensagens (mensage filtering)"
+                    <div>
+                        <img class="figure" alt="" src="../imagem/Imagem24_ErrosHTML nuvalidator.png">
+					</div>
+                </li>
+            </ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="n11">Técnica WCAG aplicada no website exemplo do workshop</h2>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G134" target="_blank">Técnica G134: Validando páginas da Web</a>
+				</li>
+			</ul>			
+		</div>
+	</div>
+</body>
+</html>
