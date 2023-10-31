@@ -1,13 +1,18 @@
----
-title: Jornadas de Acessibilidade e Usabilidade na AP 2023
----
 
-Índice
+# Jornadas de Acessibilidade e Usabilidade na AP 2023
 
-- sítio Web "Acessibilidade Fora de Mão"
-- [checklist "10 aspetos críticos de acessibilidade funcional" (versão Jornadas)](checklist-10aspetos.html)
+## Materiais
+-  [Website Jornada Acessibilidade 2023 - com problemas]()
+-  [Website Jornada Acessibilidade 2023 - corrigido]()
+-  [Checklist dos 10 aspetos críticos de acessibilidade funcional](checklist-10aspetos.html)
+-  [Website Jornada Acessibilidade 2023 - corrigido](ficheiros/template-relatorio.pdf)
 
-TBD by JF
+## Ferramentas necessárias
+- [ANDI](https://www.ssa.gov/accessibility/andi/help/install.html)
+- [Web developer tools](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
+- [Access Monitor (análise automática)](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
+
+## TBD by JF
 
 - Teclas de atalho Narrator
 - [Teclas de atalho NVDA](NVDA.md)
