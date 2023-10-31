@@ -148,6 +148,10 @@ button {
   display: block;
 }
 
+.custom-button:hover {
+  background-color: transparent;
+}
+
 
 
 
@@ -593,7 +597,13 @@ button:hover {
 .container-Mensage {
   padding: 50px;
   text-align: left;
+  color: #666;
 }
+
+.sem-sublinhado {
+  text-decoration: none;
+}
+
 
 
 
