@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <title>Erros de Acessibilidade</title>
     <link rel="stylesheet" href="../styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600&family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600&family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -68,47 +71,69 @@
             </div>
         </header>
 
-        <div class="container py-4">
+        <div class="form py-4">
             <h2>Formulário de Inscrição</h2>
-            <form>
-                <div class="form-group">
-                    <label for="nome">Primeiro e último nome (Obrigatório)</label>
-                    <input type="text" id="nome" name="nome">
+            <div>
+                <div class="form-group mt-2">
+                    <label>Primeiro e último nome <img src="../img/asterisco.png" style="width: 8px; height: 8px;"></label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="email">Email
+                        <span class="required">Obrigatório</span>
+                    </label>
+                    <input type="email" id="email" name="email">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email (Obrigatório)</label>
-                    <input type="email" id="email" name="email" required>
+                    <label>Modalidade de Participação
+                        <span class="required">Obrigatório</span>
+                    </label>
+                    <div class="radio-group mt-2">
+                        <span>
+                            <input type="radio" id="presencial" name="modalidade" value="presencial">
+                            <label for="presencial">Presencial</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="online" name="modalidade" value="online">
+                            <label for="online">Online</label>
+                        </span>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Selecione os dias em que pretende participar</label>
+                <div class="form-group mt-2">
+                    <label>Selecione os dias em que pretende participar
+                        <span class="required">Obrigatório</span>
+                    </label>
                     <select name="evento">
                         <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
                         <option value="evento2">Dia 9 de novembro</option>
                         <option value="evento3">Dia 10 de novembro</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>Refeições ?</label>
-                    <div class="checkbox-group mt-2">
+                <div class="form-group mt-2">
+                    <label>Selecione o(s) workshop(s) em que pretende participar</label>
+                    <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops sequenciais.
+                        Para participar no segundo workshop, é recomendado que participe primeiro no workshop de
+                        'Avaliação
+                        de acessibilidade e usabilidade'.</p>
+                    <div class="checkbox-group ">
                         <span>
                             <input type="checkbox" id="cafe" name="cafe" value="cafe">
-                            <label for="cafe">Café da Manhã</label>
+                            <label for="cafe">Avaliação de acessibilidade e usabilidade</label>
                         </span>
                         <span>
                             <input type="checkbox" id="almoco" name="almoco" value="almoco">
-                            <label for="almoco">Almoço</label>
+                            <label for="almoco">Declaração de acessibilidade no meu site Web</label>
                         </span>
                         <span>
                             <input type="checkbox" id="jantar" name="jantar" value="jantar">
-                            <label for="jantar">Jantar</label>
+                            <label for="jantar">Testes com utilizadores para Selo Ouro</label>
                         </span>
                     </div>
                 </div>
-                <button type="submit">Inscrever-se</button>
-            </form>
+                <button type="submit">Enviar inscrição</button>
+                <div id="email-error-message" class="error-message">Por favor, insira um endereço de email válido.</div>
+            </div>
         </div>
-        
-
 
 
 
@@ -160,4 +185,4 @@
         });
     </script>
 
-    </html>
+</html>
