@@ -37,18 +37,17 @@
             </a>
 
             <div class="navegação">
+                <a href="index.html"><i class="material-icons">home</i></a>
                 <a href="evento.html">Evento</a>
                 <a href="inscricao.html">Inscrição</a>
                 <div class="submenu">
                     <a class="submenu-toggle" href="#">Workshops &#9662;</a>
                     <div class="submenu-content">
-                        <a href="#" style="white-space: nowrap;">Exercício prático I</a>
-                        <a href="#" style="white-space: nowrap;">Exercício prático II</a>
-                        <a href="#" style="white-space: nowrap;">Exercício prático III</a>
-                    </div>
+                        <a class="submenu-link" href="#" style="white-space: nowrap;">Exercício prático I</a>
+                        <a class="submenu-link" href="videos.html">Gravações</a>
+                  </div>
                 </div>
                 <a href="tabela.html">Agenda</a>
-                <a href="videos.html">Gravações</a>
             </div>
 
             <div class="button-container">
@@ -70,70 +69,73 @@
                 </div>
             </div>
         </header>
-
-        <div class="form py-4">
-            <h2>Formulário de Inscrição</h2>
-            <div>
-                <div class="form-group mt-2">
-                    <label>Primeiro e último nome <img src="../img/asterisco.png" style="width: 8px; height: 8px;"></label>
-                    <input type="text" id="nome" name="nome" required>
+        <main>
+            <div class="wrapper">
+                <div class="form py-4 my-5">
+                    <h2>Formulário de Inscrição</h2>
+                    <form id="registration-form" action="your-server-endpoint" method="post">
+                        <div class="form-group mt-2">
+                            <label>Primeiro e último nome <img src="../img/asterisco.png" style="width: 8px; height: 8px;"></label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="email">Email
+                                <span class="required">Obrigatório</span>
+                            </label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Modalidade de Participação
+                                <span class="required">Obrigatório</span>
+                            </label>
+                            <div class="radio-group mt-2">
+                                <span>
+                                    <input type="radio" id="presencial" name="modalidade" value="presencial">
+                                    <label class="mb-0" for="presencial">Presencial</label>
+                                </span>
+                                <span>
+                                    <input type="radio" id="online" name="modalidade" value="online">
+                                    <label class="mb-0" for="online">Online</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label>Selecione os dias em que pretende participar
+                                <span class="required">Obrigatório</span>
+                            </label>
+                            <select name="evento">
+                                <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
+                                <option value="evento2">Dia 9 de novembro</option>
+                                <option value="evento3">Dia 10 de novembro</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label>Selecione o(s) workshop(s) em que pretende participar</label>
+                            <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops sequenciais.
+                                Para participar no segundo workshop, é recomendado que participe primeiro no workshop de
+                                'Avaliação
+                                de acessibilidade e usabilidade'.</p>
+                            <div class="checkbox-group ">
+                                <span>
+                                    <input type="checkbox" id="cafe" name="cafe" value="cafe">
+                                    <label class="mb-0" for="cafe">Avaliação de acessibilidade e usabilidade</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" id="almoco" name="almoco" value="almoco">
+                                    <label class="mb-0" for="almoco">Declaração de acessibilidade no meu site Web</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" id="jantar" name="jantar" value="jantar">
+                                    <label class="mb-0" for="jantar">Testes com utilizadores para Selo Ouro</label>
+                                </span>
+                            </div>
+                        </div>
+                        <button type="submit">Enviar inscrição</button>
+                        <div id="email-error-message" class="error-message">Por favor, insira um endereço de email válido.</div>
+                    </form>
                 </div>
-                <div class="form-group mt-2">
-                    <label for="email">Email
-                        <span class="required">Obrigatório</span>
-                    </label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label>Modalidade de Participação
-                        <span class="required">Obrigatório</span>
-                    </label>
-                    <div class="radio-group mt-2">
-                        <span>
-                            <input type="radio" id="presencial" name="modalidade" value="presencial">
-                            <label for="presencial">Presencial</label>
-                        </span>
-                        <span>
-                            <input type="radio" id="online" name="modalidade" value="online">
-                            <label for="online">Online</label>
-                        </span>
-                    </div>
-                </div>
-                <div class="form-group mt-2">
-                    <label>Selecione os dias em que pretende participar
-                        <span class="required">Obrigatório</span>
-                    </label>
-                    <select name="evento">
-                        <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
-                        <option value="evento2">Dia 9 de novembro</option>
-                        <option value="evento3">Dia 10 de novembro</option>
-                    </select>
-                </div>
-                <div class="form-group mt-2">
-                    <label>Selecione o(s) workshop(s) em que pretende participar</label>
-                    <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops sequenciais.
-                        Para participar no segundo workshop, é recomendado que participe primeiro no workshop de
-                        'Avaliação
-                        de acessibilidade e usabilidade'.</p>
-                    <div class="checkbox-group ">
-                        <span>
-                            <input type="checkbox" id="cafe" name="cafe" value="cafe">
-                            <label for="cafe">Avaliação de acessibilidade e usabilidade</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" id="almoco" name="almoco" value="almoco">
-                            <label for="almoco">Declaração de acessibilidade no meu site Web</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" id="jantar" name="jantar" value="jantar">
-                            <label for="jantar">Testes com utilizadores para Selo Ouro</label>
-                        </span>
-                    </div>
-                </div>
-                <button type="submit">Enviar inscrição</button>
-                <div id="email-error-message" class="error-message">Por favor, insira um endereço de email válido.</div>
             </div>
-        </div>
+        </main>
 
 
 
@@ -161,7 +163,7 @@
         <div class="modal" style="display: none;" id="searchModal">
             <div class="modal-content">
                 <img src="../img/close.svg" id="closeModalButton" class="close-button">
-                <h2>Pesquisar</h2>
+                <div class="modal__title">Pesquisar</div>
                 <div class="search-form">
                     <input type="text" id="searchInput" placeholder="Pesquisar">
                     <button id="searchButton">Pesquisar</button>
@@ -181,6 +183,29 @@
 
         document.getElementById("closeModalButton").addEventListener("click", function () {
             document.getElementById("searchModal").style.display = "none";
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("registration-form");
+            const emailInput = document.getElementById("email");
+            const emailErrorMessage = document.getElementById("email-error-message");
+
+            form.addEventListener("submit", function(event) {
+                if (!isValidEmail(emailInput.value)) {
+                    emailErrorMessage.style.display = "block";
+                    event.preventDefault(); // Prevent form submission
+                }
+            });
+
+            emailInput.addEventListener("input", function() {
+                emailErrorMessage.style.display = "none"; // Hide the error message as the user types
+            });
+
+            function isValidEmail(email) {
+                // Regular expression for email validation
+                const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+                return emailPattern.test(email);
+            }
         });
     </script>
 

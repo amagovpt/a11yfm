@@ -51,24 +51,27 @@ iframe {
 </head>
 
 <body>
+    <div class="skip-link">
+        <a id='main' href="#main">Pular para o Conteúdo Principal</a>
+    </div>
+
     <header>
         <a href="index.html">
             <img src="../img/logo1234.svg" alt="logo1234.svg">
         </a>
 
         <div class="navegação">
+            <a href="index.html"><i class="material-icons">home</i></a>
             <a href="evento.html">Evento</a>
             <a href="inscricao.html">Inscrição</a>
             <div class="submenu">
                 <a class="submenu-toggle" href="#">Workshops &#9662;</a>
                 <div class="submenu-content">
-                    <a href="#" style="white-space: nowrap;">Exercício prático I</a>
-                    <a href="#" style="white-space: nowrap;">Exercício prático II</a>
-                    <a href="#" style="white-space: nowrap;">Exercício prático III</a>
-                </div>
+                    <a class="submenu-link" href="#" style="white-space: nowrap;">Exercício prático I</a>
+                    <a class="submenu-link" href="videos.html">Gravações</a>
+              </div>
             </div>
             <a href="tabela.html">Agenda</a>
-            <a href="videos.html">Gravações</a>
         </div>
 
         <div class="button-container">
@@ -140,7 +143,7 @@ iframe {
     <div class="modal" style="display: none;" id="searchModal">
         <div class="modal-content">
             <img src="../img/close.svg" id="closeModalButton" class="close-button">
-            <h2>Pesquisar</h2>
+            <div class="modal__title">Pesquisar</div>
             <div class="search-form">
                 <input type="text" id="searchInput" placeholder="Pesquisar">
                 <button id="searchButton">Pesquisar</button>
