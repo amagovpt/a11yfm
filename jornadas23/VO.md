@@ -1,6 +1,6 @@
 # Voiceover para macOS
 
-No macOS o VoiceOver encontra-se instalado por defeito no sistema operativo.
+No macOS, o VoiceOver encontra-se instalado por defeito no sistema operativo.
 
 Encontra-o no menu Apple. Escolha Definições e depois Acessibilidade. No menu Acessibilidade encontrará uma opção Acessibilidade. 
 
