@@ -15,7 +15,7 @@
 
 - Teclas de atalho Narrator
 - [Teclas de atalho NVDA](NVDA.md)
-- Teclas de atalho VO
+- [Teclas de atalho VO](VO.md)
 
 ## Exercício Prático III - 15h15 | A Declaração no meu sítio web (50 minutos)
 
