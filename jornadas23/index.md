@@ -2,7 +2,8 @@
 # Jornadas de Acessibilidade e Usabilidade na AP 2023
 
 ## Materiais
--  [Website Jornada Acessibilidade 2023]()
+-  [Website Jornada Acessibilidade 2023 - Fora de Mão](https://amagovpt.github.io/a11yfm/exercicio/original/index.html)
+-  [Website Jornadas Acessibilidade 2023 - Na direção certa](https://amagovpt.github.io/a11yfm/exercicio/corrigido/index.html)
 -  [Checklist dos 10 aspetos críticos de acessibilidade funcional](checklist-10aspetos.html)
 -  [Template Plano de correção](ficheiros/template-relatorio.pdf)
 
@@ -15,7 +16,7 @@
 
 - Teclas de atalho Narrator
 - [Teclas de atalho NVDA](NVDA.md)
-- Teclas de atalho VO
+- [Teclas de atalho VO](VO.md)
 
 ## Exercício Prático III - 15h15 | A Declaração no meu sítio web (50 minutos)
 
