@@ -6,33 +6,30 @@
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="styles-corrigidos.css">
+    <link rel="stylesheet" href="corrigido/styles-corrigido.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </head>
+</head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <header>
-        <a href="index.html">
-            <h1>
-                <img src="../img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
-            </h1>
-        </a>
+        <h1>
+            <img src="../img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
+        </h1>
 
         <nav>
-            <ul class="navegação">
+            <ul class="menu">
                 <li><a href="index.html" class="current-page">Homepage</a></li>
                 <li><a href="index.html">Evento</a></li>
                 <li><a href="inscricao.html">Inscrição</a></li>
                 <li class="has-submenu">
-                    <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">Workshops 
-                        <i class="bi bi-chevron-down"></i></a>
+                    <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false">
+                        Workshops <i class="bi bi-chevron-down"></i>
+                    </a>
                     <ul class="submenu-content">
                         <li><a href="gravacoes.html">Gravações</a></li>
                         <li><a href="exercicio2.html">Exercício prático II</a></li>
-                        <li><a href="exercicio3.html">Exercício prático III</a></li>
                     </ul>
                 </li>
                 <li><a href="agenda.html">Agenda</a></li>
@@ -61,76 +58,77 @@
     </header>
 
 
-<main>
+    <main>
 
 
+        <section class="content-presentation">
+            <div class="image-section">
+                <div class="container">
+                    <h1>Bem-vindo às Jornadas de Acessibilidade e Usabilidade <br> Digital da AP 2023</h1>
 
+                    <p>Concebido a pensar no futuro e orientado para a ação, este evento promovido pela <a
+                            href="https://www.ama.gov.pt/">AMA</a> é especialmente focado nas necessidades dos
+                        desenvolvedores e
+                        dos utilizadores de sítios web e aplicações móveis da Administração Pública (AP).</p>
+                    <a href="tabela.html">Saiba mais</a>
 
-    <section class="content-presentation">
-        <div class="image-section">
-            <div class="container">
-                <h1>Bem-vindo às Jornadas de Acessibilidade e Usabilidade <br> Digital da AP 2023</h1>
+                    <h3>Descrição do Evento</h3>
+                    <p>As jornadas terão duas componentes complementares: uma mais expositiva, em auditório, e outra
+                        mais
+                        prática,
+                        com workshops <em>hands on job</em> durante parte da tarde, com grupos de trabalho mais pequenos
+                        em
+                        sala.
+                        Numa perspetiva de troca de experiências entre pares, iremos esclarecer dúvidas, analisar casos
+                        de
+                        sucesso,
+                        explorar ferramentas e apresentar estratégias que contribuam cada vez mais para o objetivo de
+                        desenvolver de
+                        sítios Web e aplicações móveis cada vez mais acessíveis e inclusivos.</p>
 
-                <p>Concebido a pensar no futuro e orientado para a ação, este evento promovido pela <a
-                        href="https://www.ama.gov.pt/">AMA</a> é especialmente focado nas necessidades dos
-                    desenvolvedores e
-                    dos utilizadores de sítios web e aplicações móveis da Administração Pública (AP).</p>
-                <a href="tabela.html">Saiba mais</a>
-
-                <h3>Descrição do Evento</h3>
-                <p>As jornadas terão duas componentes complementares: uma mais expositiva, em auditório, e outra mais
-                    prática,
-                    com workshops <em>hands on job</em> durante parte da tarde, com grupos de trabalho mais pequenos em
-                    sala.
-                    Numa perspetiva de troca de experiências entre pares, iremos esclarecer dúvidas, analisar casos de
-                    sucesso,
-                    explorar ferramentas e apresentar estratégias que contribuam cada vez mais para o objetivo de
-                    desenvolver de
-                    sítios Web e aplicações móveis cada vez mais acessíveis e inclusivos.</p>
-
-                <p>A participação será gratuita mediante inscrição prévia, limitada às vagas existentes e poderá
-                    consultar a agenda do evento e inscrever-se <a
-                        href="https://www.acessibilidade.gov.pt/blogue/categoria-evento/jornadas-de-acessibilidade-e-usabilidade-digital-da-ap-2023/"
-                        target="_blank" rel="noopener">aqui</a>.</p>
+                    <p>A participação será gratuita mediante inscrição prévia, limitada às vagas existentes e poderá
+                        consultar a agenda do evento e inscrever-se <a
+                            href="https://www.acessibilidade.gov.pt/blogue/categoria-evento/jornadas-de-acessibilidade-e-usabilidade-digital-da-ap-2023/"
+                            target="_blank" rel="noopener">aqui</a>.</p>
+                </div>
             </div>
+        </section>
+
+
+        <section class="container-chart">
+            <div class="chart-container">
+                <h1>Participação no Evento Anteriores</h1>
+                <figure>
+                    <canvas id="myChart" width="400" height="200"
+                        alt="Gráfico com o número de participantes por profisão do último evento em 2022"></canvas>
+                    <a href="#" class="table-link" id="showTableLink">Consultar dados em tabela</a>
+                </figure>
+            </div>
+        </section>
+
+        <div class="table-container" id="tableContainer">
+            <table>
+                <caption>Tabela de Dados do Evento</caption>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Número de Participantes</th>
+                </tr>
+                <tr>
+                    <td>Designers</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Developers</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Gestores de Projeto</td>
+                    <td>30</td>
+                </tr>
+            </table>
         </div>
-    </section>
 
-
-    <section class="container-chart">
-        <div class="chart-container">
-            <h1>Participação no Evento Anteriores</h1>
-            <figure>
-                <canvas id="myChart" width="400" height="200"
-                    alt="Gráfico com o número de participantes por profisão do último evento em 2022"></canvas>
-                <a href="#" class="table-link" id="showTableLink">Consultar dados em tabela</a>
-            </figure>
-        </div>
-    </section>
-
-    <div class="table-container" id="tableContainer">
-        <table>
-            <caption>Tabela de Dados do Evento</caption>
-            <tr>
-                <th>Categoria</th>
-                <th>Número de Participantes</th>
-            </tr>
-            <tr>
-                <td>Designers</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>Developers</td>
-                <td>40</td>
-            </tr>
-            <tr>
-                <td>Gestores de Projeto</td>
-                <td>30</td>
-            </tr>
-        </table>
-    </div>
-
-</main>
+    </main>
 
     <footer class="footer-supporters">
         <h3>Apoios</h3>
@@ -151,7 +149,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
 
-var showTableLink = document.getElementById('showTableLink');
+        var showTableLink = document.getElementById('showTableLink');
         var tableContainer = document.getElementById('tableContainer');
 
         showTableLink.addEventListener('click', function (event) {
@@ -190,19 +188,22 @@ var showTableLink = document.getElementById('showTableLink');
         });
     </script>
 
-<script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $(".submenu-toggle").on("click", function() {
-            var $submenuContent = $(this).next(".submenu-content");
-            var expanded = $submenuContent.is(":visible");
-            
-            $submenuContent.toggle();
-            $(this).attr("aria-expanded", !expanded);
-        });
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+            $(document).ready(function() {
+                $(".submenu-toggle").on("click", function () {
+                    var $submenuContent = $(this).next(".submenu-content");
+                    var expanded = $submenuContent.is(":visible");
+
+                    $submenuContent.toggle();
+                    $(this).attr("aria-expanded", !expanded);
+                });
     });
     </script>
+
+
+</body>
 
 </body>
 
