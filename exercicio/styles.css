@@ -493,6 +493,14 @@ button[type="submit"]:hover {
   background: #0056b3;
 }
 
+.titlecenter {
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
 /* Formulario Mensagem de erro */
 
 .error-message {
@@ -807,6 +815,21 @@ section.workshop-info ul {
 
 section.workshop-info ul li:first-child {
   margin-top: 10px;
+}
+
+
+.evento-imagetop {
+  max-width: 100%;
+  height: auto;
+}
+.banner-top {
+  width: 100%;
+  padding: 0;
+}
+
+.banner-top img {
+  width: 100%;
+  height: auto;
 }
 
 

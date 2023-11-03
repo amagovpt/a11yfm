@@ -43,7 +43,8 @@
                 <div class="submenu">
                     <a class="submenu-toggle" href="#">Workshops &#9662;</a>
                     <div class="submenu-content">
-                        <a class="submenu-link" href="exerciciopratico.html" style="white-space: nowrap;">Exercício prático I</a>
+                        <a class="submenu-link" href="exerciciopratico.html" style="white-space: nowrap;">Exercício
+                            prático I</a>
                         <a class="submenu-link" href="videos.html">Gravações</a>
                     </div>
                 </div>
@@ -72,75 +73,82 @@
             </div>
         </header>
         <main>
-            <div class="wrapper">
-                <div class="form py-4 my-5">
-                    <h2>Formulário de Inscrição</h2>
-                    <form id="registration-form" action="your-server-endpoint" method="post">
-                        <div class="form-group mt-2">
-                            <label>Primeiro e último nome <img src="../img/asterisco.png"
-                                    style="width: 8px; height: 8px;"></label>
-                            <input type="text" id="nome" name="nome" required aria-describedby="nome-error">
-                            <div id="nome-error" class="error-message" aria-hidden="true">Este campo é obrigatório.</div>
-                        </div>
-                        <div class="form-group mt-2">
-                            <label for="email">Email
-                                <span class="required">Obrigatório</span>
-                            </label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label>Modalidade de Participação
-                                <span class="required">Obrigatório</span>
-                            </label>
-                            <div class="radio-group mt-2">
-                                <span>
-                                    <input type="radio" id="presencial" name="modalidade" value="presencial">
-                                    <label class="mb-0" for="presencial">Presencial</label>
-                                </span>
-                                <span>
-                                    <input type="radio" id="online" name="modalidade" value="online">
-                                    <label class="mb-0">Online</label>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group mt-2">
-                            <label>Selecione os dias em que pretende participar
-                                <span class="required">Obrigatório</span>
-                            </label>
-                            <select name="evento">
-                                <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
-                                <option value="evento2">Dia 9 de novembro</option>
-                                <option value="evento3">Dia 10 de novembro</option>
-                            </select>
-                        </div>
-                        <div class="form-group mt-2">
-                            <label>Selecione o(s) workshop(s) em que pretende participar</label>
-                            <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops
-                                sequenciais.
-                                Para participar no segundo workshop, é recomendado que participe primeiro no workshop de
-                                'Avaliação
-                                de acessibilidade e usabilidade'.</p>
-                            <div class="checkbox-group ">
-                                <span>
-                                    <input type="checkbox" id="Avaliacao" name="cafe" value="cafe">
-                                    <label class="mb-0">Avaliação de acessibilidade e usabilidade</label>
-                                </span>
-                                <span>
-                                    <input type="checkbox" id="DA" name="almoco" value="almoco">
-                                    <label class="mb-0" for="DA">Declaração de acessibilidade no meu site Web</label>
-                                </span>
-                                <span>
-                                    <input type="checkbox" id="testes" name="jantar" value="jantar">
-                                    <label class="mb-0">Testes com utilizadores para Selo Ouro</label>
-                                </span>
-                            </div>
-                        </div>
-                        <button type="submit">Enviar inscrição</button>
-                        <div id="email-error-message" class="error-message">Por favor, insira um endereço de email
-                            válido.</div>
-                    </form>
+            <div class="container-Events">
+                <div class="banner-top">
+                    <img src="../img/Banner.png" class="evento-imagetop" alt="">
                 </div>
-            </div>
+                <div class="wrapper">
+                    <div class="form py-4 my-5">
+                        <h2 class="titlecenter py-3">Formulário de Inscrição</h2>
+                        <form id="registration-form" action="your-server-endpoint" method="post">
+                            <div class="form-group mt-2">
+                                <label>Primeiro e último nome <img src="../img/asterisco.png"
+                                        style="width: 8px; height: 8px;"></label>
+                                <input type="text" id="nome" name="nome" required aria-describedby="nome-error">
+                                <div id="nome-error" class="error-message" aria-hidden="true">Este campo é obrigatório.
+                                </div>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="email">Email
+                                    <span class="required">Obrigatório</span>
+                                </label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Modalidade de Participação
+                                    <span class="required">Obrigatório</span>
+                                </label>
+                                <div class="radio-group mt-2">
+                                    <span>
+                                        <input type="radio" id="presencial" name="modalidade" value="presencial">
+                                        <label class="mb-0" for="presencial">Presencial</label>
+                                    </span>
+                                    <span>
+                                        <input type="radio" id="online" name="modalidade" value="online">
+                                        <label class="mb-0">Online</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label>Selecione os dias em que pretende participar
+                                    <span class="required">Obrigatório</span>
+                                </label>
+                                <select name="evento">
+                                    <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
+                                    <option value="evento2">Dia 9 de novembro</option>
+                                    <option value="evento3">Dia 10 de novembro</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label>Selecione o(s) workshop(s) em que pretende participar</label>
+                                <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops
+                                    sequenciais.
+                                    Para participar no segundo workshop, é recomendado que participe primeiro no
+                                    workshop de
+                                    'Avaliação
+                                    de acessibilidade e usabilidade'.</p>
+                                <div class="checkbox-group ">
+                                    <span>
+                                        <input type="checkbox" id="Avaliacao" name="cafe" value="cafe">
+                                        <label class="mb-0">Avaliação de acessibilidade e usabilidade</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="DA" name="almoco" value="almoco">
+                                        <label class="mb-0" for="DA">Declaração de acessibilidade no meu site
+                                            Web</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="testes" name="jantar" value="jantar">
+                                        <label class="mb-0">Testes com utilizadores para Selo Ouro</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <button type="submit">Enviar inscrição</button>
+                            <div id="email-error-message" class="error-message">Por favor, insira um endereço de email
+                                válido.</div>
+                        </form>
+                    </div>
+                </div>
         </main>
 
         <footer class="footer-supporters">
