@@ -9,6 +9,7 @@
 
 /* Menu */
 
+/* Estilos padrão para os itens do menu */
 .menu {
   list-style: none;
   padding: 0;
@@ -21,19 +22,32 @@
   position: relative;
   margin: 0 10px;
   padding: 10px;
-  border: 2px solid transparent;
-  transition: border 0.3s;
   text-decoration: none;
 }
 
-.menu li:hover,
-.menu li:focus-within {
-  border: 2px solid #007bff;
-  padding: 10px;
-  text-decoration: none;
-  border-bottom: 3px solid #007bff; 
+/* Efeito de quadrado no hover para os itens do menu */
+.menu li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #140C93;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+  transform-origin: left;
 }
 
+.menu li:hover::before {
+  width: 100%;
+}
+
+/* Mudança de cor do texto no hover */
+.menu li:hover a {
+  color: #140C93;
+}
+
+/* Estilos para itens de submenu */
 .has-submenu .submenu-content {
   display: none;
   position: absolute;
@@ -50,38 +64,50 @@
   display: block;
 }
 
-.submenu-toggle::after {
-  content: " ▼";
+/* Ícone de seta para baixo no submenu */
+.has-submenu .submenu-toggle {
+  position: relative;
+  padding-right: 20px; /* Espaço para o ícone de seta */
+  cursor: pointer;
+}
+
+.has-submenu .submenu-toggle::after {
+  content: " ▼"; /* Ícone de seta para baixo */
   position: absolute;
   right: 0;
   pointer-events: none;
 }
 
-.submenu-toggle[aria-expanded="true"]::after {
-  content: " ▲";
+.has-submenu:hover .submenu-toggle::after,
+.has-submenu:focus-within .submenu-toggle::after {
+  content: " ▲"; /* Ícone de seta para cima no hover */
 }
 
-.submenu-content {
-  list-style: none;
-  padding: 0;
+.has-submenu ul {
+  list-style: none; /* Remover bullets das subopções */
+}
+
+.has-submenu ul li {
+  padding: 5px 0; /* Espaçamento entre subopções */
 }
 
 .current-page {
   font-weight: bold;
-  color: #007bff;
-  text-decoration: none; 
+  color: #140C93;
+  text-decoration: none;
   padding: 10px;
-  border-bottom: 3px solid #007bff; 
+  border-bottom: 3px solid #140C93;
 }
 
 .current-page:hover,
 .current-page:focus {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li a {
   text-decoration: none;
 }
+
 
 
 /* Seletor de idioma */
@@ -116,6 +142,18 @@ li a {
   min-width: 100px;
 }
 
+
+.language-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 5px;
+  background: url('../img/chevron_down_icon.svg') no-repeat right center;
+}
+
+.language-select::-ms-expand {
+  display: none; 
+}
 
 
 /* Tabela do gráfico */
