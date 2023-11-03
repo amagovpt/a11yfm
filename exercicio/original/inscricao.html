@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Erros de Acessibilidade</title>
+    <title>Inscrições</title>
     <link rel="stylesheet" href="../styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -43,9 +43,9 @@
                 <div class="submenu">
                     <a class="submenu-toggle" href="#">Workshops &#9662;</a>
                     <div class="submenu-content">
-                        <a class="submenu-link" href="#" style="white-space: nowrap;">Exercício prático I</a>
+                        <a class="submenu-link" href="exerciciopratico.html" style="white-space: nowrap;">Exercício prático I</a>
                         <a class="submenu-link" href="videos.html">Gravações</a>
-                  </div>
+                    </div>
                 </div>
                 <a href="tabela.html">Agenda</a>
             </div>
@@ -56,17 +56,19 @@
                     <span>Pesquisar</span>
                 </button>
 
+
                 <div class="language-container">
-                    <button class="language-button">
+                    <button id="language-button" class="language-button custom-button" tabindex="0">
                         <div class="language-icon">
-                            <img src="../img/language.svg" alt="Idioma">
+                            <img src="../img/language.svg" alt="Selecionar idioma PT">
                         </div>
-                        <a class="language-option">PT</a>
+                        <span id="language-option" class="language-option" lang="PT">PT</span>
                     </button>
                     <div class="language-dropdown">
-                        <a class="language-option">ENG</a>
+                        <button id="eng-button" class="language-button language-option" tabindex="0">EN</button>
                     </div>
                 </div>
+
             </div>
         </header>
         <main>
@@ -75,8 +77,10 @@
                     <h2>Formulário de Inscrição</h2>
                     <form id="registration-form" action="your-server-endpoint" method="post">
                         <div class="form-group mt-2">
-                            <label>Primeiro e último nome <img src="../img/asterisco.png" style="width: 8px; height: 8px;"></label>
-                            <input type="text" id="nome" name="nome" required>
+                            <label>Primeiro e último nome <img src="../img/asterisco.png"
+                                    style="width: 8px; height: 8px;"></label>
+                            <input type="text" id="nome" name="nome" required aria-describedby="nome-error">
+                            <div id="nome-error" class="error-message" aria-hidden="true">Este campo é obrigatório.</div>
                         </div>
                         <div class="form-group mt-2">
                             <label for="email">Email
@@ -111,7 +115,8 @@
                         </div>
                         <div class="form-group mt-2">
                             <label>Selecione o(s) workshop(s) em que pretende participar</label>
-                            <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops sequenciais.
+                            <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops
+                                sequenciais.
                                 Para participar no segundo workshop, é recomendado que participe primeiro no workshop de
                                 'Avaliação
                                 de acessibilidade e usabilidade'.</p>
@@ -126,12 +131,13 @@
                                 </span>
                                 <span>
                                     <input type="checkbox" id="testes" name="jantar" value="jantar">
-                                    <label class="mb-0" >Testes com utilizadores para Selo Ouro</label>
+                                    <label class="mb-0">Testes com utilizadores para Selo Ouro</label>
                                 </span>
                             </div>
                         </div>
                         <button type="submit">Enviar inscrição</button>
-                        <div id="email-error-message" class="error-message">Por favor, insira um endereço de email válido.</div>
+                        <div id="email-error-message" class="error-message">Por favor, insira um endereço de email
+                            válido.</div>
                     </form>
                 </div>
             </div>
@@ -150,7 +156,7 @@
                 </div>
                 <div class="footer-links">
                     <a href="/acessibilidade">Acessibilidade</a>
-                    <a href="/contactos">Contactos</a>
+                    <a href="contactos.html">Contactos</a>
                 </div>
             </div>
         </footer>
@@ -182,19 +188,19 @@
             document.getElementById("searchModal").style.display = "none";
         });
 
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const form = document.getElementById("registration-form");
             const emailInput = document.getElementById("email");
             const emailErrorMessage = document.getElementById("email-error-message");
 
-            form.addEventListener("submit", function(event) {
+            form.addEventListener("submit", function (event) {
                 if (!isValidEmail(emailInput.value)) {
                     emailErrorMessage.style.display = "block";
                     event.preventDefault(); // Prevent form submission
                 }
             });
 
-            emailInput.addEventListener("input", function() {
+            emailInput.addEventListener("input", function () {
                 emailErrorMessage.style.display = "none"; // Hide the error message as the user types
             });
 
@@ -205,5 +211,6 @@
             }
         });
     </script>
+    <script src="script.js"></script>
 
 </html>

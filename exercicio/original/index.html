@@ -3,15 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Erros de Acessibilidade</title>
+    <title>Página inicial</title>
     <link rel="stylesheet" href="../styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600&family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600&family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;500&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+
     <div class="skip-link">
         <a id='main' href="#main">Pular para o Conteúdo Principal</a>
     </div>
@@ -28,9 +32,9 @@
             <div class="submenu">
                 <a class="submenu-toggle" href="#">Workshops &#9662;</a>
                 <div class="submenu-content">
-                    <a class="submenu-link" href="#" style="white-space: nowrap;">Exercício prático I</a>
+                    <a class="submenu-link" href="exerciciopratico.html" style="white-space: nowrap;">Exercício prático I</a>
                     <a class="submenu-link" href="videos.html">Gravações</a>
-              </div>
+                </div>
             </div>
             <a href="tabela.html">Agenda</a>
         </div>
@@ -42,16 +46,17 @@
             </button>
 
             <div class="language-container">
-                <button class="language-button custom-button">
+                <button id="language-button" class="language-button custom-button" tabindex="0">
                     <div class="language-icon">
-                        <img src="../img/language.svg">
+                        <img src="../img/language.svg" alt="Selecionar idioma PT">
                     </div>
-                    <a class="language-option">PT</a>
+                    <span id="language-option" class="language-option" lang="PT">PT</span>
                 </button>
                 <div class="language-dropdown">
-                    <a class="language-option">ENG</a>
+                    <button id="eng-button" class="language-button language-option" tabindex="0">EN</button>
                 </div>
             </div>
+
         </div>
     </header>
 
@@ -63,51 +68,55 @@
                     <img src="../img/Banner- site-900x450px (1).png" alt="Slide 1">
                 </div>
                 <div class="slide">
-                    <img src="../sigmund-HE1zW44Zm_Y-unsplash.jpg" alt="Slide 2">
+                    <img src="../img/sigmund-HE1zW44Zm_Y-unsplash.jpg" alt="Slide 2" style="height: 763px;">
                 </div>
                 <div class="slide">
-                    <img src="img/slide3.jpg" alt="Slide 3">
                 </div>
             </div>
             <div class="slider-content">
-                <h1 class="image-section__title">Bem-vindo às Jornadas de Acessibilidade e Usabilidade <br> Digital da AP 2023</h1>
+                <h1 class="image-section__title">Bem-vindo às Jornadas de Acessibilidade e Usabilidade <br> Digital da
+                    AP 2023</h1>
                 <button class="prev-slide"><img src="../img/216595_chevron_icon.svg" alt="Anterior"></button>
                 <button class="next-slide"><img src="../img/216714_right_icon.svg" alt="Próximo"></button>
             </div>
         </div>
 
 
-            <div class="container-Mensage">
-                <h3>Descrição do Evento</h3>
-                <p>Concebido a pensar no futuro e orientado para a ação, este evento promovido pela <a class="sem-sublinhado"
-                        href="https://www.ama.gov.pt/">AMA</a> é especialmente focado nas necessidades dos desenvolvedores e
-                    dos utilizadores de sítios web e aplicações móveis da Administração Pública (AP).</p>
-                <a class="sem-sublinhado" href="tabela.html">Saiba mais</a>
+        <div class="container-Mensage">
+            <h3>Descrição do Evento</h3>
+            <p>Concebido a pensar no futuro e orientado para a ação, este evento promovido pela <a
+                    class="sem-sublinhado" href="https://www.ama.gov.pt/">AMA</a> é especialmente focado nas
+                necessidades dos desenvolvedores e
+                dos utilizadores de sítios web e aplicações móveis da Administração Pública (AP).</p>
+            <a class="botao-link sem-sublinhado" href="tabela.html">Saiba mais</a>
 
-          
-                <p class="mt-4">As jornadas terão duas componentes complementares: uma mais expositiva, em auditório, e outra mais prática,
-                    com workshops <em>hands on job</em> durante parte da tarde, com grupos de trabalho mais pequenos em sala.
-                    Numa perspetiva de troca de experiências entre pares, iremos esclarecer dúvidas, analisar casos de sucesso,
-                    explorar ferramentas e apresentar estratégias que contribuam cada vez mais para o objetivo de desenvolver de
-                    sítios Web e aplicações móveis cada vez mais acessíveis e inclusivos.</p>
 
-                <p>A participação será gratuita mediante inscrição prévia, limitada às vagas existentes e poderá
-                    consultar a agenda do evento e inscrever-se <a class="sem-sublinhado"
-                        href="https://www.acessibilidade.gov.pt/blogue/categoria-evento/jornadas-de-acessibilidade-e-usabilidade-digital-da-ap-2023/"
-                        target="_blank" rel="noopener">aqui</a>.</p>
-            </div>
- 
+            <p class="mt-4">As jornadas terão duas componentes complementares: uma mais expositiva, em auditório, e
+                outra mais prática,
+                com workshops <em>hands on job</em> durante parte da tarde, com grupos de trabalho mais pequenos em
+                sala.
+                Numa perspetiva de troca de experiências entre pares, iremos esclarecer dúvidas, analisar casos de
+                sucesso,
+                explorar ferramentas e apresentar estratégias que contribuam cada vez mais para o objetivo de
+                desenvolver de
+                sítios Web e aplicações móveis cada vez mais acessíveis e inclusivos.</p>
+
+            <p>A participação será gratuita mediante inscrição prévia, limitada às vagas existentes e poderá
+                consultar a agenda do evento e inscrever-se <a class="sem-sublinhado" href="inscricao.html"
+                    target="_blank" rel="noopener">aqui</a>.</p>
+        </div>
+
 
         <div class="chart-container mt-4 py-4 container-chart">
             <div class="container">
-                <h1 class="py-4">Eventos anteriores</h1>
+                <h1 class="py-4">Perfil dos participantes em edições anterioress</h1>
                 <canvas id="myChart" width="400" height="200"></canvas>
             </div>
         </div>
     </main>
 
     <footer class="footer-supporters">
-        <h2>Apoios</h2>
+        <h2 class="py-2">Apoios</h2>
         <div class="apoios-logos">
             <img src="../img/PT_Financiado_UE_WHITE.png" alt="Logo 1">
             <img src="../img/PRR_Logotipos-white-hor.png" alt="Logo 2">
@@ -119,7 +128,7 @@
             </div>
             <div class="footer-links">
                 <a href="/acessibilidade">Acessibilidade</a>
-                <a href="/contactos">Contactos</a>
+                <a href="contactos.html">Contactos</a>
             </div>
         </div>
     </footer>
@@ -128,35 +137,35 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
 
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Designers', 'Developers', 'Gestores de Projeto'],
-        datasets: [{
-            label: 'Número de Participantes',
-            data: [60, 40, 30],
-            backgroundColor: [
-                'rgba(75, 192, 192, 0.5)',
-                'rgba(255, 99, 132, 0.5)',
-                'rgba(54, 162, 235, 0.5)'
-            ],
-            borderColor: [
-                'rgba(75, 192, 192, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Designers', 'Developers', 'Gestores de Projeto'],
+                datasets: [{
+                    label: 'Número de Participantes',
+                    data: [60, 40, 30],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.5)',
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
             }
-        }
-    }
-});
+        });
 
     </script>
 
@@ -173,48 +182,6 @@ var myChart = new Chart(ctx, {
     </div>
 </body>
 
-<script>
-    document.getElementById("openModalButton").addEventListener("click", function () {
-        document.getElementById("searchModal").style.display = "flex";
-    });
-
-    document.getElementById("closeModalButton").addEventListener("click", function () {
-        document.getElementById("searchModal").style.display = "none";
-    });
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const slides = document.querySelectorAll(".slide");
-        const prevButton = document.querySelector(".prev-slide");
-        const nextButton = document.querySelector(".next-slide");
-
-        let currentIndex = 0;
-
-        // Function to show the current slide and hide others
-        function showCurrentSlide() {
-            slides.forEach((slide, index) => {
-                if (index === currentIndex) {
-                    slide.classList.add("active");
-                } else {
-                    slide.classList.remove("active");
-                }
-            });
-        }
-
-        // Event listener for the previous button
-        prevButton.addEventListener("click", function() {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showCurrentSlide();
-        });
-
-        // Event listener for the next button
-        nextButton.addEventListener("click", function() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showCurrentSlide();
-        });
-
-        // Initialize the slider
-        showCurrentSlide();
-    });
-</script>
+<script src="script.js"></script>
 
 </html>
