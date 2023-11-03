@@ -22,27 +22,30 @@
             <img src="../img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
         </h1>
 
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="index.html">
-                        <i class="home" aria-label="Ir para a página Inicial"></i>
-                    </a>
-                    <a href="index.html" class="current-page" aria-label="Página Inicial" aria-current="true">Homepage</a></li>
-                <li><a href="index.html" aria-label="Evento">Evento</a></li>
-                <li><a href="inscricao.html" aria-label="Inscrição">Inscrição</a></li>
-                <li class="has-submenu">
-                    <a href="#" class="submenu-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Workshops">
-                        Workshops <i class="bi bi-chevron-down"></i>
-                    </a>
-                    <ul class="submenu-content" role="menu">
-                        <li><a href="gravacoes.html" aria-label="Gravações">Gravações</a></li>
-                        <li><a href="exercicio2.html" aria-label="Exercício prático II">Exercício prático II</a></li>
-                    </ul>
-                </li>
-                <li><a href="agenda.html" aria-label="Agenda">Agenda</a></li>
-            </ul>
-        </nav>
+   <nav>
+  <ul class="menu">
+    <li>
+      <a href="index.html">
+        <i class="home" aria-label="Ir para a página Inicial"></i>
+      </a>
+      <a href="index.html" class="current-page" aria-label="Página Inicial" aria-current="true">Homepage</a>
+    </li>
+    <li><a href="index.html" aria-label="Evento">Evento</a></li>
+    <li><a href="inscricao.html" aria-label="Inscrição">Inscrição</a></li>
+    <li class="has-submenu">
+      <a href="#" class="submenu-arrow" aria-haspopup="true" aria-expanded="false" aria-label="Workshops">
+        Workshops 
+        <span class="expand-icon"><img src="../img/chevron_down_icon.svg" alt="Expandir"></span>
+      </a>
+      <ul class="submenu-content" role="menu">
+        <li><a href="gravacoes.html" aria-label="Gravações">Gravações</a></li>
+        <li><a href="exercicio2.html" aria-label="Exercício prático II">Exercício prático II</a></li>
+      </ul>
+    </li>
+    <li><a href="agenda.html" aria-label="Agenda">Agenda</a></li>
+  </ul>
+</nav>
+
 
         <div class="button-container">
             <button id="openModalButton" aria-label="Abrir pesquisa">
@@ -54,9 +57,9 @@
                 <label for="language-selector">
                     <i class="bi bi-globe"></i>
                     <span class="visually-hidden">Selecionar idioma</span>
-                    <i class="bi bi-chevron-down"></i>
+                    <img src="../img/language.svg">
                 </label>
-                <select id="language-selector" class="language-select">
+                <select class="language-select">
                     <option value="pt" tabindex="o">PT</option>
                     <option value="eng" tabindex="0">ENG</option>
                 </select>
