@@ -832,4 +832,6 @@ section.workshop-info ul li:first-child {
   height: auto;
 }
 
-
+.material-icons--home:before {
+  content: "\e88a";
+}
