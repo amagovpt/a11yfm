@@ -107,6 +107,7 @@ header {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  text-align: left;
 }
 
 .navegação div div a {
@@ -234,6 +235,7 @@ button {
   padding: 20px;
   width: 60% !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
 }
 
 .close-button {
