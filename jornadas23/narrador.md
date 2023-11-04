@@ -1,4 +1,4 @@
-# Narrator
+# Narrador
 
 Leitor de ecrã do sistema operativo Windows 10 e 11. Não precisa de instalar nada. Ele faz parte do sistema operativo.
 
