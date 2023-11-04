@@ -14,8 +14,8 @@ Por defeito a tecla modificadora NARRADOR corresponde à tecla INSERT ou CAPS-LO
 
 Há duas formas para o fazer:
 
-- Prima a tecla logótipo Windows + Ctrl + Enter em conjunto para iniciar o Narrador. Prima estas teclas novamente para parar o Narrador.
-- Prima a tecla logótipo Windows + Ctrl + N para abrir as definições do Narrador e, em seguida, ative o botão de alternar em Utilizar Narrador.
+- Prima a tecla LOGÓTIPO WINDOWS + CTRL + ENTER em conjunto para iniciar o Narrador. Prima estas teclas novamente para parar o Narrador.
+- Prima a tecla LOGÓTIPO WINDOWS + CTRL + N para abrir as definições do Narrador e, em seguida, ative o botão de alternar em Utilizar Narrador.
 
 Nota: quando estiver a iniciar sessão ou a aceder a alguns menus, o ícone Acessibilidade será apresentado no canto inferior direito do ecrã. Selecionar o ícone acessibilidade abre um menu com um botão de alternar que pode utilizar para ativar ou desativar o Narrador. O Narrador será desativado assim que iniciar sessão ou sair do ecrã.
 
@@ -26,8 +26,8 @@ Nota: quando estiver a iniciar sessão ou a aceder a alguns menus, o ícone Aces
 ## Navegação simples
 
 - TAB e SHIFT+TAB - próximo elemento e elemento anterior focável ou interativo
-- Setas - próximo elemento e elemento anterior
-- Enter - executa ação quando num elemento interativo como link, botão ou campo de formulário
+- SETAS - próximo elemento e elemento anterior
+- ENTER - executa ação quando num elemento interativo como link, botão ou campo de formulário
 
 ## Modo análise (ideal para efetuar auditorias às páginas web)
 
@@ -64,7 +64,7 @@ Quando está no 'Modo Análise' pode usar as teclas:
 - T lê tabela seguinte
 - SHIFT+T lê tabela anterior
 - X lê caixa de verificação seguinte
-- SHIFT+X lê caixa de verificação anterior- 
+- SHIFT+X lê caixa de verificação anterior
 
 O 'Modo Análise' desativa-se quando o leitor de ecrã percebe que está num campo de edição, para permitir que se possa usar o teclado para escrever.
 
