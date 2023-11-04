@@ -12,11 +12,9 @@
 
 INSERT | Tecla modificadora. 
 
-## Teclas em Mac
+Nota: em teclados de portáteis Mac a tecla INSERT corresponde às teclas fn+Enter. Se está a usar teclados externos com bloco numérico a tecla INSERT corresponde à tecla "0".
 
-INSERT em portáteis Mac faz-se com as teclas fn+Enter. Será a tecla "0" da parte numérica do teclado, caso se use um teclado externo com bloco numérico.
-
-ALT é a tecla OPTION em Mac
+ALT é a tecla OPTION em Mac.
 
 ## NVDA - iniciar/sair
 
