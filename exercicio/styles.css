@@ -715,8 +715,7 @@ color: #888;
   color: #888;
 }
 
-.prev-slide,
-.next-slide {
+.slider-button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -727,14 +726,12 @@ color: #888;
   border-radius: 50%;
 }
 
-.prev-slide img,
-.next-slide img {
+.slider-button img {
   width: 24px;
   height: 24px;
 }
 
-.prev-slide:hover,
-.next-slide:hover {
+.slider-button:hover {
   background-color: #0056b3;
 }
 

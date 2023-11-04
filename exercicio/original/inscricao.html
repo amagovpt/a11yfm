@@ -82,11 +82,8 @@
                         <h2 class="titlecenter py-3">Formulário de Inscrição</h2>
                         <form id="registration-form" action="your-server-endpoint" method="post">
                             <div class="form-group mt-2">
-                                <label>Primeiro e último nome <img src="../img/asterisco.png"
-                                        style="width: 8px; height: 8px;"></label>
-                                <input type="text" id="nome" name="nome" required aria-describedby="nome-error">
-                                <div id="nome-error" class="error-message" aria-hidden="true">Este campo é obrigatório.
-                                </div>
+                                <label for="nome">Primeiro e último nome <img src="../img/asterisco.png" style="width: 8px; height: 8px;"></label>
+                                <input type="text" id="nome" name="nome">
                             </div>
                             <div class="form-group mt-2">
                                 <label for="email">Email
@@ -100,11 +97,11 @@
                                 </label>
                                 <div class="radio-group mt-2">
                                     <span>
-                                        <input type="radio" id="presencial" name="modalidade" value="presencial">
+                                        <input type="radio" id="presencial" name="modalidade" value="presencial" required>
                                         <label class="mb-0" for="presencial">Presencial</label>
                                     </span>
                                     <span>
-                                        <input type="radio" id="online" name="modalidade" value="online">
+                                        <input type="radio" id="online" name="modalidade" value="online" required>
                                         <label class="mb-0">Online</label>
                                     </span>
                                 </div>
@@ -113,7 +110,7 @@
                                 <label>Selecione os dias em que pretende participar
                                     <span class="required">Obrigatório</span>
                                 </label>
-                                <select name="evento">
+                                <select name="evento" required>
                                     <option value="">Selecione uma opção</option>
                                     <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
                                     <option value="evento2">Dia 9 de novembro</option>
@@ -155,9 +152,16 @@
         <footer class="footer-supporters">
             <h3>Apoios</h3>
             <div class="apoios-logos">
-                <img src="../img/PT_Financiado_UE_WHITE.png" alt="Logo 1">
-                <img src="../img/PRR_Logotipos-white-hor.png" alt="Logo 2">
-                <img src="../img/Republica_Portuguesa.png" alt="Logo 3">
+                <a href="https://next-generation-eu.europa.eu/index_en">
+                    <img src="../img/PT_Financiado_UE_WHITE.png" alt="Logo 1">
+    
+                </a>
+                <a href="https://recuperarportugal.gov.pt/">
+                    <img src="../img/PRR_Logotipos-white-hor.png" alt="Logo 2">
+                </a>
+                <a href="https://www.portugal.gov.pt/pt/gc23">
+                    <img src="../img/Republica_Portuguesa.png" alt="Logo 3">
+                </a>
             </div>
             <div class="footer-policies">
                 <div class="footer-text">
