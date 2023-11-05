@@ -28,7 +28,7 @@ Aprenda o básico para navegar e auditar páginas web
 
 ## Dia 10 novembro - '15h15/16h15 | Exercício prático - A Declaração de Acessibilidade no meu sítio web' (50 minutos)
 
-### Antes de começar a preencher a Declaração
+### A. Antes de começar a preencher a Declaração
 
 Antes de começar a preencher a Declaração de Acessibilidade com o Gerador é importante recolher e colocar no sítio Web toda a informação que vai ser anexada à Declaração:
 
@@ -40,11 +40,45 @@ Antes de começar a preencher a Declaração de Acessibilidade com o Gerador é 
   4. Avaliação Manual - checklist 'Transação': 20231110_am_transacao.xlsx
   5. Relatório com os Testes de Usabilidade: 20231110_tu.html
 
-### Preencher a Declaração de Acessibilidade
+### B. Preencher a Declaração de Acessibilidade com o Gerador
+
+O modelo da Declaração de Acessibilidade é importante. Para o ajudar a AMA desenvolveu um Gerador. Introduza a informação e o Gerador fornece-lhe uma Declaração de acordo com o modelo.
 
 - Preencher a Declaração com o Gerador: [https://www.acessibilidade.gov.pt/gerador/](https://www.acessibilidade.gov.pt/gerador/)
 
-### Publicar a Declaração de Acessibilidade
+No preenchimento use os seguintes dados.
 
-- Descarregar a página acessibilidade.zip, descompactar e efetuar copy/paste do conteúdo descarregado do Gerador para a página XX.html.
-- Renomear a página 'XX.html' com o número do grupo (XX corresponde ao número do grupo; 01, 02, ... 10) e enviar para [jorge.fernandes@ama.pt](mailto:jorge.fernandes@ama.pt). 
+Para o Passo 1. Informação da entidade:
+
+- A | AMA, I.P | o seu sítio Web | O Meu Blog | https://jorgeponto.github.io/bootstrap-blog-jekyll/
+
+Para o Passo 2. Estado de conformidade:
+
+- Plenamente conforme
+
+Para o Passo 3. Elaboração da Declaração
+
+- 10/11/2023
+- Sim
+- 10/11/2023 | Relatório Avaliação Automática | 20231110_aa.xlsx | AccessMonitor | 20 ?? páginas | 20 páginas com pontuação 10 no AccessMonitor
+- Sim
+- 10/11/2023 | Checklist 10 aspetos críticos de acessibilidade funcional | 20231110_am_10aspetos.xlsx | 4 ?? | 24 ?? | 24 ??
+- 10/11/2023 | Checklist Conteúdo | 20231110_am_conteudo.xlsx | 4 ?? | 17 ?? | 17 ??
+- 10/11/2023 | Checklist Transação | 20231110_am_transacao.xlsx | 4 ?? | 13 ?? | 13 ??
+- Sim
+- 10/11/2023 | Relatório dos Testes de Usabilidade | 20231110_tu.html | 2 utilizadores com leitor de ecrã e 4 utilizadores sem deficiência | 4 Tarefas / 1 Serviço | Em média os utilizadores de leitores de ecrã foram 10x mais rápidos que os utilizadores sem deficiência a terminar as tarefas. Foram localizados em média 10 issues por tarefa por cada utilizador, os quais foram retificados.
+
+Para o Passo 4. Contacto e solicitação de informação relativa ao sítio Web
+
+- Email: | info@meublog.pt
+
+Para o Passo 5. Outras evidências
+
+- Não | Todas as equipas de produtos digitais efetuaram avaliações e elaboraram Planos de Correção validados por uma Consultora em Acessibilidade Digital. A 10/11/2023 foi enviada à AMA candidatura a selo Ouro de Usabilidade e Acessibilidade do presente sítio Web. 
+
+### C. Integrar e Publicar a Declaração de Acessibilidade no sítio web
+
+Agora que já tem um ficheiro com a Declaração de Acessibilidade, vamos integrar essa info numa página web do sítio web. Para o presente exercício, nós fornecemos a página web!
+
+- Descarregar a página [XX.zip](https://jorgeponto.github.io/bootstrap-blog-jekyll/acessibilidade/XX.zip), descompactar e efetuar copy/paste do conteúdo descarregado do Gerador para a página XX.html.
+- Renomear a página 'XX.html' com o número do grupo (XX corresponde ao número do grupo; 01, 02, ... 10) e enviar para [jorge.fernandes@ama.pt](mailto:jorge.fernandes@ama.pt).
