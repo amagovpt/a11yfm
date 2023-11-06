@@ -48,15 +48,15 @@ O modelo da Declaração de Acessibilidade é importante. Para o ajudar a AMA de
 
 No preenchimento use os seguintes dados.
 
-Para o Passo 1. Informação da entidade:
+&#xF114; Para o Passo 1. Informação da entidade:
 
 - A \| AMA, I.P \| o seu sítio Web \| O Meu Blog \| https://jorgeponto.github.io/bootstrap-blog-jekyll/
 
-Para o Passo 2. Estado de conformidade:
+&#xF114; Para o Passo 2. Estado de conformidade:
 
 - Plenamente conforme
 
-Para o Passo 3. Elaboração da Declaração
+&#xF114; Para o Passo 3. Elaboração da Declaração
 
 - 10/11/2023
 - Sim
@@ -64,15 +64,15 @@ Para o Passo 3. Elaboração da Declaração
 - Sim
 - 10/11/2023 \| Checklist 10 aspetos críticos de acessibilidade funcional \| 20231110_am_10aspetos.xlsx \| 4 ?? \| 24 ?? \| 24 ??
 - 10/11/2023 \| Checklist Conteúdo \| 20231110_am_conteudo.xlsx \| 4 ?? \| 17 ?? \| 17 ??
-- 10/11/2023 \| Checklist Transação \| 20231110_am_transacao.xlsx | 4 ?? \| 13 ?? \| 13 ??
+- 10/11/2023 \| Checklist Transação \| 20231110_am_transacao.xlsx \| 4 ?? \| 13 ?? \| 13 ??
 - Sim
 - 10/11/2023 \| Relatório dos Testes de Usabilidade \| 20231110_tu.html \| 2 utilizadores com leitor de ecrã e 4 utilizadores sem deficiência \| 4 Tarefas / 1 Serviço \| Em média os utilizadores de leitores de ecrã foram 10x mais rápidos que os utilizadores sem deficiência a terminar as tarefas. Foram localizados em média 10 issues por tarefa por cada utilizador, os quais foram retificados.
 
-Para o Passo 4. Contacto e solicitação de informação relativa ao sítio Web
+&#xF114; Para o Passo 4. Contacto e solicitação de informação relativa ao sítio Web
 
 - Email: \| `<a href="mailto:info@meublog.pt">info@meublog.pt</a>`
 
-Para o Passo 5. Outras evidências
+&#xF114; Para o Passo 5. Outras evidências
 
 - Não
 
