@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-corrigido.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,48 +17,80 @@
 </head>
 
 <body>
-    <div class="skip-link">
-        <a id='main' href="#main">Pular para o Conteúdo Principal</a>
-    </div>
-
     <header>
-        <a href="index.html">
-            <img src="../img/logo1234.svg" alt="logo1234.svg">
-        </a>
-
-        <div class="navegação">
-            <a href="index.html"><i class="material-icons material-icons--home"></i></a>
-            <a href="evento.html">Evento</a>
-            <a href="inscricao.html">Inscrição</a>
-            <div class="submenu">
-                <a class="submenu-toggle" href="#">Workshops &#9662;</a>
-                <div class="submenu-content">
-                    <a class="submenu-link" href="videos.html">Gravações</a>
-                    <a class="submenu-link" href="#" style="white-space: nowrap;">Exercício prático I</a>
-                </div>
+        <a href="#main" class="skip">Saltar para conteúdo principal</a>
+        <div class="row">
+            <div class="col-sm">
+                <a href="index.html">
+                    <img src="img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
+                </a>
             </div>
-            <a href="agenda.html">Agenda</a>
-        </div>
-
-        <div class="button-container">
-            <button id="openModalButton">
-                <img src="../img/search.svg" alt="Pesquisar">
-                <span>Pesquisar</span>
-            </button>
-
-
-            <div class="language-container">
-                <button id="language-button" class="language-button custom-button" tabindex="0">
-                    <div class="language-icon">
-                        <img src="../img/language.svg">
-                    </div>
-                    <span id="language-option" class="language-option" lang="PT">PT</span>
-                </button>
-                <div class="language-dropdown">
-                    <button id="eng-button" class="language-button language-option" tabindex="0">EN</button>
-                </div>
+            <div class="col-sm">
+                <nav id="mainNav">
+                    <ul class="menu">
+                        <li class="current">
+                            <a href="index.html" aria-current="page" aria-label="Página Inicial">
+                                <i class="material-icons">home</i>
+                            </a>
+                        </li>
+                        <li> <a href="evento.html">Evento</a>
+                        </li>
+                        <li>
+                            <a href="inscricao.html">Inscrição</a>
+                        </li>
+                        <li class="has-submenu" aria-haspopup="menu" aria-expanded="false">
+                            <a href="#" class="submenu-arrow" aria-label="Workshops">
+                                Workshops
+                                <span class="expand-icon"><img src="img/chevron_down_icon.svg" alt="Expandir"></span>
+                            </a>
+                            <ul class="submenu-content" role="menu">
+                                <li><a href="videos.html" tabindex="0">Gravações</a></li>
+                                <li><a href="exercicio2.html" tabindex="0">Exercício prático II</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="agenda.html">Agenda</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
+            <div class="col-sm">
+                <ul>
+                    <li>
+                        <button id="openSearchModalButton" aria-label="Abrir pesquisa">
+                            <img src="img/search.svg" alt="">
+                            <span>Pesquisar</span>
+                        </button>
+                        <div class="modal" id="searchModal" aria-hidden="false" role="dialog"
+                            aria-labelledby="searchModalTitle">
+                            <div class="modal-content">
+                                <span class="close-modal" id="closeSearchModalButton" aria-label="Fechar modal">&times;</span>
+                                <form id="searchForm">
+                                    <label id="searchModalTitle" for="searchInput">O que procura?</label>
+                                    <div class="input-container">
+                                        <input class="form-control mt-3" type="text" id="searchInput" name="searchInput"
+                                            tabindex="0" autofocus>
+                                        <button class="btn btn-primary mt-2" type="submit">Pesquisar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="language-container-1">
+                            <label for="language-selector">
+                                <span aria-label="selecionar idioma">
+                                    <img src="img/language.svg" alt="">
+                                </span>
+                            </label>
+                            <select class="form-select language-select" id="language-selector">
+                                <option value="pt">PT</option>
+                                <option value="eng">EN</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -65,7 +98,7 @@
         
         <div class="container-Events">
             <div class="banner-top">
-                <img src="../img/Banner.png" class="evento-imagetop" alt="">
+                <img src="img/Banner.png" class="evento-imagetop" alt="">
             </div>
             <div class="container-contactos">
                 <h1 class="mt-4 py-5">Contactos | Selo de Usabilidade</h1>
@@ -90,14 +123,14 @@
         <h3>Apoios</h3>
         <div class="apoios-logos">
             <a href="https://next-generation-eu.europa.eu/index_en">
-                <img src="../img/PT_Financiado_UE_WHITE.png" alt="Logo 1">
+                <img src="img/PT_Financiado_UE_WHITE.png" alt="Logo 1">
 
             </a>
             <a href="https://recuperarportugal.gov.pt/">
-                <img src="../img/PRR_Logotipos-white-hor.png" alt="Logo 2">
+                <img src="img/PRR_Logotipos-white-hor.png" alt="Logo 2">
             </a>
             <a href="https://www.portugal.gov.pt/pt/gc23">
-                <img src="../img/Republica_Portuguesa.png" alt="Logo 3">
+                <img src="img/Republica_Portuguesa.png" alt="Logo 3">
             </a>
         </div>
         <div class="footer-policies">
@@ -105,7 +138,7 @@
                 <p>&copy; 2023 AMA - Agência para a Modernização Administrativa, I.P. Todos os direitos reservados.</p>
             </div>
             <div class="footer-links">
-                <a href="/acessibilidade">Acessibilidade</a>
+                <a href="acessibilidade.html">Acessibilidade</a>
                 <a href="/contactos">Contactos</a>
             </div>
         </div>
@@ -114,7 +147,7 @@
     <!-- Modal - Search -->
     <div class="modal" style="display: none;" id="searchModal">
         <div class="modal-content">
-            <img src="../img/close.svg" id="closeModalButton" class="close-button">
+            <img src="img/close.svg" id="closeModalButton" class="close-button">
             <div class="modal__title">Pesquisar</div>
             <div class="search-form">
                 <input type="text" id="searchInput" placeholder="Pesquisar">
