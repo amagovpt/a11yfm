@@ -6,7 +6,8 @@
     <title>Exemplo de Erros de Acessibilidade</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="styles-corrigido.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                 <div class="submenu-content">
                     <a class="submenu-link" href="#" style="white-space: nowrap;">Exercício prático I</a>
                     <a class="submenu-link" href="videos.html">Gravações</a>
-              </div>
+                </div>
             </div>
             <a href="tabela.html">Agenda</a>
         </div>
@@ -47,46 +48,45 @@
                     <span class="language-option">PT</span>
                 </button>
                 <div class="language-dropdown">
-                    <a href="#" class="language-option">ENG</a>
+                    <a href="#" class="language-option">EN</a>
                 </div>
             </div>
         </div>
     </header>
 
-
-
     <main id="main">
         <section class="container py-4">
-            <h1>Programação e Oradores</h1>
-
-            <h2>Agenda do Evento</h2>
-
+            <h1 class="mt-5">Programação e Oradores</h1>
             <table class="styled-table mt-4">
-                <tr>
-                    <th>Horário</th>
-                    <th>Atividade</th>
-                    <th>Local</th>
-                </tr>
-                <tr>
-                    <td>08:00 - 09:00</td>
-                    <td>Palestra de Abertura</td>
-                    <td>Sala Principal</td>
-                </tr>
-                <tr>
-                    <td>08:00 - 09:00</td>
-                    <td>Palestra de Abertura</td>
-                    <td>Sala Principal</td>
-                </tr>
-                <tr>
-                    <td>08:00 - 09:00</td>
-                    <td>Palestra de Abertura</td>
-                    <td>Sala Principal</td>
-                </tr>
-                <tr>
-                    <td>08:00 - 09:00</td>
-                    <td>Palestra de Abertura</td>
-                    <td>Sala Principal</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Atividade</th>
+                        <th scope="col">Local</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:30 - 10:00</td>
+                        <td>Registo/credenciação</td>
+                        <td>Entrada</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 10:30</td>
+                        <td>Acessibilidade e usabilidade em escala com design systems</td>
+                        <td>Sala Principal</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 - 11:00</td>
+                        <td>Mosaico e Ágora Design System</td>
+                        <td>Sala Principal</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 11:30</td>
+                        <td>Plano de ação para a promoção de serviços inclusivos na AP</td>
+                        <td>Sala Principal</td>
+                    </tr>
+                </tbody>
                 <caption class="visually-hidden">Agenda do evento</caption>
             </table>
         </section>
