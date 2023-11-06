@@ -3,7 +3,7 @@
 
 <hr>
 
-## Dia 09 novembro - '15h45/16h45 | Exercício prático (parte 1) – Avaliação de acessibilidade e usabilidade do meu sítio web' e '16h45/17h45 | Exercício prático (parte 2) – Avaliação de acessibilidade e usabilidade do meu sítio web' (120 minutos)
+## Dia 09 novembro - '15h45/16h45 \| Exercício prático (parte 1) – Avaliação de acessibilidade e usabilidade do meu sítio web' e '16h45/17h45 \| Exercício prático (parte 2) – Avaliação de acessibilidade e usabilidade do meu sítio web' (120 minutos)
 
 ### Materiais
 -  [Website Jornada Acessibilidade 2023 - Fora de Mão](https://amagovpt.github.io/a11yfm/exercicio/original/index.html)
@@ -26,7 +26,7 @@ Aprenda o básico para navegar e auditar páginas web
 
 <hr>
 
-## Dia 10 novembro - '15h15/16h15 | Exercício prático - A Declaração de Acessibilidade no meu sítio web' (50 minutos)
+## Dia 10 novembro - '15h15/16h15 \| Exercício prático - A Declaração de Acessibilidade no meu sítio web' (50 minutos)
 
 ### A. Antes de começar a preencher a Declaração
 
@@ -50,7 +50,7 @@ No preenchimento use os seguintes dados.
 
 Para o Passo 1. Informação da entidade:
 
-- A | AMA, I.P | o seu sítio Web | O Meu Blog | https://jorgeponto.github.io/bootstrap-blog-jekyll/
+- A \| AMA, I.P \| o seu sítio Web \| O Meu Blog \| https://jorgeponto.github.io/bootstrap-blog-jekyll/
 
 Para o Passo 2. Estado de conformidade:
 
@@ -60,21 +60,21 @@ Para o Passo 3. Elaboração da Declaração
 
 - 10/11/2023
 - Sim
-- 10/11/2023 | Relatório Avaliação Automática | 20231110_aa.xlsx | AccessMonitor | 20 ?? páginas | 20 páginas com pontuação 10 no AccessMonitor
+- 10/11/2023 \| Relatório Avaliação Automática \| 20231110_aa.xlsx \| AccessMonitor \| 20 ?? páginas \| 20 páginas com pontuação 10 no AccessMonitor
 - Sim
-- 10/11/2023 | Checklist 10 aspetos críticos de acessibilidade funcional | 20231110_am_10aspetos.xlsx | 4 ?? | 24 ?? | 24 ??
-- 10/11/2023 | Checklist Conteúdo | 20231110_am_conteudo.xlsx | 4 ?? | 17 ?? | 17 ??
-- 10/11/2023 | Checklist Transação | 20231110_am_transacao.xlsx | 4 ?? | 13 ?? | 13 ??
+- 10/11/2023 \| Checklist 10 aspetos críticos de acessibilidade funcional \| 20231110_am_10aspetos.xlsx \| 4 ?? \| 24 ?? \| 24 ??
+- 10/11/2023 \| Checklist Conteúdo \| 20231110_am_conteudo.xlsx \| 4 ?? \| 17 ?? \| 17 ??
+- 10/11/2023 \| Checklist Transação \| 20231110_am_transacao.xlsx | 4 ?? \| 13 ?? \| 13 ??
 - Sim
-- 10/11/2023 | Relatório dos Testes de Usabilidade | 20231110_tu.html | 2 utilizadores com leitor de ecrã e 4 utilizadores sem deficiência | 4 Tarefas / 1 Serviço | Em média os utilizadores de leitores de ecrã foram 10x mais rápidos que os utilizadores sem deficiência a terminar as tarefas. Foram localizados em média 10 issues por tarefa por cada utilizador, os quais foram retificados.
+- 10/11/2023 \| Relatório dos Testes de Usabilidade \| 20231110_tu.html \| 2 utilizadores com leitor de ecrã e 4 utilizadores sem deficiência \| 4 Tarefas / 1 Serviço \| Em média os utilizadores de leitores de ecrã foram 10x mais rápidos que os utilizadores sem deficiência a terminar as tarefas. Foram localizados em média 10 issues por tarefa por cada utilizador, os quais foram retificados.
 
 Para o Passo 4. Contacto e solicitação de informação relativa ao sítio Web
 
-- Email: | info@meublog.pt
+- Email: \| `<a href="mailto:info@meublog.pt">info@meublog.pt</a>`
 
 Para o Passo 5. Outras evidências
 
-- Não | Todas as equipas de produtos digitais efetuaram avaliações e elaboraram Planos de Correção validados por uma Consultora em Acessibilidade Digital. A 10/11/2023 foi enviada à AMA candidatura a selo Ouro de Usabilidade e Acessibilidade do presente sítio Web. 
+- Não
 
 ### C. Integrar e Publicar a Declaração de Acessibilidade no sítio web
 
