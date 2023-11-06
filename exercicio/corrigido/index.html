@@ -1,216 +1,339 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-pt">
 
 <head>
     <meta charset="UTF-8">
-    <title>Formulário de Inscrição</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../corrigido/styles-corrigido.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIkIA6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600&family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;500&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../corrigido/styles-corrigido.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<style>
-
-
-
-</style>
 
 <body>
 
-    <div class="skip-link visually-hidden">
-        <a href="#main">Pular para o Conteúdo Principal</a>
-    </div>
-
     <header>
-        <a href="index.html">
-            <img src="../img/logo1234.svg" alt="logo1234.svg">
-        </a>
 
-        <div class="navegação">
-            <a href="index.html"><i class="material-icons">home</i></a>
-            <a href="evento.html">Evento</a>
-            <a href="inscricao.html">Inscrição</a>
-            <div class="submenu">
-                <a class="submenu-toggle" href="#">Workshops &#9662;</a>
-                <div class="submenu-content">
-                    <a class="submenu-link" href="exerciciopratico.html" style="white-space: nowrap;">Exercício
-                        prático I</a>
-                    <a class="submenu-link" href="videos.html">Gravações</a>
-                </div>
-            </div>
-            <a href="tabela.html">Agenda</a>
-        </div>
+        <h1>
+            <img src="../img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
+        </h1>
 
-        <div class="button-container">
-            <button id="openModalButton">
-                <img src="../img/search.svg" alt="Pesquisar">
-                <span>Pesquisar</span>
-            </button>
-
-            <div class="language-container">
-                <button id="language-button" class="language-button custom-button" tabindex="0">
-                    <div class="language-icon">
-                        <img src="../img/language.svg" alt="Selecionar idioma PT">
-                    </div>
-                    <span id="language-option" class="language-option" lang="PT">PT</span>
+        <nav id="mainNav">
+            <ul class="menu">
+                <li class="current">
+                    <a href="index.html" aria-current="page" aria-label="Página Inicial">
+                        <i class="material-icons">home</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="evento.html">Evento</a>
+                </li>
+                <li>
+                    <a href="inscricao.html">Inscrição</a>
+                </li>
+                <li class="has-submenu" tabindex="0" aria-haspopup="menu" aria-expanded="false">
+                    <a href="#" class="submenu-arrow" aria-label="Workshops">
+                        Workshops
+                        <span class="expand-icon"><img src="../img/chevron_down_icon.svg" alt="Expandir"></span>
+                    </a>
+                    <ul class="submenu-content" role="menu">
+                        <li><a href="gravacoes.html" tabindex="0">Gravações</a></li>
+                        <li><a href="exercicio2.html" tabindex="0">Exercício prático II</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="agenda.html">Agenda</a>
+                </li>
+            </ul>
+        </nav>
+        <ul>
+            <li>
+                <button id="openSearchModalButton" aria-label="Abrir pesquisa">
+                    <img src="../img/search.svg" alt="">
+                    <span>Pesquisar</span>
                 </button>
-                <div class="language-dropdown">
-                    <button id="eng-button" class="language-button language-option" tabindex="0">EN</button>
+                <div class="modal" id="searchModal" aria-hidden="false" role="dialog"
+                    aria-labelledby="searchModalTitle">
+                    <div class="modal-content">
+                        <span class="close-modal" id="closeSearchModalButton" aria-label="Fechar modal">&times;</span>
+                        <form id="searchForm">
+                            <label id="searchModalTitle" for="searchInput">O que procura?</label>
+                            <div class="input-container">
+                                <input class="form-control mt-3" type="text" id="searchInput" name="searchInput"
+                                    tabindex="0" autofocus>
+                                <button class="btn btn-primary mt-2" type="submit">Pesquisar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li>
+                <div class="language-container-1">
+                    <label for="language-selector">
+                        <span aria-label="selecionar idioma">
+                            <img src="../img/language.svg" alt="">
+                        </span>
+                    </label>
+                    <select class="form-select language-select" id="language-selector">
+                        <option value="pt" tabindex="0">PT</option>
+                        <option value="eng" tabindex="0">EN</option>
+                    </select>
+                </div>
+            </li>
+        </ul>
     </header>
 
     <main>
-        <div class="wrapper">
-            <div class="form py-4 my-5">
-                <h2>Formulário de Inscrição</h2>
 
-                <div class="form-step" id="step1">
-                    <h2>Passo 1: Informações Pessoais</h2>
-                    <form id="step1-form" action="your-server-endpoint" method="post">
-                      <!-- Etapa 1: Informações Pessoais -->
-                      <div class="form-group mt-2">
-                        <label for="nome">Primeiro e último nome
-                          <img src="../img/asterisco.png" alt="Campo obrigatório" width="8" height="8">
-                        </label>
-                        <input type="text" id="nome" name="nome" required aria-describedby="nome-error">
-                        <div id="nome-error" class="error-message" aria-hidden="true">Este campo é obrigatório.</div>
-                      </div>
-                      <div class="form-group mt-2">
-                        <label for="email">Email
-                          <span class="required">Obrigatório</span>
-                        </label>
-                        <input type="email" id="email" name="email" required aria-describedby="email-error">
-                        <div id="email-error" class="error-message" aria-hidden="true">Por favor, insira um endereço de email válido.</div>
-                      </div>
-                      <button type="button" id="next-step">Próximo</button>
-                    </form>
-                  </div>
-                  
-                  <div class="form-step" id="step2">
-                    <h2>Passo 2: Modalidade e Workshop</h2>
-                    <form id="step2-form" action="your-server-endpoint" method="post">
-                      <!-- Etapa 2: Modalidade e Workshop -->
-                      <fieldset>
-                        <legend>Modalidade de Participação<span class="required">Obrigatório</span></legend>
-                        <div class="radio-group mt-2">
-                          <input type="radio" id="presencial" name="modalidade" value="presencial" required>
-                          <label for="presencial" class="mb-0">Presencial</label>
-                          <input type="radio" id="online" name="modalidade" value="online" required>
-                          <label for="online" class="mb-0">Online</label>
+        <section aria-label="Slider">
+            <div class="slider-container">
+                <ul class="image-slider">
+                    <li class="slide">
+                        <div class="slider-background"></div>
+                        <img src="../img/Banner- site-900x450px (1).png" alt="">
+                        <div class="slider-content">
+                            <h1 class="slider-title">Bem-vindo às Jornadas de Acessibilidade e Usabilidade Digital da AP
+                                2023</h1>
                         </div>
-                      </fieldset>
-                      <fieldset>
-                        <legend>Selecione os dias em que pretende participar
-                          <span class="required">Obrigatório</span>
-                        </legend>
-                        <select id="evento" name="evento" required>
-                          <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
-                          <option value="evento2">Dia 9 de novembro</option>
-                          <option value="evento3">Dia 10 de novembro</option>
-                        </select>
-                      </fieldset>
-                      <fieldset>
-                        <legend>Selecione o(s) workshop(s) em que pretende participar</legend>
-                        <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops sequenciais. Para participar no segundo workshop, é recomendado que participe primeiro no workshop de 'Avaliação de acessibilidade e usabilidade'.</p>
-                        <div class="checkbox-group">
-                          <span>
-                            <input type="checkbox" id="Avaliacao" name="workshops" value="Avaliacao">
-                            <label for="Avaliacao" class="mb-0">Avaliação de acessibilidade e usabilidade</label>
-                          </span>
-                          <span>
-                            <input type="checkbox" id="DA" name="workshops" value="DA">
-                            <label for="DA" class="mb-0">Declaração de acessibilidade no meu site Web</label>
-                          </span>
-                          <span>
-                            <input type="checkbox" id="testes" name="workshops" value="testes">
-                            <label for="testes" class="mb-0">Testes com utilizadores para Selo Ouro</label>
-                          </span>
+                    </li>
+                    <li class="slide">
+                        <div class="slider-background"></div>
+                        <img src="../img/sigmund-HE1zW44Zm_Y-unsplash.jpg" alt="">
+                        <div class="slider-content">
+                            <h2 class="slider-title">Bem-vindo às Jornadas de Acessibilidade e Usabilidade Digital da AP
+                                2023</h2>
                         </div>
-                      </fieldset>
-                      <button type="button" id="prev-step">Anterior</button>
-                      <button type="submit">Enviar inscrição</button>
-                    </form>
-                  </div>
-                  
-
+                    </li>
+                </ul>
+                <ul class="slide-navigation">
+                    <li>
+                        <button class="prev-slide" aria-label="Slide anterior">
+                            <img src="../img/216595_chevron_icon.svg" alt="Anterior">
+                        </button>
+                    </li>
+                    <li class="slide-indicator">1</li>
+                    <li class="slide-indicator">2</li>
+                    <li>
+                        <button class="next-slide" aria-label="Próximo slide">
+                            <img src="../img/216714_right_icon.svg" alt="Próximo">
+                        </button>
+                    </li>
+                </ul>
             </div>
+        </section>
+
+
+
+        <section class="text-event-section">
+            <div class="Text-event mt-5">
+                <h2 class="py-3">Descrição do Evento</h2>
+                <p>Concebido a pensar no futuro e orientado para a ação, este evento promovido pela <a
+                        href="https://www.ama.gov.pt/">AMA</a> é especialmente focado nas necessidades dos
+                    desenvolvedores e
+                    dos utilizadores de sítios web e aplicações móveis da Administração Pública (AP).</p>
+                <a class="btn btn-primary mt-2" href="tabela.html">Programa das Jornadas</a>
+
+                <p class="mt-5">As jornadas terão duas componentes complementares: uma mais expositiva, em auditório, e
+                    outra mais prática, com workshops <em>hands on job</em> durante parte da tarde, com grupos de
+                    trabalho
+                    mais pequenos em sala. Numa perspetiva de troca de experiências entre pares, iremos esclarecer
+                    dúvidas,
+                    analisar casos de sucesso, explorar ferramentas e apresentar estratégias que contribuam cada vez
+                    mais
+                    para o objetivo de desenvolver de sítios Web e aplicações móveis cada vez mais acessíveis e
+                    inclusivos.
+                </p>
+
+                <p>A participação será gratuita mediante inscrição prévia, limitada às vagas existentes, e poderá
+                    consultar
+                    a agenda do evento e <a href="inscricao.html" target="_blank" rel="noopener"> inscrever-se aqui</a>.
+                </p>
+            </div>
+        </section>
+
+
+
+        <section class="container-chart py-5 mt-5">
+            <div class="chart-container">
+                <h2>Participação no Evento Anteriores</h2>
+                <figure>
+                    <canvas id="myChart" width="400" height="200"
+                        alt="Gráfico com o número de participantes por profissão do último evento em 2022"></canvas>
+                    <a href="#" class="table-link" id="showTableLink">Consultar dados em tabela</a>
+                </figure>
+            </div>
+        </section>
+
+        <div class="table-container" id="tableContainer">
+            <table class="table">
+                <caption>Tabela de Dados dos participantes no Evento Anteriores</caption>
+                <tr>
+                    <th class="header-cell">Categoria</th>
+                    <th class="header-cell">Número de Participantes</th>
+                </tr>
+                <tr>
+                    <td>Designers</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Developers</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Gestores de Projeto</td>
+                    <td>30</td>
+                </tr>
+            </table>
         </div>
+
     </main>
 
     <footer class="footer-supporters mt-5">
         <h3>Apoios</h3>
         <div class="apoios-logos">
-            <a href="https://next-generation-eu.europa.eu/index_en"><img src="../img/PT_Financiado_UE_WHITE.png"
-                    alt="Financiamento pela União Europeia"></a>
-            <a href="https://recuperarportugal.gov.pt/plano-de-recuperacao-e-resiliencia/"><img
-                    src="../img/PRR_Logotipos-white-hor.png" alt="PPR-Plano de recuperação e resiliencia"></a>
-            <a href="https://www.portugal.gov.pt/pt/gc23"><img src="../img/Republica_Portuguesa.png"
-                    alt="Republica portuguesa"></a>
+            <img src="../img/PT_Financiado_UE_WHITE.png" alt="Logo 1">
+            <img src="../img/PRR_Logotipos-white-hor.png" alt="Logo 2">
+            <img src="../img/Republica_Portuguesa.png" alt="Logo 3">
         </div>
-        <div class="policies">
+        <div class="footer-policies">
             <div class="footer-text">
                 <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
             </div>
             <div class="footer-links">
-                <ul>
-                    <li><a href="/acessibilidade">Acessibilidade</a></li>
-                    <li><a href="/contactos">Contactos</a></li>
-                </ul>
+                <a href="acessibilidade.html">Acessibilidade</a>
+                <a href="contactos.html">Contactos</a>
             </div>
         </div>
     </footer>
 
-    <!-- Modal - Search -->
-    <div class="modal" style="display: none;" id="searchModal">
-        <div class="modal-content">
-            <img src="../img/close.svg" id="closeModalButton" class="close-button">
-            <div class="modal__title">Pesquisar</div>
-            <div class="search-form">
-                <input type="text" id="searchInput" placeholder="Pesquisar">
-                <button id="searchButton">Pesquisar</button>
-            </div>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
 
-    <script>
-        document.getElementById("openModalButton").addEventListener("click", function () {
-            document.getElementById("searchModal").style.display = "flex";
-        });
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
 
-        document.getElementById("closeModalButton").addEventListener("click", function () {
-            document.getElementById("searchModal").style.display = "none";
-        });
+    var showTableLink = document.getElementById('showTableLink');
+    var tableContainer = document.getElementById('tableContainer');
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const form = document.getElementById("registration-form");
-            const emailInput = document.getElementById("email");
-            const emailErrorMessage = document.getElementById("email-error-message");
+    showTableLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        tableContainer.classList.toggle('show');
+    });
 
-            form.addEventListener("submit", function (event) {
-                if (!isValidEmail(emailInput.value)) {
-                    emailErrorMessage.removeAttribute("hidden");
-                    event.preventDefault();
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Designers', 'Developers', 'Gestores de Projeto'],
+            datasets: [{
+                label: 'Número de Participantes',
+                data: [60, 40, 30],
+                backgroundColor: [
+                    'rgba(75, 192, 192, 0.5)',
+                    'rgba(255, 99, 132, 0.5)',
+                    'rgba(54, 162, 235, 0.5)'
+                ],
+                borderColor: [
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
                 }
-            });
+            }
+        }
+    });
+</script>
 
-            emailInput.addEventListener("input", function () {
-                emailErrorMessage.setAttribute("hidden", "true");
-            });
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const openButton = document.getElementById('openSearchModalButton');
+        const modal = document.getElementById('searchModal');
+        const closeButton = document.getElementById('closeSearchModalButton');
+        const searchInput = document.getElementById('searchInput');
 
-            function isValidEmail(email) {
-                const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-                return emailPattern.test(email);
+        openButton.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            searchInput.focus();
+        });
+
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    });
+
+</script>
+
+<script>
+    const slider = document.querySelector('.image-slider');
+    const slides = document.querySelectorAll('.slide');
+    const slideNav = document.querySelectorAll('.slide-navigation button');
+    const slideIndicators = document.querySelectorAll('.slide-indicator');
+
+    let currentIndex = 0;
+
+    function goToSlide(index) {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+        currentIndex = index;
+        updateSlideIndicators();
+    }
+
+    function slideNext() {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        goToSlide(currentIndex);
+        updateSlideIndicators();
+    }
+
+    function slidePrev() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = slides.length - 1;
+        }
+        goToSlide(currentIndex);
+        updateSlideIndicators();
+    }
+
+    function updateSlideIndicators() {
+        slideIndicators.forEach((indicator, index) => {
+            indicator.classList.remove('current');
+            if (index === currentIndex) {
+                indicator.classList.add('current');
             }
         });
-    </script>
-</body>
+    }
+
+    slideNav.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            if (button.classList.contains('prev-slide')) {
+                slidePrev();
+            } else if (button.classList.contains('next-slide')) {
+                slideNext();
+            }
+        });
+    });
+
+    // Inicializa o slider
+    updateSlideIndicators();
+</script>
+
 
 </html>
