@@ -18,6 +18,7 @@
   margin: 0 10px;
   padding: 10px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 
@@ -96,7 +97,15 @@ additional-menu a:active {
   color: #FF0000;
 }
 
+header ul {
+  padding-left: 0 !important;
+}
+header ul li {
+  padding: 10px 0;
+}
+
 .has-submenu:hover .submenu-content,
+.has-submenu.active .submenu-content,
 has-submenu:focus-within .submenu-content {
   display: block;
 }
@@ -384,7 +393,8 @@ tr:nth-child(even) {
 
 /* footer */
 .footer-supporters {
-  background-color: #0C1932 padding: 20px;
+  background-color: #0C1932;
+  padding: 20px;
   text-align: center;
   color: #fff;
 }
@@ -613,7 +623,7 @@ legend {
   max-width: 80ch; 
   text-align: left;
   overflow-wrap: break-word; 
-
+}
 
 .text-event-section a.btn {
   display: inline-block;

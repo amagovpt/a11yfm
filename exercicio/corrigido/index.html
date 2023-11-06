@@ -14,80 +14,85 @@
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600&family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;500&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-
-        <h1>
-            <img src="../img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
-        </h1>
-
-        <nav id="mainNav">
-            <ul class="menu">
-                <li class="current">
-                    <a href="index.html" aria-current="page" aria-label="Página Inicial">
-                        <i class="material-icons">home</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="evento.html">Evento</a>
-                </li>
-                <li>
-                    <a href="inscricao.html">Inscrição</a>
-                </li>
-                <li class="has-submenu" tabindex="0" aria-haspopup="menu" aria-expanded="false">
-                    <a href="#" class="submenu-arrow" aria-label="Workshops">
-                        Workshops
-                        <span class="expand-icon"><img src="../img/chevron_down_icon.svg" alt="Expandir"></span>
-                    </a>
-                    <ul class="submenu-content" role="menu">
-                        <li><a href="gravacoes.html" tabindex="0">Gravações</a></li>
-                        <li><a href="exercicio2.html" tabindex="0">Exercício prático II</a></li>
+        <div class="row">
+            <div class="col-sm">
+                <h1>
+                    <img src="../img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
+                </h1>
+            </div>
+            <div class="col-sm">
+                <nav id="mainNav">
+                    <ul class="menu">
+                        <li class="current">
+                            <a href="index.html" aria-current="page" aria-label="Página Inicial">
+                                <i class="material-icons">home</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="evento.html">Evento</a>
+                        </li>
+                        <li>
+                            <a href="inscricao.html">Inscrição</a>
+                        </li>
+                        <li class="has-submenu" aria-haspopup="menu" aria-expanded="false">
+                            <a href="#" class="submenu-arrow" aria-label="Workshops">
+                                Workshops
+                                <span class="expand-icon"><img src="../img/chevron_down_icon.svg" alt="Expandir"></span>
+                            </a>
+                            <ul class="submenu-content" role="menu">
+                                <li><a href="gravacoes.html" tabindex="0">Gravações</a></li>
+                                <li><a href="exercicio2.html" tabindex="0">Exercício prático II</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="agenda.html">Agenda</a>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <a href="agenda.html">Agenda</a>
-                </li>
-            </ul>
-        </nav>
-        <ul>
-            <li>
-                <button id="openSearchModalButton" aria-label="Abrir pesquisa">
-                    <img src="../img/search.svg" alt="">
-                    <span>Pesquisar</span>
-                </button>
-                <div class="modal" id="searchModal" aria-hidden="false" role="dialog"
-                    aria-labelledby="searchModalTitle">
-                    <div class="modal-content">
-                        <span class="close-modal" id="closeSearchModalButton" aria-label="Fechar modal">&times;</span>
-                        <form id="searchForm">
-                            <label id="searchModalTitle" for="searchInput">O que procura?</label>
-                            <div class="input-container">
-                                <input class="form-control mt-3" type="text" id="searchInput" name="searchInput"
-                                    tabindex="0" autofocus>
-                                <button class="btn btn-primary mt-2" type="submit">Pesquisar</button>
+                </nav>
+            </div>
+            <div class="col-sm">
+                <ul>
+                    <li>
+                        <button id="openSearchModalButton" aria-label="Abrir pesquisa">
+                            <img src="../img/search.svg" alt="">
+                            <span>Pesquisar</span>
+                        </button>
+                        <div class="modal" id="searchModal" aria-hidden="false" role="dialog"
+                            aria-labelledby="searchModalTitle">
+                            <div class="modal-content">
+                                <span class="close-modal" id="closeSearchModalButton" aria-label="Fechar modal">&times;</span>
+                                <form id="searchForm">
+                                    <label id="searchModalTitle" for="searchInput">O que procura?</label>
+                                    <div class="input-container">
+                                        <input class="form-control mt-3" type="text" id="searchInput" name="searchInput"
+                                            tabindex="0" autofocus>
+                                        <button class="btn btn-primary mt-2" type="submit">Pesquisar</button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="language-container-1">
-                    <label for="language-selector">
-                        <span aria-label="selecionar idioma">
-                            <img src="../img/language.svg" alt="">
-                        </span>
-                    </label>
-                    <select class="form-select language-select" id="language-selector">
-                        <option value="pt" tabindex="0">PT</option>
-                        <option value="eng" tabindex="0">EN</option>
-                    </select>
-                </div>
-            </li>
-        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="language-container-1">
+                            <label for="language-selector">
+                                <span aria-label="selecionar idioma">
+                                    <img src="../img/language.svg" alt="">
+                                </span>
+                            </label>
+                            <select class="form-select language-select" id="language-selector">
+                                <option value="pt" tabindex="0">PT</option>
+                                <option value="eng" tabindex="0">EN</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
