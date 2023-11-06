@@ -3,7 +3,6 @@ const languageButton = document.getElementById('language-button');
 const languageOption = document.getElementById('language-option');
 const engButton = document.getElementById('eng-button');
 
-
 engButton.addEventListener('click', () => {
 
   if (languageOption.textContent === 'PT') {
