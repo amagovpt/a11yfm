@@ -20,9 +20,9 @@
 
 Aprenda o básico para navegar e auditar páginas web
 
-- [Teclas de atalho Narrator](narrador.md) | leitor de ecrã incluído no sistema operativo Windows 10 e 11
-- [Teclas de atalho NVDA](nvda.md) | leitor de ecrã grátis para Windows
-- [Teclas de atalho VO](vo.md) | leitor de ecrã incluído no sistema operativo macOS
+- [Teclas de atalho Narrator](narrador.md) \| leitor de ecrã incluído no sistema operativo Windows 10 e 11
+- [Teclas de atalho NVDA](nvda.md) \| leitor de ecrã grátis para Windows
+- [Teclas de atalho VO](vo.md) \| leitor de ecrã incluído no sistema operativo macOS
 
 <hr>
 
