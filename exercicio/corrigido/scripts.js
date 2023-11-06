@@ -3,33 +3,34 @@ const languageButton = document.getElementById('language-button');
 const languageOption = document.getElementById('language-option');
 const engButton = document.getElementById('eng-button');
 
+engButton?.addEventListener('click', () => {
 
-engButton.addEventListener('click', () => {
-
-  if (languageOption.textContent === 'PT') {
-    languageOption.textContent = 'EN';
-  } else {
-    languageOption.textContent = 'PT';
-  }
-  
-  
-  const languageOptions = document.querySelectorAll('.language-option');
-  languageOptions.forEach(option => option.classList.remove('selected'));
-  languageOption.classList.add('selected');
-});
-
-languageButton.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter') {
-    languageButton.click();
-  }
+    if (languageOption.textContent === 'PT') {
+        languageOption.textContent = 'EN';
+    } else {
+        languageOption.textContent = 'PT';
+    }
+    
+    
+    const languageOptions = document.querySelectorAll('.language-option');
+    languageOptions.forEach(option => option.classList.remove('selected'));
+    languageOption.classList.add('selected');
 });
 
 
-document.getElementById("openModalButton").addEventListener("click", function () {
+languageButton?.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        languageButton.click();
+    }
+});
+
+
+
+document.getElementById("openModalButton")?.addEventListener("click", function () {
   document.getElementById("searchModal").style.display = "flex";
 });
 
-document.getElementById("closeModalButton").addEventListener("click", function () {
+document.getElementById("closeModalButton")?.addEventListener("click", function () {
   document.getElementById("searchModal").style.display = "none";
 });
 
@@ -72,11 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('keydown', (event) => {
 
         if (event.keyCode === 13) {
+            // Press Enter - Open submenu
             const element = event.target.closest('.has-submenu');
             element.classList.add('active');
+        } else if (event.keyCode === 27) {
+            // Press ESC - Close submenu
+            Array.from(document.getElementsByClassName('has-submenu')).forEach(
+                (el) => el.classList.remove('active')
+              );
         }
     });
-    
+  
 });
 
 document.addEventListener("DOMContentLoaded", function () {
