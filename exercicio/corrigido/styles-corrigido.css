@@ -406,8 +406,6 @@ tr:nth-child(even) {
 
 .apoios-logos img {
   margin: 0 20px;
-  max-width: 200px;
-  max-height: 80px;
 }
 
 .policies {
@@ -440,9 +438,7 @@ tr:nth-child(even) {
   text-decoration: underline;
 }
 
-.apoios-logos img {
-  width: 25%;
-}
+
 
 
 
