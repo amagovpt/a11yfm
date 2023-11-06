@@ -42,7 +42,7 @@ Antes de começar a preencher a Declaração de Acessibilidade com o Gerador é 
 
 ### B. Preencher a Declaração de Acessibilidade com o Gerador
 
-O modelo da Declaração de Acessibilidade é importante. Para o ajudar a AMA desenvolveu um Gerador. Introduza a informação e o Gerador fornece-lhe uma Declaração de acordo com o modelo.
+O modelo da Declaração de Acessibilidade é importante! Para o ajudar, a AMA desenvolveu um Gerador. Introduza a informação e o Gerador fornece-lhe uma Declaração de acordo com o modelo. Depois é só fazer copy/paste do HTML para a página template que vai usar para publicar a Declaração no sítio web.
 
 - Preencher a Declaração com o Gerador: [https://www.acessibilidade.gov.pt/gerador/](https://www.acessibilidade.gov.pt/gerador/)
 
@@ -71,6 +71,7 @@ No preenchimento use os seguintes dados.
 &#xF114; Para o Passo 4. Contacto e solicitação de informação relativa ao sítio Web
 
 - Email: \| `<a href="mailto:info@meublog.pt">info@meublog.pt</a>`
+- Telefone/WhatsApp: \| 999999999 (fale connosco e/ou envie-nos WhatsApp)
 
 &#xF114; Para o Passo 5. Outras evidências
 
@@ -78,7 +79,12 @@ No preenchimento use os seguintes dados.
 
 ### C. Integrar e Publicar a Declaração de Acessibilidade no sítio web
 
-Agora que já tem um ficheiro com a Declaração de Acessibilidade, vamos integrar essa info numa página web do sítio web. Para o presente exercício, nós fornecemos a página web!
+Agora que já tem um ficheiro com a Declaração de Acessibilidade preenchida, vamos publicá-la no sítio Web. Para isso, precisa da página onde vai integrar a Declaração. No presente exercício, nós damos-lhe a página template: 
 
-- Descarregar a página [XX.zip](https://jorgeponto.github.io/bootstrap-blog-jekyll/acessibilidade/XX.zip), descompactar e efetuar copy/paste do conteúdo descarregado do Gerador para a página XX.html.
-- Renomear a página 'XX.html' com o número do grupo (XX corresponde ao número do grupo; 01, 02, ... 10) e enviar para [jorge.fernandes@ama.pt](mailto:jorge.fernandes@ama.pt).
+- Descarregue a página [XX.zip](https://jorgeponto.github.io/bootstrap-blog-jekyll/acessibilidade/XX.zip), descompacte o zip e ficará com o ficheiro XX.html .
+- Abra a página XX.html e a página que resultou do Gerador com o seu Notepad.
+- Copie todo o conteúdo do ficheiro que obteve do Gerador para a página XX.html. Deixe uma linha em branco a seguir aos últimos '---' (3 hífens) e cole o conteúdo.
+- Renomei a página 'XX.html' com o número do grupo (XX corresponde ao número do grupo; 01.html, 02.html, ... 10.html) e envie para [jorge.fernandes@ama.pt](mailto:jorge.fernandes@ama.pt).
+- O formador da sessão fará o upload para o GitHub para analisarmos o aspeto final.
+
+Lembre-se, o Gerador fornece a estrutura da página (HTML). o Estilo é o do sítio Web!
