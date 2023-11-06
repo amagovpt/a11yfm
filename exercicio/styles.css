@@ -726,6 +726,32 @@ color: #888;
   color: #888;
 }
 
+
+.prev-slide,
+.next-slide {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 0;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.prev-slide img,
+.next-slide img {
+  width: 24px;
+  height: 24px;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+  background-color: #0056b3;
+}
+
+/* Slide EN */
+
 .slider-button {
   background-color: #007bff;
   color: #fff;
