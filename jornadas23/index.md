@@ -5,7 +5,8 @@
 -  [Website Jornada Acessibilidade 2023 - com problemas]()
 -  [Website Jornada Acessibilidade 2023 - corrigido]()
 -  [Checklist dos 10 aspetos críticos de acessibilidade funcional](checklist-10aspetos.html)
--  [Template Plano de correção](ficheiros/template-relatorio.pdf)
+-  [Template Plano de correção word](ficheiros/Template Plano de correcao.docx)
+
 
 ## Ferramentas necessárias
 - [ANDI](https://www.ssa.gov/accessibility/andi/help/install.html)
