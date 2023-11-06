@@ -5,7 +5,7 @@
 -  [Website Jornada Acessibilidade 2023 - com problemas]()
 -  [Website Jornada Acessibilidade 2023 - corrigido]()
 -  [Checklist dos 10 aspetos críticos de acessibilidade funcional](checklist-10aspetos.html)
--  [Template Plano de correção word](ficheiros/Template Plano de correcao.docx)
+-  [Template Plano de correção word](ficheiros/template-plano-de-correcao.docx)
 
 
 ## Ferramentas necessárias
