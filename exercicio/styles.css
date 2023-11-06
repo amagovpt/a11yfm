@@ -284,18 +284,22 @@ button {
 
 
 /* Página Videos */
+
 .video-container {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .video {
   color: #333;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  align-items: center;
+  text-align: center;
+  flex: 0 0 50%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 video {
@@ -304,7 +308,14 @@ video {
 }
 
 .video-description {
-  margin-left: 20px;
+  text-align: left; 
+  margin-top: 10px;
+  padding-left: 10px; 
+}
+
+.speaker-name {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 hr {
@@ -834,3 +845,12 @@ section.workshop-info ul li:first-child {
 .material-icons--home:before {
   content: "\e88a";
 }
+
+#alinhamento-Left {
+  text-align: left !important; 
+}
+
+#alinhamento-Left_1 {
+  text-align: left !important; 
+}
+
