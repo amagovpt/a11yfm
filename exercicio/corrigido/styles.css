@@ -390,15 +390,16 @@ hr {
 /* Tabelas */
 
 .styled-table {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
 }
 
 .styled-table th,
 .styled-table td {
-  padding: 12px 15px;
+  padding: 12px 8px;
   text-align: left;
+  min-width: 116px;
 }
 
 .styled-table tr:first-child {
