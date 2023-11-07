@@ -527,10 +527,17 @@ button[type="submit"]:hover {
   margin-top: 5px;
 }
 
-input[type="email"]:invalid + .error-message {
+input.dirty:invalid + .error-message {
   display: block;
 }
 
+input[type="email"].dirty:invalid + .error-message {
+  display: block;
+}
+
+.empty + .error-message {
+  display: block;
+}
 
 /* Evento */
 

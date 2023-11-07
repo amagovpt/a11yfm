@@ -53,13 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Event listener for the previous button
-  prevButton.addEventListener("click", function () {
+  prevButton?.addEventListener("click", function () {
       currentIndex = (currentIndex - 1 + slides.length) % slides.length;
       showCurrentSlide();
   });
 
   // Event listener for the next button
-  nextButton.addEventListener("click", function () {
+  nextButton?.addEventListener("click", function () {
       currentIndex = (currentIndex + 1) % slides.length;
       showCurrentSlide();
   });
@@ -105,3 +105,44 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.display = 'none';
   });
 });
+
+
+//**    FORMS    **/
+
+// focus and dirty
+Array.from(document.getElementsByTagName('input')).forEach(
+    (el) => el.addEventListener('focusin', function() {
+        el.classList.add('focus');
+        if (el.type == "radio") {
+            el.closest('.field-group').classList.add('focus');
+        }
+    })
+);
+Array.from(document.getElementsByTagName('input')).forEach(
+    (el) => el.addEventListener('focusout', function() {
+        el.classList.add('dirty');
+        el.classList.remove('focus');
+        if (el.type == "radio") {
+            el.closest('.field-group').classList.remove('focus');
+            if (el.checked) {
+                el.closest('.field-group').classList.remove('empty');   
+            } else {
+                el.closest('.field-group').classList.add('empty');
+            }
+        }
+    })
+);
+
+// radio buttons change
+for (let elem of document.querySelectorAll('input[type="radio"]')) {
+    elem.addEventListener('change', function () {
+        if (elem.checked) {
+            elem.closest('.field-group').classList.remove('empty');   
+        } else {
+            elem.closest('.field-group').classList.add('empty');
+        }
+    });
+}
+
+
+
