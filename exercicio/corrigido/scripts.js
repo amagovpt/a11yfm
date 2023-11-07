@@ -144,5 +144,18 @@ for (let elem of document.querySelectorAll('input[type="radio"]')) {
     });
 }
 
+function putInputsDirty() {
+    Array.from(document.getElementsByTagName('input')).forEach(
+        (el) => el.classList.add('dirty')
+    );
+
+    // radio buttons
+    for (let elem of document.querySelectorAll('input[type="radio"]')) {
+        if (!elem.checked) {
+            elem.closest('.field-group').classList.add('empty');
+        }
+    }
+}
+
 
 
