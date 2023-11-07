@@ -4,21 +4,6 @@
   height: 150px;
 }
 
-.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-
 /* Menu */
 .menu {
   list-style: none;
@@ -116,7 +101,10 @@ header ul {
   padding-left: 0 !important;
 }
 header ul li {
-  padding: 10px 0;
+  padding: 5px 0;
+}
+header ul li a {
+  padding: 5px 0;
 }
 
 .has-submenu:hover .submenu-content,
