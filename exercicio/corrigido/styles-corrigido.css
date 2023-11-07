@@ -24,7 +24,7 @@
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -42,7 +42,7 @@
   content: "";
   position: absolute;
   width: 0;
-  height: 3px;
+  height: 2px;
   background: #140C93;
   bottom: 0;
   left: 0;
@@ -344,7 +344,7 @@ button#openSearchModalButton:hover+.modal {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding: 5px;
-  background: url('../img/chevron_down_icon.svg') no-repeat right center;
+  background: url('img/chevron_down_icon.svg') no-repeat right center;
   width: 50px;
   /* Ajuste a largura conforme necessário */
   border: none;
@@ -369,6 +369,7 @@ button#openSearchModalButton:hover+.modal {
   position: absolute;
   width: 100%;
   bottom: 0;
+  left: 0;
 }
 
 
@@ -634,21 +635,23 @@ legend {
 /* home Text-event */
 
 .text-event-section {
-  padding: 20px;
-  margin-left: 80px; 
-  max-width: 75%;
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 20px 0;
+}
+
+.text-event-section h1 {
+  margin-bottom: 24px;
 }
 
 .text-event-section h2 {
-  font-size: 24px;
-  margin: 0;
+  margin-bottom: 16px;
 }
 
 .text-event-section p {
   margin: 0 0 1rem 0;
-  max-width: 80ch; 
   text-align: left;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
 }
 
 .text-event-section a.btn {
@@ -668,6 +671,16 @@ legend {
   background-color: #007bff;
   color: #fff;
   border: 1px solid #007bff;
+}
+
+.text-event-section ul {
+  list-style: initial;
+  display: block;
+  align-items: initial;
+}
+
+.text-event-section ul li {
+  margin: 0;
 }
 
 .mobile-only {

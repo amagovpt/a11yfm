@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             node.style.outline = null;
         }
+
+        openButton.focus();
     }
     
     openButton.addEventListener('click', () => {

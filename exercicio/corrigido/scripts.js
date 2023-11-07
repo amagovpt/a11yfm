@@ -24,50 +24,6 @@ languageButton?.addEventListener('keydown', (event) => {
     }
 });
 
-
-
-document.getElementById("openModalButton")?.addEventListener("click", function () {
-  document.getElementById("searchModal").style.display = "flex";
-});
-
-document.getElementById("closeModalButton")?.addEventListener("click", function () {
-  document.getElementById("searchModal").style.display = "none";
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".slide");
-  const prevButton = document.querySelector(".prev-slide");
-  const nextButton = document.querySelector(".next-slide");
-
-  let currentIndex = 0;
-
-  // Function to show the current slide and hide others
-  function showCurrentSlide() {
-      slides.forEach((slide, index) => {
-          if (index === currentIndex) {
-              slide.classList.add("active");
-          } else {
-              slide.classList.remove("active");
-          }
-      });
-  }
-
-  // Event listener for the previous button
-  prevButton?.addEventListener("click", function () {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      showCurrentSlide();
-  });
-
-  // Event listener for the next button
-  nextButton?.addEventListener("click", function () {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showCurrentSlide();
-  });
-
-  // Initialize the slider
-  showCurrentSlide();
-});
-
 document.addEventListener("DOMContentLoaded", function () { 
     // Event listener for Close Submenu
     document.addEventListener('keydown', (event) => {

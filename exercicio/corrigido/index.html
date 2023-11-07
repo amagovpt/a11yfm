@@ -17,12 +17,12 @@
     <header>
         <a href="#main" class="skip">Saltar para conteúdo principal</a>
         <div class="row">
-            <div class="col-sm">
+            <div class="col-auto">
                 <h1>
                     <img src="img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
                 </h1>
             </div>
-            <div class="col-sm">
+            <div class="col">
                 <nav id="mainNav">
                     <ul class="menu">
                         <li class="current">
@@ -53,7 +53,7 @@
                 </nav>
                 <button id="btn-hamburguer"></button>
             </div>
-            <div class="col-sm">
+            <div class="col-auto">
                 <ul>
                     <li>
                         <button id="openSearchModalButton" aria-label="Abrir pesquisa">
@@ -80,45 +80,56 @@
     </header>
 
     <main>
-
-        <section aria-label="Slider">
-            <div class="slider-container">
-                <ul class="image-slider">
-                    <li class="slide">
-                        <div class="slider-background"></div>
-                        <img src="img/Banner-site-900x450px.png" alt="">
-                        <div class="slider-content">
-                            <h2 class="slider-title">Bem-vindo a Jornada de Acessibilidade e Usabilidade Digital 2023</h2>
+        <section>
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <ul>
+                        <li>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+                        </li>
+                        <li>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <div class="carousel-nav-prev">
+                            <button class="carousel-nav-button-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                                <span class="carousel-nav-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Slide anterior</span>
+                            </button>
                         </div>
                     </li>
-                    <li class="slide">
-                        <div class="slider-background"></div>
-                        <img src="img/sigmund-HE1zW44Zm_Y-unsplash.jpg" alt="">
-                        <div class="slider-content">
-                            <h2 class="slider-title">Bem-vindo a Jornada de Acessibilidade e Usabilidade Digital 2023</h2>
+                    <li>
+                        <div class="carousel-nav-next">
+                            <button class="carousel-nav-button-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                                <span class="carousel-nav-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo slide</span>
+                            </button>
                         </div>
                     </li>
                 </ul>
-                <ul class="slide-navigation">
-                    <li>
-                        <button class="prev-slide" aria-label="Slide anterior">
-                            <img src="img/216595_chevron_icon.svg" alt="Anterior">
-                        </button>
-                    </li>
-                    <li class="slide-indicator">1</li>
-                    <li class="slide-indicator">2</li>
-                    <li>
-                        <button class="next-slide" aria-label="Próximo slide">
-                            <img src="img/216714_right_icon.svg" alt="Próximo">
-                        </button>
-                    </li>
-                </ul>
-            </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Banner-1.png" class="d-block w-100" alt="Jornada de Acessibilidade e Usabilidade Digital 2023">
+                        <div class="carousel-header">
+                            <h2>Bem-vindo à Jornada de Acessibilidade e Usabilidade Digital 2023</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/sigmund-HE1zW44Zm_Y-unsplash.jpg" class="d-block w-100" alt="Avaliação de acessibilidade e usabilidade">
+                        <div class="carousel-header overlay">
+                            <h2>Faça a avaliação de acessibilidade e usabilidade do seu sítio web</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
         </section>
 
         <section class="text-event-section">
             <div class="Text-event mt-5">
-                <h2 class="py-3">Descrição do Evento</h2>
+                <h2>Descrição do Evento</h2>
                 <p>Concebido a pensar no futuro e orientado para a ação, este evento promovido pela <a
                         href="https://www.ama.gov.pt/">AMA</a> é especialmente focado nas necessidades dos
                     desenvolvedores e
@@ -156,7 +167,7 @@
 
         <div class="table-container" id="tableContainer">
             <table class="table">
-                <caption>Tabela de Dados dos participantes no Evento Anteriores</caption>
+                <caption>Tabela de Dados de eventos anteriores, número de participantes</caption>
                 <tr>
                     <th class="header-cell">Categoria</th>
                     <th class="header-cell">Número de Participantes</th>
@@ -218,6 +229,8 @@
     <script src="scripts.js"></script>
     <script src="modal.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         var showTableLink = document.getElementById('showTableLink');
@@ -257,63 +270,6 @@
                 }
             }
         });
-    </script>
-    
-    <script>
-        const slider = document.querySelector('.image-slider');
-        const slides = document.querySelectorAll('.slide');
-        const slideNav = document.querySelectorAll('.slide-navigation button');
-        const slideIndicators = document.querySelectorAll('.slide-indicator');
-    
-        let currentIndex = 0;
-    
-        function goToSlide(index) {
-            slider.style.transform = `translateX(-${index * 100}%)`;
-            currentIndex = index;
-            updateSlideIndicators();
-        }
-    
-        function slideNext() {
-            if (currentIndex < slides.length - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0;
-            }
-            goToSlide(currentIndex);
-            updateSlideIndicators();
-        }
-    
-        function slidePrev() {
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = slides.length - 1;
-            }
-            goToSlide(currentIndex);
-            updateSlideIndicators();
-        }
-    
-        function updateSlideIndicators() {
-            slideIndicators.forEach((indicator, index) => {
-                indicator.classList.remove('current');
-                if (index === currentIndex) {
-                    indicator.classList.add('current');
-                }
-            });
-        }
-    
-        slideNav.forEach((button, index) => {
-            button.addEventListener('click', () => {
-                if (button.classList.contains('prev-slide')) {
-                    slidePrev();
-                } else if (button.classList.contains('next-slide')) {
-                    slideNext();
-                }
-            });
-        });
-    
-        // Inicializa o slider
-        updateSlideIndicators();
     </script>
 </body>
 
