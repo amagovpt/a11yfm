@@ -720,6 +720,15 @@ legend {
   main {
     padding-top: 126px; 
   }
+  footer .apoios-logos {
+    display: block;
+  }
+  footer .apoios-logos img {
+    margin: 10px;
+  }
+  footer .policies {
+    display: block;
+  }
 }
 
 
