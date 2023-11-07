@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () { 
     // Event listener for Close Submenu
     document.addEventListener('keydown', (event) => {
-
         if (event.keyCode === 13) {
             // Press Enter - Open submenu
             const element = event.target.closest('.has-submenu');
@@ -83,7 +82,12 @@ document.addEventListener("DOMContentLoaded", function () {
               );
         }
     });
-  
+});
+
+document.getElementById('btn-hamburguer')?.addEventListener('click', function() {
+    console.log("ping");
+
+    document.getElementById('mainNav').classList.toggle('active');
 });
 
 document.addEventListener("DOMContentLoaded", function () {

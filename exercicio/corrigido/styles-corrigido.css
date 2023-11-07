@@ -113,6 +113,10 @@ has-submenu:focus-within .submenu-content {
   display: block;
 }
 
+#btn-hamburguer {
+  display: none;
+}
+
 /* Ícone da lupa */
 #openSearchModalButton img {
   width: 24px;
@@ -647,10 +651,66 @@ legend {
   border: 1px solid #007bff;
 }
 
-
-
-
+.mobile-only {
+  display: none;
+}
 
 .chart-container {
   width: 100%;
+}
+
+
+
+@media only screen and (max-width: 560px) {
+  .mobile-only {
+    display: block;
+  }
+
+  #mainNav .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    margin-top: 50px;
+    border-top: 2px solid #2c2c2c;
+  }
+
+  #mainNav.active .menu {
+    display: block;
+  }
+
+  #mainNav.active .menu .material-icons {
+    display: none;
+  }
+
+  .has-submenu.active, .has-submenu .submenu-content {
+    display: block;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .has-submenu::before {
+    display: none;
+  }
+  
+  .submenu-content,
+  .submenu-content li {
+    padding: 0;
+    margin: 0;
+  }
+
+  #btn-hamburguer {
+    width: 40px;
+    height: 40px;
+    background-image: url('img/hamburger_button.png'); 
+    background-size: cover; 
+    position: absolute;
+    right: 20px;
+    bottom: 26px;
+    display: block;
+  }
+
 }
