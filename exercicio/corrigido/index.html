@@ -208,33 +208,18 @@
                 <h2 class="modal__title">Pesquisar</h2>
                 <button type="button" class="btn-close" aria-label="Fechar" id="closeSearchModalButton"></button>
             </div>
-            <form class="search-form">
-                <input type="text" id="searchInput" placeholder="Pesquisar" autofocus>
+            <form id="form-search" class="search-form">
+                <input type="text" id="searchInput" placeholder="Pesquisar">
                 <button id="searchButton" type="submit">Pesquisar</button>
             </form>
         </div>
     </div>
 
-    <div class="modal" id="searchModal" aria-hidden="false" role="dialog"
-        aria-labelledby="searchModalTitle">
-        <div class="modal-content">
-            <span class="close-modal" id="closeSearchModalButton" aria-label="Fechar modal">&times;</span>
-            <form id="searchForm">
-                <label id="searchModalTitle" for="searchInput">O que procura?</label>
-                <div class="input-container">
-                    <input class="form-control mt-3" type="text" id="searchInput" name="searchInput"
-                        tabindex="0" autofocus>
-                    <button class="btn btn-primary mt-2" type="submit">Pesquisar</button>
-                </div>
-            </form>
-        </div>
-    </div>
+    <script src="scripts.js"></script>
+    <script src="modal.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-    
         var showTableLink = document.getElementById('showTableLink');
         var tableContainer = document.getElementById('tableContainer');
     
@@ -272,25 +257,6 @@
                 }
             }
         });
-    </script>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const openButton = document.getElementById('openSearchModalButton');
-            const modal = document.getElementById('searchModal');
-            const closeButton = document.getElementById('closeSearchModalButton');
-            const searchInput = document.getElementById('searchInput');
-    
-            openButton.addEventListener('click', () => {
-                modal.style.display = 'flex';
-                searchInput.focus();
-            });
-    
-            closeButton.addEventListener('click', () => {
-                modal.style.display = 'none';
-            });
-        });
-    
     </script>
     
     <script>
