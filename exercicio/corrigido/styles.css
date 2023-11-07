@@ -312,7 +312,8 @@ video {
 .video-description {
   text-align: left; 
   margin-top: 10px;
-  padding-left: 10px; 
+  padding-left: 40px;
+  max-width: 500px;
 }
 
 .speaker-name {
@@ -573,9 +574,9 @@ width: 100%;
 }
 
 .update {
-margin: 0;
-display: flex;
-align-items: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .evento-social {
