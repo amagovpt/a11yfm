@@ -593,8 +593,8 @@ gap: 10px;
 }
 
 .social-button {
-width: 32px;
-height: 32px;
+width: 44px;
+height: 44px;
 border-radius: 50%;
 display: inline-block;
 }
@@ -604,6 +604,7 @@ background: #f8f9fa;
 background-image: url('img/icons8-facebook.svg'); 
 background-repeat: no-repeat;
 background-position: center;
+
 }
 
 .social-button.twitter {

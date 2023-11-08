@@ -658,6 +658,14 @@ legend {
   font-size: 13px;
 }
 
+.btn {
+  height: 44px;
+}
+
+.table-link {
+  color: #0264F7;
+}
+
 
 .text-event-section a.btn {
   display: inline-block;
