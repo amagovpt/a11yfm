@@ -6,7 +6,7 @@
 
 ### Materiais
 -  [Website Jornada Acessibilidade 2023 - Fora de Mão](https://amagovpt.github.io/a11yfm/exercicio/original/index.html)
--  [Website Jornadas Acessibilidade 2023 - Na direção certa](https://amagovpt.github.io/a11yfm/exercicio/corrigido/index.html)
+/* -  [Website Jornadas Acessibilidade 2023 - Na direção certa](https://amagovpt.github.io/a11yfm/exercicio/corrigido/index.html) */
 -  [Checklist dos 10 aspetos críticos de acessibilidade funcional](checklist-10aspetos.html)
 -  [Template Plano de correção word](ficheiros/template-plano-de-correcao.docx)
 
