@@ -636,7 +636,7 @@ legend {
 
 .text-event-section {
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 790px;
   padding: 20px 0;
 }
 
@@ -653,6 +653,11 @@ legend {
   text-align: left;
   overflow-wrap: break-word;
 }
+
+.update {
+  font-size: 13px;
+}
+
 
 .text-event-section a.btn {
   display: inline-block;

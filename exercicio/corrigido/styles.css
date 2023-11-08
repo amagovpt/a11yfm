@@ -566,15 +566,18 @@ align-items: center;
 }
 
 .evento-image {
-max-width: 100%;
+max-width: 790px;
 margin-bottom: 20px;
 }
 
 .evento-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
+  margin: 0 auto;
+  max-width: 790px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
 }
 
 .evento-content {
@@ -600,21 +603,21 @@ display: inline-block;
 }
 
 .social-button.facebook {
-background: #EDF1F8; 
+background: #f8f9fa; 
 background-image: url('img/icons8-facebook.svg'); 
 background-repeat: no-repeat;
 background-position: center;
 }
 
 .social-button.twitter {
-background: #EDF1F8; 
+background: #f8f9fa; 
 background-image: url('img/icons8-twitter.svg'); 
 background-repeat: no-repeat;
 background-position: center;
 }
 
 .social-button.linkedin {
-background: #EDF1F8; 
+background: #f8f9fa;
 background-image: url('img/icons8-linkedin-24.svg'); 
 background-repeat: no-repeat;
 background-position: center;
