@@ -106,11 +106,16 @@ function putInputsDirty() {
     );
 
     // radio buttons
-    for (let elem of document.querySelectorAll('input[type="radio"]')) {
-        if (!elem.checked) {
-            elem.closest('.field-group').classList.add('empty');
+    for (let elem of document.querySelectorAll('.field-group')) {
+        for (let radio of elem.getElementsByTagName('input')) {
+            if (radio.checked) {
+                return;
+            }
         }
+
+        elem.classList.add('empty');
     }
+
 }
 
 
