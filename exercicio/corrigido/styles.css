@@ -932,10 +932,6 @@ section.workshop-info {
   text-align: left; 
 }
 
-section.workshop-info h1 {
-  font-size: 28px;
-  color: #007bff;
-}
 
 section.workshop-info p {
   font-size: 16px;
@@ -945,7 +941,8 @@ section.workshop-info p {
 
 section.workshop-info ul {
   list-style: disc;
-  padding-left: 20px;
+  display: contents;
+  
 }
 
 section.workshop-info ul li:first-child {
