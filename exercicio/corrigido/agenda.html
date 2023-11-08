@@ -26,7 +26,7 @@
                     <img src="img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
                 </h1>
             </div>
-            <div class="col">
+            <div class="col-auto">
                 <nav id="mainNav">
                     <ul class="menu">
                         <li>
@@ -161,14 +161,15 @@
 </body>
 
 <script>
-    document.getElementById("openModalButton").addEventListener("click", function () {
+    document.getElementById("openModalButton")?.addEventListener("click", function () {
         document.getElementById("searchModal").style.display = "flex";
     });
 
-    document.getElementById("closeModalButton").addEventListener("click", function () {
+    document.getElementById("closeModalButton")?.addEventListener("click", function () {
         document.getElementById("searchModal").style.display = "none";
     });
 </script>
-<script src="script.js"></script>
+<script src="scripts.js"></script>
+<script src="modal.js"></script>
 
 </html>

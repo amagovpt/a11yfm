@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       searchInput.focus();
   });
 
-  closeButton.addEventListener('click', () => {
+  closeButton?.addEventListener('click', () => {
       modal.style.display = 'none';
   });
 });
