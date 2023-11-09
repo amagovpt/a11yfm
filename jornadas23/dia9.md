@@ -8,10 +8,10 @@
 -  [Website Jornada Acessibilidade 2023 - Fora de Mão](https://amagovpt.github.io/a11yfm/exercicio/original/index.html)
 <!-- -  [Website Jornadas Acessibilidade 2023 - Na direção certa](https://amagovpt.github.io/a11yfm/exercicio/corrigido/index.html) -->
 -  [Checklist dos 10 aspetos críticos de acessibilidade funcional](checklist-10aspetos.html)
--  [Template Plano de correção word (docx, 71KB)](ficheiros/template-plano-de-correcao.docx)
+-  [Template Plano de correção word (docx, 71KB)](ficheiros/template-plano-correcao.docx)
 <!-- -  [Plano de correção - exemplo preenchido (docx, 5,7MB)](plano-de-correcao-exemplo-preenchido.docx) -->
 <!-- -  [Template Plano de correção - Open Document File (odt, 34KB)](template-plano-correcao-odt.odt) -->
-<!-- -  [Plano de correção - exemplo preenchido - Open Document File (odt, 5,7MB)](plano-de-correcao-exemplo-preenchido-odt.odt.odt) -->
+<!-- -  [Plano de correção - exemplo preenchido - Open Document File (odt, 5,7MB)](plano-de-correcao-exemplo-preenchido-odt.odt) -->
 
 
 ### Ferramentas necessárias
