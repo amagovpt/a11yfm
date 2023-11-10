@@ -65,3 +65,5 @@ Agora que já tem um ficheiro com a Declaração de Acessibilidade preenchida, v
 5. O formador da sessão fará o upload para o GitHub para analisarmos o aspeto final.
 
 Lembre-se, o Gerador fornece a estrutura da página (HTML). o Estilo é o do sítio Web!
+
+O resultado final vai aparecer aqui: [site com Declaração](https://jorgeponto.github.io/bootstrap-blog-jekyll/acessibilidade/)
