@@ -214,6 +214,22 @@ ul li {
 }
 
 
+/* Carousel */
+.carousel-indicators > ul > li {
+  margin: 0 5px;
+}
+.carousel-indicators [data-bs-target] {
+border-radius: 0;
+width: 44px  !important;
+height: 44px !important;
+}
+.carousel-nav-prev, .carousel-nav-next {
+position: relative;
+width: auto;
+left: auto;
+right: auto;
+}
+
 /* Mostrar a modal */
 button#openSearchModalButton:hover+.modal {
   transform: translateY(0);

@@ -16,7 +16,10 @@
 <body>
 
     <header>
-        <a href="#main" class="skip">Saltar para conteúdo principal</a>
+        <a href="#main" class="skip">
+            <span class="lan-pt">Saltar para conteúdo principal</span>
+            <span class="lan-en hidden">Skip to main content</span>
+        </a>
         <div class="row">
             <div class="col-auto">
                 <img src="img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
@@ -27,14 +30,22 @@
                         <li>
                             <a href="index.html" aria-current="page" aria-label="Página Inicial">
                                 <i class="material-icons">home</i>
-                                <span class="mobile-only">Página Inicial</span>
+                                <span class="mobile-only">
+                                    <span class="lan-pt">Página Inicial</span>
+                                    <span class="lan-en hidden">Homepage</span>
+                                </span>
                             </a>
                         </li>
-                        <li> 
-                            <a href="evento.html">Evento</a>
+                        <li> <a href="evento.html">
+                            <span class="lan-pt">Eventos</span>
+                            <span class="lan-en hidden">Events</span>
+                        </a>
                         </li>
                         <li class="current">
-                            <a href="inscricao.html">Inscrição</a>
+                            <a href="inscricao.html">
+                            <span class="lan-pt">Inscrição</span>
+                            <span class="lan-en hidden">Registration</span>
+                        </a>
                         </li>
                         <li class="has-submenu" aria-haspopup="menu" aria-expanded="false">
                             <a href="#" class="submenu-arrow" aria-label="Workshops">
@@ -42,12 +53,21 @@
                                 <span class="expand-icon"><img src="img/chevron_down_icon.svg" alt="Expandir"></span>
                             </a>
                             <ul class="submenu-content" role="menu">
-                                <li><a href="videos.html" tabindex="0">Gravações</a></li>
-                                <li><a href="exercicio2.html" tabindex="0">Exercício prático II</a></li>
+                                <li><a href="videos.html" tabindex="0">
+                                    <span class="lan-pt">Gravações</span>
+                                    <span class="lan-en hidden">Recordings</span>
+                                </a></li>
+                                <li><a href="exercicio2.html" tabindex="0">
+                                    <span class="lan-pt">Exercício prático II</span>
+                                    <span class="lan-en hidden">Practical exercise II</span>
+                                </a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="agenda.html">Agenda</a>
+                            <a href="agenda.html">
+                                <span class="lan-pt">Agenda</span>
+                                <span class="lan-en hidden">Schedule</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -58,8 +78,23 @@
                     <li>
                         <button id="openSearchModalButton" aria-label="Abrir pesquisa">
                             <img src="img/search.svg" alt="">
-                            <span>Pesquisar</span>
+
+                            <span class="lan-pt">Pesquisar</span>
+                            <span class="lan-en hidden">Search</span>
                         </button>
+                    </li>
+                    <li>
+                        <div class="language-container-1">
+                            <label for="language-selector">
+                                <span aria-label="selecionar idioma">
+                                    <img src="img/language.svg" alt="">
+                                </span>
+                            </label>
+                            <select class="form-select language-select" id="language-selector">
+                                <option value="pt">PT</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -69,81 +104,137 @@
     <main id="main">
         <div class="wrapper">
             <div class="form py-4 my-5">
-                <h1>Formulário de Inscrição</h1>
+                <h1>
+                    <span class="lan-pt">Formulário de Inscrição</span>
+                    <span class="lan-en hidden">Application form</span>
+                </h1>
                 <form id="registration-form" action="inscricao_sucesso.html" method="get">
                     <div class="form-group mt-2">
-                        <label for="nome">Primeiro e último nome
-                            <span class="required">(obrigatório)</span>
+                        <label for="nome">
+                            <span class="lan-pt">Primeiro e último nome</span>
+                            <span class="lan-en hidden">First and last name</span>
+                            <span class="required">
+                                <span class="lan-pt">(obrigatório)</span>
+                                <span class="lan-en hidden">(required)</span>
+                            </span>
                         </label>
                         <input type="text" id="nome" name="nome" required aria-describedby="nome-error">
-                        <div id="nome-error" class="error-message" aria-hidden="true">Este campo é obrigatório.</div>
+                        <div id="nome-error" class="error-message" aria-hidden="true">
+                            <span class="lan-pt">Primeiro e último nome são obrigatórios.</span>
+                            <span class="lan-en hidden">First and last name are required.</span>
+                        </div>
                     </div>
                     <div class="form-group mt-2">
                         <label for="email">E-mail
-                            <span class="required">(obrigatório)</span>
+                            <span class="required">
+                                <span class="lan-pt">(obrigatório)</span>
+                                <span class="lan-en hidden">(required)</span>
+                            </span>
                         </label>
                         <input type="email" id="email" name="email" required aria-describedby="email-error">
-                        <div id="email-error" class="error-message" aria-hidden="true">Por favor, insira um endereço
-                            de email válido.</div>
+                        <div id="email-error" class="error-message" aria-hidden="true">
+                            <span class="lan-pt">Por favor, insira um endereço de email válido.</span>
+                            <span class="lan-en hidden">Please enter a valid email address.</span>
+                        </div>
                     </div>
 
                     <div class="mt-4">
                         <fieldset>
-                            <legend>Modalidade de Participação
-                                <span class="required">(obrigatório)</span>
+                            <legend>
+                                <span class="lan-pt">Modalidade de Participação</span>
+                                <span class="lan-en hidden">Participation Type</span>
+                                <span class="required">
+                                    <span class="lan-pt">(obrigatório)</span>
+                                    <span class="lan-en hidden">(required)</span>
+                                </span>
                             </legend>
                             <div class="row gx-5 field-group">
                                 <div class="d-flex align-items-center col-auto">
                                     <input type="radio" id="presencial" name="modalidade" value="presencial" required aria-describedby="modalidade-error">
-                                    <label for="presencial" class="mb-0">Presencial</label>
+                                    <label for="presencial" class="mb-0">
+                                        <span class="lan-pt">Presencial</span>
+                                        <span class="lan-en hidden">In person</span>
+                                    </label>
                                 </div>
                                 <div class="d-flex align-items-center col-auto">
                                     <input type="radio" id="online" name="modalidade" value="online" required aria-describedby="modalidade-error">
-                                    <label for="online" class="mb-0">Online</label>
+                                    <label for="online" class="mb-0">
+                                        <span class="lan-pt">Online</span>
+                                        <span class="lan-en hidden">Online</span>
+                                    </label>
                                 </div>
                             </div>
-                            <div id="modalidade-error" class="error-message" aria-hidden="true">Este campo é obrigatório.</div>
+                            <div id="modalidade-error" class="error-message" aria-hidden="true">
+                                <span class="lan-pt">Este campo é obrigatórios.</span>
+                                <span class="lan-en hidden">This field is required.</span>
+                            </div>
                         </fieldset>
                     </div>
 
                     <div class="mt-4">
                         <fieldset>
-                            <legend>Selecione os dias em que pretende participar
-                                <span class="required">(obrigatório)</span>
+                            <legend>
+                                <span class="lan-pt">Selecione os dias em que pretende participar</span>
+                                <span class="lan-en hidden">Select the days you want to participate</span>
+                                <span class="required">
+                                    <span class="lan-pt">(obrigatório)</span>
+                                    <span class="lan-en hidden">(required)</span>
+                                </span>
                             </legend>
                             <select id="evento" name="evento" required>
-                                <option value="evento1">Ambos, dias 9 e 10 de novembro</option>
-                                <option value="evento2">Dia 9 de novembro</option>
-                                <option value="evento3">Dia 10 de novembro</option>
+                                <option value="evento1" class="lan" id="lanBothDays">Ambos, dias 9 e 10 de novembro</option>
+                                <option value="evento2" class="lan" id="lanDay9">Dia 9 de novembro</option>
+                                <option value="evento3" class="lan" id="lanDay10">Dia 10 de novembro</option>
                             </select>
                         </fieldset>
                     </div>
 
                     <div class="mt-4">
                         <fieldset>
-                            <legend>Selecione o(s) workshop(s) em que pretende participar</legend>
-                            <p class="workshop-description">Avaliação de acessibilidade e usabilidade são workshops
-                                sequenciais. Para participar no segundo workshop, é recomendado que participe primeiro no
-                                workshop de 'Avaliação de acessibilidade e usabilidade'.</p>
+                            <legend>
+                                <span class="lan-pt">Selecione o(s) workshop(s) em que pretende participar</span>
+                                <span class="lan-en hidden">Select the workshop(s) you wish to participate in</span>
+                            </legend>
+                            <p class="workshop-description">
+                                
+                                <span class="lan-pt">Avaliação de acessibilidade e usabilidade são workshops
+                                    sequenciais. Para participar no segundo workshop, é recomendado que participe primeiro no
+                                    workshop de 'Avaliação de acessibilidade e usabilidade'.</span>
+                                <span class="lan-en hidden">
+                                    Accessibility and usability evaluation are workshops sequential. To participate in the second workshop, it is recommended that you first participate in the 'Accessibility and usability assessment' workshop.
+                                </span>
+                            </p>
                             <div class="checkbox-group">
                                 <span>
                                     <input type="checkbox" id="Avaliacao" name="workshops" value="Avaliacao">
-                                    <label for="Avaliacao" class="mb-0">Avaliação de acessibilidade e usabilidade</label>
+                                    <label for="Avaliacao" class="mb-0">
+                                        <div class="lan-pt">Avaliação de acessibilidade e usabilidade</div>
+                                        <div class="lan-en hidden">Accessibility and usability evaluation</div>
+                                    </label>
                                 </span>
                                 <span>
                                     <input type="checkbox" id="DA" name="workshops" value="DA">
-                                    <label for="DA" class="mb-0">Declaração de acessibilidade no meu site Web</label>
+                                    <label for="DA" class="mb-0">
+                                        <div class="lan-pt">Declaração de acessibilidade no meu site Web</div>
+                                        <div class="lan-en hidden">Accessibility and usability evaluation</div>
+                                    </label>
                                 </span>
                                 <span>
                                     <input type="checkbox" id="testes" name="workshops" value="testes">
-                                    <label for="testes" class="mb-0">Testes com utilizadores para Selo Ouro</label>
+                                    <label for="testes" class="mb-0">
+                                        <div class="lan-pt">Testes com utilizadores para Selo Ouro</div>
+                                        <div class="lan-en hidden">User testing for Gold Seal</div>
+                                    </label>
                                 </span>
                             </div>
                         </fieldset>
                     </div>
 
                     <div class="mt-4">
-                        <button type="submit" onclick="putInputsDirty()">Enviar inscrição</button>
+                        <button type="submit" onclick="putInputsDirty()">
+                            <span class="lan-pt">Enviar inscrição</span>
+                            <span class="lan-en hidden">Submit application</span>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -151,7 +242,10 @@
     </main>
 
     <footer class="footer-supporters mt-5">
-        <h2>Apoios</h2>
+        <h2>
+            <span class="lan-pt">Apoios</span>
+            <span class="lan-en hidden">Support</span>
+        </h2>
         <div class="apoios-logos">
             <a href="https://next-generation-eu.europa.eu/index_en"><img src="img/PT_Financiado_UE_WHITE.png"
                     alt="Financiamento pela União Europeia"></a>
@@ -162,12 +256,21 @@
         </div>
         <div class="policies">
             <div class="footer-text">
-                <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
+                <p>&copy;
+                    <span class="lan-pt">2023 República Portuguesa. Todos os direitos reservados.</span>
+                    <span class="lan-en hidden">2023 Portuguese Republic. All rights reserved.</span>
+                </p>
             </div>
             <div class="footer-links">
                 <ul>
-                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="acessibilidade.html">
+                        <span class="lan-pt">Acessibilidade</span>
+                        <span class="lan-en hidden">Accessibility</span>
+                    </a></li>
+                    <li><a href="contactos.html">
+                        <span class="lan-pt">Contactos</span>
+                        <span class="lan-en hidden">Contacts</span>
+                    </a></li>
                 </ul>
             </div>
         </div>
@@ -177,12 +280,18 @@
     <div class="modal" style="display: none;" id="searchModal" role="dialog" aria-modal="true">
         <div class="modal-content">
             <div class="d-flex align-items-center justify-content-between">
-                <h2 class="modal__title">Pesquisar</h2>
+                <h2 class="modal__title"> 
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </h2>
                 <button type="button" class="btn-close" aria-label="Fechar" id="closeSearchModalButton"></button>
             </div>
             <form id="form-search" class="search-form">
                 <input type="text" id="searchInput" placeholder="Pesquisar">
-                <button id="searchButton" type="submit">Pesquisar</button>
+                <button id="searchButton" type="submit">
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </button>
             </form>
         </div>
     </div>

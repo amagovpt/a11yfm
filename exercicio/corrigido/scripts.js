@@ -1,28 +1,66 @@
+const i18nPt = {
+    lanBothDays: 'Ambos, dias 9 e 10 de novembro',
+    lanDay9: 'Dia 9 de novembro', 
+    lanDay10: 'Dia 10 de novembro'
+};
 
-const languageButton = document.getElementById('language-button');
-const languageOption = document.getElementById('language-option');
-const engButton = document.getElementById('eng-button');
+const i18nEn = {
+    lanBothDays: 'Both November 9th and 10th',
+    lanDay9: 'November 9th', 
+    lanDay10: 'November 10th'
+};
 
-engButton?.addEventListener('click', () => {
+const languageSelector = document.getElementById('language-selector');
+updateTexts();
 
-    if (languageOption.textContent === 'PT') {
-        languageOption.textContent = 'EN';
+languageSelector.addEventListener("change", function() {
+    var url = window.location.pathname;
+    var newUrl = '';
+
+    language = this.value;
+    sessionStorage.setItem("language", this.value);
+    updateTexts();
+    
+});
+
+function updateTexts() {
+    var language = sessionStorage.getItem("language");
+    var lanArray = {};
+
+    if (language == undefined) {
+        language = 'pt';
+        sessionStorage.setItem("language", language);
+    }
+
+    if (document.getElementById('language-selector').value != language) {
+        document.getElementById('language-selector').value = language;
+    }
+
+    if (language === 'pt') {
+        document.documentElement.setAttribute("lang", 'pt-pt');
+        lanArray = i18nPt;
+
     } else {
-        languageOption.textContent = 'PT';
+        document.documentElement.setAttribute("lang", 'en');
+        lanArray = i18nEn;
     }
-    
-    
-    const languageOptions = document.querySelectorAll('.language-option');
-    languageOptions.forEach(option => option.classList.remove('selected'));
-    languageOption.classList.add('selected');
-});
 
+    Array.from(document.getElementsByClassName("lan-pt")).forEach(
+        (el) => el.classList.add('hidden')
+    );
+    Array.from(document.getElementsByClassName("lan-en")).forEach(
+        (el) => el.classList.add('hidden')
+    );
+    Array.from(document.getElementsByClassName("lan-" + language)).forEach(
+        (el) => el.classList.remove('hidden')
+    );
 
-languageButton?.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-        languageButton.click();
-    }
-});
+    
+    Array.from(document.getElementsByClassName("lan")).forEach(
+        (el) => { el.innerHTML = lanArray[el.getAttribute('id')]; }
+    );
+}
+
 
 document.addEventListener("DOMContentLoaded", function () { 
     // Event listener for Close Submenu

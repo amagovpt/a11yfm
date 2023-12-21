@@ -15,7 +15,10 @@
 
 <body>
     <header>
-        <a href="#main" class="skip">Saltar para conteúdo principal</a>
+        <a href="#main" class="skip">
+            <span class="lan-pt">Saltar para conteúdo principal</span>
+            <span class="lan-en hidden">Skip to main content</span>
+        </a>
         <div class="row">
             <div class="col-auto">
                <img src="img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
@@ -26,14 +29,23 @@
                         <li>
                             <a href="index.html" aria-current="page" aria-label="Página Inicial">
                                 <i class="material-icons">home</i>
-                                <span class="mobile-only">Página Inicial</span>
+                                <span class="mobile-only">
+                                    <span class="lan-pt">Página Inicial</span>
+                                    <span class="lan-en hidden">Homepage</span>
+                                </span>
                             </a>
                         </li>
                         <li class="current">
-                            <a href="evento.html">Evento</a>
+                            <a href="evento.html">
+                            <span class="lan-pt">Eventos</span>
+                            <span class="lan-en hidden">Events</span>
+                        </a>
                         </li>
                         <li>
-                            <a href="inscricao.html">Inscrição</a>
+                            <a href="inscricao.html">
+                            <span class="lan-pt">Inscrição</span>
+                            <span class="lan-en hidden">Registration</span>
+                        </a>
                         </li>
                         <li class="has-submenu" aria-haspopup="menu" aria-expanded="false">
                             <a href="#" class="submenu-arrow" aria-label="Workshops">
@@ -41,12 +53,21 @@
                                 <span class="expand-icon"><img src="img/chevron_down_icon.svg" alt="Expandir"></span>
                             </a>
                             <ul class="submenu-content" role="menu">
-                                <li><a href="videos.html" tabindex="0">Gravações</a></li>
-                                <li><a href="exercicio2.html" tabindex="0">Exercício prático II</a></li>
+                                <li><a href="videos.html" tabindex="0">
+                                    <span class="lan-pt">Gravações</span>
+                                    <span class="lan-en hidden">Recordings</span>
+                                </a></li>
+                                <li><a href="exercicio2.html" tabindex="0">
+                                    <span class="lan-pt">Exercício prático II</span>
+                                    <span class="lan-en hidden">Practical exercise II</span>
+                                </a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="agenda.html">Agenda</a>
+                            <a href="agenda.html">
+                                <span class="lan-pt">Agenda</span>
+                                <span class="lan-en hidden">Schedule</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -57,8 +78,22 @@
                     <li>
                         <button id="openSearchModalButton" aria-label="Abrir pesquisa">
                             <img src="img/search.svg" alt="">
-                            <span>Pesquisar</span>
+                            <span class="lan-pt">Pesquisar</span>
+                            <span class="lan-en hidden">Search</span>
                         </button>
+                    </li>
+                    <li>
+                        <div class="language-container-1">
+                            <label for="language-selector">
+                                <span aria-label="selecionar idioma">
+                                    <img src="img/language.svg" alt="">
+                                </span>
+                            </label>
+                            <select class="form-select language-select" id="language-selector">
+                                <option value="pt">PT</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -92,8 +127,13 @@
                 </div>
             </div>
             <div class="evento-content text-event-section">
-                <h1>Eventos</h1>
-                <p>O foco principal do evento são as necessidades de quem programa, desenvolve e
+                <h1>
+                    <span class="lan-pt">Eventos</span>
+                    <span class="lan-en hidden">Events</span>
+                </h1>
+                <p>
+                    <span class="lan-pt">
+                    O foco principal do evento são as necessidades de quem programa, desenvolve e
                     utiliza websites e aplicações móveis da Administração Pública. As jornadas têm como objetivo a troca de
                     experiências entre participantes, mostrando casos de sucesso, ferramentas e estratégias que permitam, no
                     futuro, o desenvolvimento de websites e apps móveis cada vez mais acessíveis e inclusivos.
@@ -102,17 +142,28 @@
                     do
                     IAPMEI (Edifício L), em Lisboa. A participação é gratuita, mas com inscrição obrigatória e limitada às
                     vagas
-                    existentes.</p>
+                    existentes.
+                    </span>
+                    <span class="lan-en hidden">
+                        The main focus of the event is the needs of those who program, develop and use Public Administration websites and mobile applications. The journeys aim to exchange experiences between participants, showing success stories, tools and strategies that allow, in the future, the development of increasingly accessible and inclusive websites and mobile apps. The Public Administration Digital Accessibility and Usability Days will take place in the IAPMEI Auditorium (Building L), in Lisbon. Participation is free, but registration is mandatory and limited to existing places.
+                    </span>
+                    </p>
 
                     <button type="button" class="btn btn-light" onclick="window.location.href = 'img/jornada-acessibilidade-2023-folheto.pdf'">Jornada-acessibilidade-2023-folheto (pdf, 448kb)</button>
-                    <p class="update mt-5">Data de atualização: 26/10/2023</p>
+                    <p class="update mt-5">
+                        <span class="lan-pt">Data de atualização: 26/10/2023</span>
+                        <span class="lan-en hidden">Update date: 10/26/2023</span>
+                    </p>
             </div>
         </div>
     </main>
 
 
     <footer class="footer-supporters mt-5">
-        <h2>Apoios</h2>
+        <h2>
+            <span class="lan-pt">Apoios</span>
+            <span class="lan-en hidden">Support</span>
+        </h2>
         <div class="apoios-logos">
             <a href="https://next-generation-eu.europa.eu/index_en"><img src="img/PT_Financiado_UE_WHITE.png"
                     alt="Financiamento pela União Europeia"></a>
@@ -123,12 +174,21 @@
         </div>
         <div class="policies">
             <div class="footer-text">
-                <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
+                <p>&copy;
+                    <span class="lan-pt">2023 República Portuguesa. Todos os direitos reservados.</span>
+                    <span class="lan-en hidden">2023 Portuguese Republic. All rights reserved.</span>
+                </p>
             </div>
             <div class="footer-links">
                 <ul>
-                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="acessibilidade.html">
+                        <span class="lan-pt">Acessibilidade</span>
+                        <span class="lan-en hidden">Accessibility</span>
+                    </a></li>
+                    <li><a href="contactos.html">
+                        <span class="lan-pt">Contactos</span>
+                        <span class="lan-en hidden">Contacts</span>
+                    </a></li>
                 </ul>
             </div>
         </div>
@@ -138,12 +198,18 @@
     <div class="modal" style="display: none;" id="searchModal" role="dialog" aria-modal="true">
         <div class="modal-content">
             <div class="d-flex align-items-center justify-content-between">
-                <h2 class="modal__title">Pesquisar</h2>
+                <h2 class="modal__title"> 
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </h2>
                 <button type="button" class="btn-close" aria-label="Fechar" id="closeSearchModalButton"></button>
             </div>
             <form id="form-search" class="search-form">
                 <input type="text" id="searchInput" placeholder="Pesquisar">
-                <button id="searchButton" type="submit">Pesquisar</button>
+                <button id="searchButton" type="submit">
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </button>
             </form>
         </div>
     </div>
