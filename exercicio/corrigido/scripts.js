@@ -1,13 +1,15 @@
 const i18nPt = {
     lanBothDays: 'Ambos, dias 9 e 10 de novembro',
     lanDay9: 'Dia 9 de novembro', 
-    lanDay10: 'Dia 10 de novembro'
+    lanDay10: 'Dia 10 de novembro', 
+    lanSearch: 'Pesquisar'
 };
 
 const i18nEn = {
     lanBothDays: 'Both November 9th and 10th',
     lanDay9: 'November 9th', 
-    lanDay10: 'November 10th'
+    lanDay10: 'November 10th', 
+    lanSearch: 'Search'
 };
 
 const languageSelector = document.getElementById('language-selector');
@@ -59,6 +61,11 @@ function updateTexts() {
     Array.from(document.getElementsByClassName("lan")).forEach(
         (el) => { el.innerHTML = lanArray[el.getAttribute('id')]; }
     );
+
+    // search placeholder
+    document.getElementById('searchInput').setAttribute('placeholder', lanArray['lanSearch']);
+
+    
 }
 
 

@@ -15,10 +15,13 @@
 
 <body>
     <header>
-        <a href="#main" class="skip">Saltar para conteúdo principal</a>
+        <a href="#main" class="skip">
+            <span class="lan-pt">Saltar para conteúdo principal</span>
+            <span class="lan-en hidden">Skip to main content</span>
+        </a>
         <div class="row">
             <div class="col-auto">
-              <img src="img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
+                <img src="img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
             </div>
             <div class="col-auto">
                 <nav id="mainNav">
@@ -26,13 +29,22 @@
                         <li>
                             <a href="index.html" aria-current="page" aria-label="Página Inicial">
                                 <i class="material-icons">home</i>
-                                <span class="mobile-only">Página Inicial</span>
+                                <span class="mobile-only">
+                                    <span class="lan-pt">Página Inicial</span>
+                                    <span class="lan-en hidden">Homepage</span>
+                                </span>
                             </a>
                         </li>
-                        <li> <a href="evento.html">Evento</a>
+                        <li> <a href="evento.html">
+                            <span class="lan-pt">Eventos</span>
+                            <span class="lan-en hidden">Events</span>
+                        </a>
                         </li>
                         <li>
-                            <a href="inscricao.html">Inscrição</a>
+                            <a href="inscricao.html">
+                            <span class="lan-pt">Inscrição</span>
+                            <span class="lan-en hidden">Registration</span>
+                        </a>
                         </li>
                         <li class="has-submenu" aria-haspopup="menu" aria-expanded="false">
                             <a href="#" class="submenu-arrow" aria-label="Workshops">
@@ -40,12 +52,21 @@
                                 <span class="expand-icon"><img src="img/chevron_down_icon.svg" alt="Expandir"></span>
                             </a>
                             <ul class="submenu-content" role="menu">
-                                <li><a href="videos.html" tabindex="0">Gravações</a></li>
-                                <li><a href="exercicio2.html" tabindex="0">Exercício prático II</a></li>
+                                <li><a href="videos.html" tabindex="0">
+                                    <span class="lan-pt">Gravações</span>
+                                    <span class="lan-en hidden">Recordings</span>
+                                </a></li>
+                                <li><a href="exercicio2.html" tabindex="0">
+                                    <span class="lan-pt">Exercício prático II</span>
+                                    <span class="lan-en hidden">Practical exercise II</span>
+                                </a></li>
                             </ul>
                         </li>
                         <li class="current">
-                            <a href="agenda.html">Agenda</a>
+                            <a href="agenda.html">
+                                <span class="lan-pt">Agenda</span>
+                                <span class="lan-en hidden">Schedule</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -56,7 +77,9 @@
                     <li>
                         <button id="openSearchModalButton" aria-label="Abrir pesquisa">
                             <img src="img/search.svg" alt="">
-                            <span>Pesquisar</span>
+
+                            <span class="lan-pt">Pesquisar</span>
+                            <span class="lan-en hidden">Search</span>
                         </button>
                     </li>
                     <li>
@@ -68,7 +91,7 @@
                             </label>
                             <select class="form-select language-select" id="language-selector">
                                 <option value="pt">PT</option>
-                                <option value="eng">EN</option>
+                                <option value="en">EN</option>
                             </select>
                         </div>
                     </li>
@@ -86,41 +109,86 @@
             <img src="img/Banner.png" class="evento-imagetop" alt="">
         </div>
         <div class="container w-75">
-            <h1 class="mt-5">Programação e Oradores</h1>
+            <h1 class="mt-5">
+                <span class="lan-pt">Programação e Oradores</span>
+                <span class="lan-en hidden">Schedule and Speakers</span>
+            </h1>
             <table class="styled-table mt-4">
-                <caption>Cronograma do evento</caption>
+                <caption>
+                    <span class="lan-pt">Cronograma do evento</span>
+                    <span class="lan-en hidden">Event schedule</span>
+                </caption>
                 <tr>
-                    <th>Horário</th>
-                    <th>Atividade</th>
-                    <th>Local</th>
+                    <th>
+                        <span class="lan-pt">Horário</span>
+                        <span class="lan-en hidden">Schedule</span>
+                    </th>
+                    <th>
+                        <span class="lan-pt">Horário</span>
+                        <span class="lan-en hidden">Atividade</span>
+                    </th>
+                    <th>
+                        <span class="lan-pt">Local</span>
+                        <span class="lan-en hidden">Place</span>
+                    </th>
                 </tr>
                 <tr>
                     <td>09:30 - 10:00</td>
-                    <td>Registo/credenciação</td>
-                    <td>Entrada</td>
+                    <td>
+                        <span class="lan-pt">Registo/credenciação</span>
+                        <span class="lan-en hidden">Registration/accreditation</span>
+                    </td>
+                    <td>
+                        <span class="lan-pt">Entrada</span>
+                        <span class="lan-en hidden">Entrance</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>10:00 - 10:30</td>
-                    <td>Acessibilidade e usabilidade em escala com design systems	</td>
-                    <td>Sala Principal</td>
+                    <td>
+                        <span class="lan-pt">Acessibilidade e usabilidade em escala com design systems</span>
+                        <span class="lan-en hidden">Accessibility and usability at scale with design systems</span>
+                    </td>
+                    <td>
+                        <span class="lan-pt">Sala Principal</span>
+                        <span class="lan-en hidden">Main room</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>10:30 - 11:00</td>
-                    <td>Mosaico e Ágora Design System</td>
-                    <td>Sala Principal</td>
+                    <td>
+                        <span class="lan-pt">Mosaico e Ágora Design System</span>
+                        <span class="lan-en hidden">Mosaic and Agora Design System</span>
+                    </td>
+                    <td>
+                        <span class="lan-pt">Sala Principal</span>
+                        <span class="lan-en hidden">Main room</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>11:00 - 11:30</td>
-                    <td>Plano de ação para a promoção de serviços inclusivos na AP</td>
-                    <td>Sala Principal</td>
+                    <td>
+                        <span class="lan-pt">Plano de ação para a promoção de serviços inclusivos na AP</span>
+                        <span class="lan-en hidden">Action plan to promote inclusive services in AP</span>
+                    </td>
+                    <td>
+                        <span class="lan-pt">Sala Principal</span>
+                        <span class="lan-en hidden">Main room</span>
+                    </td>
                 </tr>
             </table>
-            <p class="update mt-5">Data de atualização: 26/10/2023</p>
+            <p class="update mt-5">
+                <span class="lan-pt">Data de atualização: 26/10/2023</span>
+                <span class="lan-en hidden">Update date: 10/26/2023</span>
+            </p>
         </div>
     </main>
 
     <footer class="footer-supporters mt-5">
-        <h2>Apoios</h2>
+        <h2>
+            <span class="lan-pt">Apoios</span>
+            <span class="lan-en hidden">Support</span>
+        </h2>
         <div class="apoios-logos">
             <a href="https://next-generation-eu.europa.eu/index_en"><img src="img/PT_Financiado_UE_WHITE.png"
                     alt="Financiamento pela União Europeia"></a>
@@ -131,26 +199,43 @@
         </div>
         <div class="policies">
             <div class="footer-text">
-                <p>&copy; 2023 República Portuguesa. Todos os direitos reservados.</p>
+                <p>&copy;
+                    <span class="lan-pt">2023 República Portuguesa. Todos os direitos reservados.</span>
+                    <span class="lan-en hidden">2023 Portuguese Republic. All rights reserved.</span>
+                </p>
             </div>
             <div class="footer-links">
                 <ul>
-                    <li><a href="acessibilidade.html">Acessibilidade</a></li>
-                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="acessibilidade.html">
+                        <span class="lan-pt">Acessibilidade</span>
+                        <span class="lan-en hidden">Accessibility</span>
+                    </a></li>
+                    <li><a href="contactos.html">
+                        <span class="lan-pt">Contactos</span>
+                        <span class="lan-en hidden">Contacts</span>
+                    </a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
     <!-- Modal - Search -->
-    <div class="modal" style="display: none;" id="searchModal">
+    <div class="modal" style="display: none;" id="searchModal" role="dialog" aria-modal="true">
         <div class="modal-content">
-            <img src="img/close.svg" id="closeModalButton" alt="" class="close-button">
-            <div class="modal__title">Pesquisar</div>
-            <div class="search-form">
-                <input type="text" id="searchInput" placeholder="Pesquisar">
-                <button id="searchButton">Pesquisar</button>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2 class="modal__title"> 
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </h2>
+                <button type="button" class="btn-close" aria-label="Fechar" id="closeSearchModalButton"></button>
             </div>
+            <form id="form-search" class="search-form">
+                <input type="text" id="searchInput" placeholder="Pesquisar">
+                <button id="searchButton" type="submit">
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </button>
+            </form>
         </div>
     </div>
 </body>
