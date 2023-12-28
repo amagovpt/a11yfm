@@ -15,6 +15,12 @@ const i18nEn = {
 const languageSelector = document.getElementById('language-selector');
 updateTexts();
 
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+  button.ariaExpanded = true;
+})
+
 languageSelector.addEventListener("change", function() {
     var url = window.location.pathname;
     var newUrl = '';
@@ -68,7 +74,6 @@ function updateTexts() {
     
 }
 
-
 document.addEventListener("DOMContentLoaded", function () { 
     // Event listener for Close Submenu
     document.addEventListener('keydown', (event) => {
@@ -78,11 +83,18 @@ document.addEventListener("DOMContentLoaded", function () {
             element.classList.add('active');
         } else if (event.keyCode === 27) {
             // Press ESC - Close submenu
+            button.ariaExpanded = false;
             Array.from(document.getElementsByClassName('has-submenu')).forEach(
                 (el) => el.classList.remove('active')
               );
         }
     });
+});
+
+document.getElementById('btn-hamburguer')?.addEventListener('click', function() {
+    console.log("ping");
+
+    document.getElementById('mainNav').classList.toggle('active');
 });
 
 document.getElementById('btn-hamburguer')?.addEventListener('click', function() {

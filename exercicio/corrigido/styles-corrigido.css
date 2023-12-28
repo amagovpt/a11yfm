@@ -122,9 +122,10 @@ header ul li a {
   padding: 5px 0;
 }
 
+/*
 .has-submenu:hover .submenu-content,
-.has-submenu.active .submenu-content,
-has-submenu:focus-within .submenu-content {
+.has-submenu.active .submenu-content,*/
+.has-submenu button[aria-expanded="true"] + .submenu-content {
   display: block;
 }
 
@@ -140,7 +141,7 @@ has-submenu:focus-within .submenu-content {
 }
 
 /* Pesquisa e idioma */
-ul {
+ul { 
   list-style: none;
   display: flex;
   align-items: center;
