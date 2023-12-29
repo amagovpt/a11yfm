@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesquisa - Jornada da Acessibilidade 2023</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-corrigido.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600&family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="#main" class="skip">
+            <span class="lan-pt">Saltar para conteúdo principal</span>
+            <span class="lan-en hidden">Skip to main content</span>
+        </a>
+        <div class="row">
+            <div class="col-auto">
+                <img src="img/logo1234.svg" alt="Jornada da acessibilidade e usabilidade da AMA">
+            </div>
+            <div class="col-auto">
+                <nav id="mainNav">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html" aria-label="Página Inicial">
+                                <i class="material-icons">home</i>
+                                <span class="mobile-only">
+                                    <span class="lan-pt">Página Inicial</span>
+                                    <span class="lan-en hidden">Homepage</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li> <a href="evento.html">
+                            <span class="lan-pt">Eventos</span>
+                            <span class="lan-en hidden">Events</span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="inscricao.html">
+                            <span class="lan-pt">Inscrição</span>
+                            <span class="lan-en hidden">Registration</span>
+                        </a>
+                        </li>
+                        <li class="has-submenu" aria-haspopup="menu" aria-expanded="false">
+                            <button class="submenu-arrow" aria-label="Workshops" aria-expanded="false">
+                                Workshops
+                                <span class="expand-icon"><img src="img/chevron_down_icon.svg" alt="Expandir"></span>
+                            </button>
+                            <ul class="submenu-content" role="menu">
+                                <li><a href="videos.html" tabindex="0">
+                                    <span class="lan-pt">Gravações</span>
+                                    <span class="lan-en hidden">Recordings</span>
+                                </a></li>
+                                <li><a href="exercicio2.html" tabindex="0">
+                                    <span class="lan-pt">Exercício prático II</span>
+                                    <span class="lan-en hidden">Practical exercise II</span>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="agenda.html">
+                                <span class="lan-pt">Agenda</span>
+                                <span class="lan-en hidden">Schedule</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-hamburguer">Menu</button>
+            </div>
+            <div class="col-auto">
+                <ul>
+                    <li>
+                        <button id="openSearchModalButton" aria-label="Abrir pesquisa">
+                            <img src="img/search.svg" alt="">
+
+                            <span class="lan-pt">Pesquisar</span>
+                            <span class="lan-en hidden">Search</span>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="language-container-1">
+                            <label for="language-selector">
+                                <span aria-label="selecionar idioma">
+                                    <img src="img/language.svg" alt="">
+                                </span>
+                            </label>
+                            <select class="form-select language-select" id="language-selector">
+                                <option value="pt">PT</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <div class="gray-bg">
+            <div class="container w-75 al-base p-0">
+                <h1>
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </h1>
+
+                <form class="result-search-form" action="pesquisa.html" method="get">
+                        <input type="text" id="searchInput" class="d-flex" placeholder="Pesquisar">
+                        <button type="submit" class="d-flex">
+                            <i class="material-icons">search</i>
+                        </button>
+                </form>
+                <p class="py-1">
+                    
+                    <span class="lan-pt">Encontrámos <span class="result-number">2</span> resultados para a sua pesquisa.</span>
+                    <span class="lan-en hidden">We found <span class="result-number">2</span> results for your search.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="container w-75 al-base py-4 d-flex d-flex-start">
+            <div class="d-flex-1">
+                <fieldset>
+                    <legend>
+                        <span class="lan-pt">Filtrar por:</span>
+                        <span class="lan-en hidden">Filter by:</span>
+                    </legend>
+                    <div class="checkbox-group">
+                        <span>
+                            <input type="checkbox" id="data1" name="data1" value="data1">
+                            <label for="data1" class="mb-0">
+                                <div class="lan-pt">Data1</div>
+                                <div class="lan-en hidden">Data1</div>
+                            </label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="data2" name="data2" value="datdata2a1">
+                            <label for="data2" class="mb-0">
+                                <div class="lan-pt">Data2</div>
+                                <div class="lan-en hidden">Data2</div>
+                            </label>
+                        </span>
+                        <span>
+                            <input type="checkbox" id="data3" name="data3" value="data3">
+                            <label for="data3" class="mb-0">
+                                <div class="lan-pt">Data3</div>
+                                <div class="lan-en hidden">Data3</div>
+                            </label>
+                        </span>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="d-flex-3">
+                <p class="py-1"><span class="result-number">2</span> 
+                    <span class="lan-pt">resultados</span>
+                    <span class="lan-en hidden">results</span>
+                </p>
+                <ul class="list-group al-base">
+                    <li>
+                        <h2><a href="#">Resultado da pesquisa</a></h2>
+                        <p>Data</p>
+                        <p>Descrição</p>
+                    </li>
+                    <li>
+                        <h2><a href="#">Resultado da pesquisa</a></h2>
+                        <p>Data</p>
+                        <p>Descrição</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-supporters mt-5">
+        <h2>
+            <span class="lan-pt">Apoios</span>
+            <span class="lan-en hidden">Support</span>
+        </h2>
+        <div class="apoios-logos">
+            <a href="https://next-generation-eu.europa.eu/index_en"><img src="img/PT_Financiado_UE_WHITE.png"
+                    alt="Financiamento pela União Europeia"></a>
+            <a href="https://recuperarportugal.gov.pt/plano-de-recuperacao-e-resiliencia/"><img
+                    src="img/PRR_Logotipos-white-hor.png" alt="PPR-Plano de recuperação e resiliencia"></a>
+            <a href="https://www.portugal.gov.pt/pt/gc23"><img src="img/Republica_Portuguesa.png"
+                    alt="Republica portuguesa"></a>
+        </div>
+        <div class="policies">
+            <div class="footer-text">
+                <p>&copy;
+                    <span class="lan-pt">2023 República Portuguesa. Todos os direitos reservados.</span>
+                    <span class="lan-en hidden">2023 Portuguese Republic. All rights reserved.</span>
+                </p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="acessibilidade.html">
+                        <span class="lan-pt">Acessibilidade</span>
+                        <span class="lan-en hidden">Accessibility</span>
+                    </a></li>
+                    <li><a href="contactos.html">
+                        <span class="lan-pt">Contactos</span>
+                        <span class="lan-en hidden">Contacts</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal - Search -->
+    <div class="modal" style="display: none;" id="searchModal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <div class="d-flex align-items-center justify-content-between">
+                <h2 class="modal__title"> 
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </h2>
+                <button type="button" class="btn-close" aria-label="Fechar" id="closeSearchModalButton"></button>
+            </div>
+            <form id="form-search" class="search-form">
+                <input type="text" id="searchInput" placeholder="Pesquisar">
+                <button id="searchButton" type="submit">
+                    <span class="lan-pt">Pesquisar</span>
+                    <span class="lan-en hidden">Search</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("registration-form");
+            const emailInput = document.getElementById("email");
+            const emailErrorMessage = document.getElementById("email-error-message");
+
+            form.addEventListener("submit", function (event) {
+                if (!isValidEmail(emailInput.value)) {
+                    emailErrorMessage.removeAttribute("hidden");
+                    event.preventDefault();
+                }
+            });
+
+            emailInput.addEventListener("input", function () {
+                emailErrorMessage.setAttribute("hidden", "true");
+            });
+
+            function isValidEmail(email) {
+                const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+                return emailPattern.test(email);
+            }
+        });
+    </script>
+</body>
+
+</html>

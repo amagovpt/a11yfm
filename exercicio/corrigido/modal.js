@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById('searchModal');
     const closeButton = document.getElementById('closeSearchModalButton');
     const searchInput = document.getElementById('searchInput');
+    const searchform = document.forms['form-search'];
 
     function openModal() {
         modal.style.display = 'flex';
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function closeModal() {
+        alert('vai fechar...');
         modal.style.display = 'none';
 
         document.body.style.overflow = null;
@@ -46,14 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
     openButton.addEventListener('click', () => {
         openModal();
     });
-    
-    closeButton?.addEventListener('click', () => {
-        closeModal();
-    });
 
-    modal.addEventListener('keyup', (event) => {
-        if (event.key === 'Escape') {
-            closeModal();
-        }
+    
+    searchform.addEventListener("submit", function(e) {
+        window.location.replace("./pesquisa.html");
+        e.preventDefault();
     });
 });

@@ -283,6 +283,20 @@ button {
   margin: 10px 0;
 }
 
+.result-search-form {
+  display: flex;
+}
+
+.result-search-form input {
+  flex: 1; 
+  max-width: 700px;
+}
+.result-search-form button {
+  flex: 0;
+  padding: 15px;
+  margin: 10px 0;
+}
+
 
 
 /* Página Videos */
@@ -412,6 +426,20 @@ hr {
   border-top: 2px solid #929292; 
 }
 
+.al-base {
+  text-align: left !important; 
+  align-items: baseline;
+}
+.al-base li {
+  margin: 0;
+}
+
+.gray-bg {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto; 
+}
 
 /* Formulário */
 
