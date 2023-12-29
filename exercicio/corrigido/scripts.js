@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.keyCode === 13) {
             // Press Enter - Open submenu
             const element = event.target.closest('.has-submenu');
-            element.classList.add('active');
+            element?.classList.add('active');
         } else if (event.keyCode === 27) {
             // Press ESC - Close submenu
             button.ariaExpanded = false;

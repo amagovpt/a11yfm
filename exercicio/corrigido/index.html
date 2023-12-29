@@ -106,7 +106,7 @@
         <section>
             <div id="carousel" class="carousel slide">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-slick-index="0" aria-roledescription="slide" aria-label="1 de 2">
+                    <div class="carousel-item active" role="group" data-slick-index="0" aria-roledescription="slide">
                         <img src="img/Banner-1.png" class="d-block w-100" alt="Jornada de Acessibilidade e Usabilidade Digital 2023">
                         <div class="carousel-header">
                             <h2>
@@ -115,7 +115,7 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="carousel-item" data-slick-index="1" aria-roledescription="slide" aria-label="2 de 2">
+                    <div class="carousel-item" role="group" data-slick-index="1" aria-roledescription="slide">
                         <img src="img/sigmund-HE1zW44Zm_Y-unsplash.jpg" class="d-block w-100" alt="Avaliação de acessibilidade e usabilidade">
                         <div class="carousel-header overlay">
                             <h2>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="carousel-indicators">
-                    <button class="carousel-nav-button-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" aria-controls="carousel" aria-label="Slide anterior">
+                    <button class="carousel-nav-button-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" aria-controls="#carousel" aria-label="Slide anterior">
                         <span class="carousel-nav-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">
                             <span class="lan-pt hidden">Slide anterior</span>
@@ -135,13 +135,13 @@
                     </button>
                     <ul>
                         <li>
-                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" aria-controls="carousel">1</button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" id="slick-slide-control03" class="active" aria-current="true" aria-label="Slide 1" aria-controls="#carousel" tabindex="0">1</button>
                         </li>
                         <li>
-                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" aria-controls="carousel">2</button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" aria-controls="#carousel" tabindex="-1">2</button>
                         </li>
                     </ul>
-                    <button class="carousel-nav-next" type="button" data-bs-target="#carousel" data-bs-slide="next" aria-controls="carousel" aria-label="Slide seguinte">
+                    <button class="carousel-nav-next" type="button" data-bs-target="#carousel" data-bs-slide="next" aria-controls="#carousel" aria-label="Slide seguinte">
                         <span class="carousel-nav-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">
                             <span class="lan-pt">Próximo slide</span>
