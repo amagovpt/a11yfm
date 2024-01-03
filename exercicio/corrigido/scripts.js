@@ -49,7 +49,7 @@ function updateTexts() {
         lanArray = i18nPt;
 
     } else {
-        document.documentElement.setAttribute("lang", 'en');
+        document.documentElement.setAttribute("lang", 'en-US');
         lanArray = i18nEn;
     }
 
