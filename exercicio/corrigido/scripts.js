@@ -47,10 +47,13 @@ function updateTexts() {
     if (language === 'pt') {
         document.documentElement.setAttribute("lang", 'pt-pt');
         lanArray = i18nPt;
-
+        // change page title
+        document.title = document.getElementById('title-pt').innerHTML;
     } else {
         document.documentElement.setAttribute("lang", 'en-US');
         lanArray = i18nEn;
+        // change page title
+        document.title = document.getElementById('title-en').innerHTML;
     }
 
     Array.from(document.getElementsByClassName("lan-pt")).forEach(
@@ -70,6 +73,7 @@ function updateTexts() {
 
     // search placeholder
     document.getElementById('searchInput').setAttribute('placeholder', lanArray['lanSearch']);
+
 
     
 }
