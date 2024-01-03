@@ -318,7 +318,7 @@ button#openSearchModalButton:hover+.modal {
 }
 
 /*input de pesquisa */
-#searchInput {
+#searchInput, #searchInputB {
   padding: 10px;
   border: 1px solid #000;
   border-radius: 5px;
