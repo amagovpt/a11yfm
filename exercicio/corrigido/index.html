@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="carousel-indicators">
-                    <button class="carousel-nav-button-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" aria-controls="#carousel" aria-label="Slide anterior">
+                    <button class="carousel-nav-button-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" aria-controls="#carousel" aria-label="Slide anterior" onclick="pressSlideButton();">
                         <span class="carousel-nav-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">
                             <span class="lan-pt hidden">Slide anterior</span>
@@ -138,13 +138,13 @@
                     </button>
                     <ul>
                         <li>
-                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" id="slick-slide-control03" class="active" aria-current="true" aria-label="Slide 1" aria-controls="#carousel" tabindex="0">1</button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" id="slick-slide-control03" class="active" aria-current="true" aria-label="Slide 1" aria-controls="#carousel" tabindex="0" onclick="pressSlideButton();">1</button>
                         </li>
                         <li>
-                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" aria-controls="#carousel" tabindex="-1">2</button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" aria-controls="#carousel" tabindex="-1" onclick="pressSlideButton();">2</button>
                         </li>
                     </ul>
-                    <button class="carousel-nav-next" type="button" data-bs-target="#carousel" data-bs-slide="next" aria-controls="#carousel" aria-label="Slide seguinte">
+                    <button class="carousel-nav-next" type="button" data-bs-target="#carousel" data-bs-slide="next" aria-controls="#carousel" aria-label="Slide seguinte" onclick="pressSlideButton();">
                         <span class="carousel-nav-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">
                             <span class="lan-pt">Próximo slide</span>
@@ -269,18 +269,20 @@
 
     </main>
 
-    <footer class="footer-supporters mt-5">
-        <h2>
-            <span class="lan-pt">Apoios</span>
-            <span class="lan-en hidden">Support</span>
-        </h2>
-        <div class="apoios-logos">
-            <a href="https://next-generation-eu.europa.eu/index_en"><img src="img/PT_Financiado_UE_WHITE.png"
-                    alt="Financiamento pela União Europeia"></a>
-            <a href="https://recuperarportugal.gov.pt/plano-de-recuperacao-e-resiliencia/"><img
-                    src="img/PRR_Logotipos-white-hor.png" alt="PPR-Plano de recuperação e resiliencia"></a>
-            <a href="https://www.portugal.gov.pt/pt/gc23"><img src="img/Republica_Portuguesa.png"
-                    alt="Republica portuguesa"></a>
+    <footer class="mt-5">
+        <div class="footer-supporters">
+            <h2>
+                <span class="lan-pt">Apoios</span>
+                <span class="lan-en hidden">Support</span>
+            </h2>
+            <div class="apoios-logos">
+                <a href="https://next-generation-eu.europa.eu/index_en"><img src="img/PT_Financiado_UE_WHITE.png"
+                        alt="Financiamento pela União Europeia"></a>
+                <a href="https://recuperarportugal.gov.pt/plano-de-recuperacao-e-resiliencia/"><img
+                        src="img/PRR_Logotipos-white-hor.png" alt="PPR-Plano de recuperação e resiliencia"></a>
+                <a href="https://www.portugal.gov.pt/pt/gc23"><img src="img/Republica_Portuguesa.png"
+                        alt="Republica portuguesa"></a>
+            </div>
         </div>
         <div class="policies">
             <div class="footer-text">

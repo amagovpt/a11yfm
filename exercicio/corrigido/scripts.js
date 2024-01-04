@@ -179,5 +179,9 @@ function putInputsDirty() {
 
 }
 
+function pressSlideButton() {
+    document.querySelector('.carousel-item h2').focus();
+}
+
 
 

@@ -477,6 +477,7 @@ tr:nth-child(even) {
   justify-content: space-between;
   width: 100%;
   background-color: #070F1E;
+  color: #fff;
 }
 
 .footer-text {
